@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LocaleSwitcher from "./locale-switcher";
 
 type FooterProps = {
   locale: string;
@@ -47,9 +46,6 @@ export default function Footer({ locale }: FooterProps) {
                   <p>info@sirket.com</p>
                   <p>+90 212 000 00 00</p>
                   <p>Istanbul, Turkiye</p>
-                  <div className="pt-2">
-                    <LocaleSwitcher locale={locale} inverted />
-                  </div>
                 </div>
               </div>
             </div>

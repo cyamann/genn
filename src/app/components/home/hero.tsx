@@ -68,7 +68,7 @@ export default function Hero({ locale }: HeroProps) {
 
           <div className="rounded-[28px] border border-white/10 bg-white/6 p-4 shadow-[0_30px_120px_rgba(0,0,0,0.35)] backdrop-blur-sm sm:rounded-[36px] sm:p-5">
             <div className="rounded-[24px] border border-white/10 bg-[#201914] p-4 sm:rounded-[30px] sm:p-6">
-              <div className="grid gap-4 xl:grid-cols-[1.05fr_0.95fr]">
+              <div className="grid gap-4 2xl:grid-cols-[1.05fr_0.95fr]">
                 <div className="rounded-[24px] bg-[linear-gradient(160deg,#f0dfc8,#bf905b,#38281b)] p-5 text-[#1d1814] sm:rounded-[28px] sm:p-6">
                   <p className="text-xs uppercase tracking-[0.3em] text-[#5d4630]">Danismanlik ve planlama</p>
                   <h2 className="mt-5 max-w-md text-2xl font-semibold leading-tight sm:text-3xl">
@@ -102,7 +102,7 @@ export default function Hero({ locale }: HeroProps) {
                     </ul>
                   </div>
 
-                  <div className="grid gap-4 md:grid-cols-2">
+                  <div className="grid gap-4 2xl:grid-cols-2">
                     <div className="rounded-[24px] bg-[#f5f1e8] p-5 text-[#1d1814]">
                       <p className="text-sm text-[#7b6a57]">Hizmet alani</p>
                       <p className="mt-2 text-xl font-semibold sm:text-2xl">Gumruk ve lojistik koordinasyonu</p>

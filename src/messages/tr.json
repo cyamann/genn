@@ -8,16 +8,16 @@
     "cta": "Teklif Al"
   },
   "hero": {
-    "eyebrow": "Gumruk ve Lojistik Operasyonlari",
-    "title": "Sinir gecislerinden teslimata uzanan sureci tek merkezden yonetin.",
-    "description": "Ithalat, ihracat, depo ve uluslararasi tasima adimlarini hizli karar verebilen bir operasyon yapisinda bir araya getiriyoruz.",
-    "primaryCta": "Operasyonu Incele",
+    "eyebrow": "Gümrük ve Lojistik Operasyonları",
+    "title": "Sınır geçişinden nihai teslimata kadar tüm süreci tek bir kontrol merkezinden yönetin.",
+    "description": "İthalat, ihracat, depolama ve uluslararası taşımacılığı tek ve çevik bir operasyon yapısı altında birleştiriyoruz.",
+    "primaryCta": "Operasyonları İncele",
     "secondaryCta": "Teklif Talep Et"
   },
   "services": {
-    "eyebrow": "Uctan Uca Operasyon",
-    "title": "Isletmeniz icin gumruk, tasima ve saha operasyonlarini tek akista birlestiriyoruz.",
-    "description": "Gumruk ve lojistik odakli kritik hizmet alanlarini tek bir operasyon diliyle yonetiyoruz."
+    "eyebrow": "Uçtan Uca Operasyonlar",
+    "title": "Gümrük, taşımacılık ve saha operasyonlarını işletmeniz için tek bir akışta birleştiriyoruz.",
+    "description": "Kritik gümrük ve lojistik hizmetlerini tek ve net bir operasyon diliyle yönetiyoruz."
   },
   "footer": {
     "companyTitle": "Şirket",

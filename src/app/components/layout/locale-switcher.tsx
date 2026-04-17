@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 type LocaleSwitcherProps = {
@@ -8,13 +9,19 @@ type LocaleSwitcherProps = {
   inverted?: boolean;
 };
 
+const locales = {
+  tr: { label: "Türkçe", shortLabel: "TR", flag: "🇹🇷" },
+  en: { label: "English", shortLabel: "EN", flag: "🇬🇧" },
+} as const;
+
 export default function LocaleSwitcher({
   locale,
   inverted = false,
 }: LocaleSwitcherProps) {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
-  function buildHref(targetLocale: string) {
+  function buildHref(targetLocale: keyof typeof locales) {
     const segments = pathname.split("/").filter(Boolean);
 
     if (segments.length === 0) {
@@ -25,33 +32,58 @@ export default function LocaleSwitcher({
     return `/${segments.join("/")}`;
   }
 
-  return (
-    <div
-      className={`inline-flex items-center rounded-full border p-1 ${
-        inverted ? "border-white/15 bg-white/8" : "border-[#e8dccd] bg-[#fcfaf6]"
-      }`}
-    >
-      {(["tr", "en"] as const).map((item) => {
-        const isActive = item === locale;
+  const currentLocale = locales[locale as keyof typeof locales] ?? locales.tr;
 
-        return (
-          <Link
-            key={item}
-            href={buildHref(item)}
-            className={`rounded-full px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] transition ${
-              isActive
-                ? inverted
-                  ? "bg-[#d6a35d] text-[#1d1814]"
-                  : "bg-[#1d1814] text-white"
-                : inverted
-                  ? "text-white/72 hover:text-white"
-                  : "text-[#6d6357] hover:text-[#1d1814]"
-            }`}
-          >
-            {item}
-          </Link>
-        );
-      })}
+  return (
+    <div className="relative">
+      <button
+        type="button"
+        onClick={() => setIsOpen((current) => !current)}
+        className={`inline-flex items-center gap-2 rounded-full border px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] transition ${
+          inverted
+            ? "border-white/15 bg-white/8 text-white"
+            : "border-[#e8dccd] bg-[#fcfaf6] text-[#1d1814]"
+        }`}
+      >
+        <span className="text-sm">{currentLocale.flag}</span>
+        <span>{currentLocale.shortLabel}</span>
+        <span className="text-[10px]">{isOpen ? "▲" : "▼"}</span>
+      </button>
+
+      {isOpen ? (
+        <div
+          className={`absolute right-0 top-full z-[140] mt-3 min-w-[180px] rounded-[24px] border p-2 shadow-[0_24px_70px_rgba(30,24,18,0.14)] ${
+            inverted
+              ? "border-white/12 bg-[#1d1814] text-white"
+              : "border-[#eadfce] bg-white text-[#1d1814]"
+          }`}
+        >
+          {(Object.entries(locales) as Array<[keyof typeof locales, (typeof locales)[keyof typeof locales]]>).map(
+            ([key, value]) => {
+              const isActive = key === locale;
+
+              return (
+                <Link
+                  key={key}
+                  href={buildHref(key)}
+                  className={`flex items-center gap-3 rounded-2xl px-3 py-3 text-sm transition ${
+                    isActive
+                      ? inverted
+                        ? "bg-white/10"
+                        : "bg-[#f5efe7]"
+                      : inverted
+                        ? "hover:bg-white/6"
+                        : "hover:bg-[#faf5ef]"
+                  }`}
+                >
+                  <span className="text-base">{value.flag}</span>
+                  <span className="font-medium">{value.label}</span>
+                </Link>
+              );
+            }
+          )}
+        </div>
+      ) : null}
     </div>
   );
 }
