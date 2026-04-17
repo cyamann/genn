@@ -3,13 +3,15 @@ import Navbar from "../../components/layout/navbar";
 import MapEmbed from "../../components/ui/map-embed";
 import MailtoForm from "../../components/ui/mailto-form";
 import SectionReveal from "../../components/ui/section-reveal";
+import { getDictionary } from "@/src/lib/getDictionaries";
 
 export default async function ContactPage({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: "tr" | "en" }>;
 }) {
   const { locale } = await params;
+  const dict = await getDictionary(locale);
 
   return (
     <>
@@ -18,57 +20,84 @@ export default async function ContactPage({
         <SectionReveal className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_0.9fr]">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#d2b48c]">
-              Iletisim
+              {dict.contact.eyebrow}
             </p>
+
             <h1 className="max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl md:text-6xl">
-              Operasyon ihtiyacinizi birlikte planlayalim.
+              {dict.contact.title}
             </h1>
+
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              Sevkiyat yapiniz, gumruk surecleriniz ve ihtiyac duydugunuz operasyon modelini bize
-              iletin. Ekibimiz size en uygun akisla donus saglasin.
+              {dict.contact.description}
             </p>
           </div>
 
           <MailtoForm
             email="info@sirket.com"
-            subjectPrefix="Iletisim Talebi"
-            title="Bize yazin"
-            description="Formu doldurdugunuzda varsayilan mail uygulamaniz acilir ve bilgileriniz hazir bir e-posta olarak gider."
-            buttonLabel="Mail Gonder"
+            subjectPrefix={dict.contact.form.subjectPrefix}
+            title={dict.contact.form.title}
+            description={dict.contact.form.description}
+            buttonLabel={dict.contact.form.buttonLabel}
             fields={[
-              { id: "name", label: "Ad Soyad", placeholder: "Adinizi girin" },
-              { id: "email", label: "E-posta", type: "email", placeholder: "ornek@mail.com" },
-              { id: "phone", label: "Telefon", type: "tel", placeholder: "+90 ..." },
-              { id: "message", label: "Mesaj", type: "textarea", placeholder: "Operasyon ihtiyacinizi yazin" },
+              {
+                id: "name",
+                label: dict.contact.form.fields.name.label,
+                placeholder: dict.contact.form.fields.name.placeholder,
+              },
+              {
+                id: "email",
+                label: dict.contact.form.fields.email.label,
+                type: "email",
+                placeholder: dict.contact.form.fields.email.placeholder,
+              },
+              {
+                id: "phone",
+                label: dict.contact.form.fields.phone.label,
+                type: "tel",
+                placeholder: dict.contact.form.fields.phone.placeholder,
+              },
+              {
+                id: "message",
+                label: dict.contact.form.fields.message.label,
+                type: "textarea",
+                placeholder: dict.contact.form.fields.message.placeholder,
+              },
             ]}
           />
         </SectionReveal>
 
         <SectionReveal className="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-3" delay={120}>
           <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
-            <p className="text-white/50">E-posta</p>
+            <p className="text-white/50">{dict.contact.info.emailLabel}</p>
             <p className="mt-2 text-lg text-white">info@sirket.com</p>
           </div>
+
           <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
-            <p className="text-white/50">Telefon</p>
+            <p className="text-white/50">{dict.contact.info.phoneLabel}</p>
             <p className="mt-2 text-lg text-white">+90 212 000 00 00</p>
           </div>
+
           <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
-            <p className="text-white/50">Adres</p>
-            <p className="mt-2 text-lg text-white">Istanbul, Turkiye</p>
+            <p className="text-white/50">{dict.contact.info.addressLabel}</p>
+            <p className="mt-2 text-lg text-white">{dict.contact.info.addressValue}</p>
           </div>
         </SectionReveal>
 
         <SectionReveal className="mx-auto mt-10 max-w-6xl" delay={160}>
           <div className="mb-5">
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#d2b48c]">
-              Konum
+              {dict.contact.location.eyebrow}
             </p>
+
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-              Metroport Business lokasyonunu harita uzerinden goruntuleyin
+              {dict.contact.location.title}
             </h2>
           </div>
-          <MapEmbed title="Metroport Business" query="Metroport Business Istanbul" />
+
+          <MapEmbed
+            title={dict.contact.location.mapTitle}
+            query={dict.contact.location.mapQuery}
+          />
         </SectionReveal>
       </main>
       <Footer locale={locale} />

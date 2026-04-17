@@ -1,23 +1,25 @@
-import { notFound } from "next/navigation";
+import { getDictionary } from "@/src/lib/getDictionaries";
+import type { ReactNode } from "react";
+import { DictionaryProvider } from "../components/providers/dictionary-provider";
 
-const locales = ["tr", "en"] as const;
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
-
-export default async function RootLayout({
+export default async function LocaleLayout({
   children,
   params,
-}: Readonly<{
-  children: React.ReactNode;
+}: {
+  children: ReactNode;
   params: Promise<{ locale: string }>;
-}>) {
+}) {
   const { locale } = await params;
+  const dictionary = await getDictionary(locale);
 
-  if (!locales.includes(locale as (typeof locales)[number])) {
-    notFound();
-  }
-
-  return <>{children}</>;
+  return (
+    <html lang={locale}>
+      <body>
+        <DictionaryProvider dictionary={dictionary}>
+          {children}
+        </DictionaryProvider>
+      </body>
+    </html>
+  );
 }

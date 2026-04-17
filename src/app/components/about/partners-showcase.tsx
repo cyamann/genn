@@ -17,7 +17,15 @@ const logos = [
   { name: "GEODIS", accent: "bg-[#f6ddd8] text-[#914334]" },
 ];
 
-export default function PartnersShowcase() {
+type PartnersShowcaseProps = {
+  dictionary: {
+    eyebrow: string;
+    title: string;
+    description: string;
+  };
+};
+
+export default function PartnersShowcase({ dictionary }: PartnersShowcaseProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -32,14 +40,15 @@ export default function PartnersShowcase() {
     <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
       <div className="rounded-[34px] bg-[#1d1814] p-6 text-white shadow-[0_30px_90px_rgba(30,24,18,0.16)] sm:p-8">
         <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#d3ae79]">
-          Partner Agi
+          {dictionary.eyebrow}
         </p>
+
         <h2 className="mt-5 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Operasyon akisini destekleyen markalar ve is ortakliklari
+          {dictionary.title}
         </h2>
+
         <p className="mt-6 max-w-xl text-base leading-8 text-white/72">
-          Bu alan, farkli tasima ve lojistik hatlarinda birlikte calisilabilecek global ve bolgesel
-          oyunculari gosteren bir logo duvari mantigiyla tasarlandi.
+          {dictionary.description}
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">

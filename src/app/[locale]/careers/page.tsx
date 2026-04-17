@@ -1,3 +1,4 @@
+import { getDictionary } from "@/src/lib/getDictionaries";
 import Footer from "../../components/layout/footer";
 import Navbar from "../../components/layout/navbar";
 import MailtoForm from "../../components/ui/mailto-form";
@@ -6,9 +7,10 @@ import SectionReveal from "../../components/ui/section-reveal";
 export default async function CareersPage({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: "tr" | "en" }>;
 }) {
   const { locale } = await params;
+  const dict = await getDictionary(locale);
 
   return (
     <>
@@ -17,25 +19,23 @@ export default async function CareersPage({
         <SectionReveal className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#9a7444]">
-              Kariyer
+              {dict.careers.eyebrow}
             </p>
+
             <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-[#1d1814] sm:text-4xl md:text-6xl">
-              Operasyonu buyuten ekibe katilmak isteyenler icin acik bir basvuru alani
+              {dict.careers.title}
             </h1>
+
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f554c]">
-              Gumruk operasyonu, musteri yonetimi, tasima planlama ve saha koordinasyonu alanlarinda
-              guclu ekip arkadaslari ariyoruz. Asagidaki form ile ozgecmis ve kisa notunuzu bize
-              mail olarak iletebilirsiniz.
+              {dict.careers.description}
             </p>
 
             <div className="mt-10 grid gap-4 md:grid-cols-2">
-              {[
-                "Gumruk operasyon uzmanligi",
-                "Lojistik planlama",
-                "Musteri ve partner yonetimi",
-                "Analitik ve sorumluluk bilinci",
-              ].map((item) => (
-                <div key={item} className="rounded-[24px] bg-white p-5 shadow-[0_20px_60px_rgba(30,24,18,0.08)]">
+              {dict.careers.highlights.map((item: string) => (
+                <div
+                  key={item}
+                  className="rounded-[24px] bg-white p-5 shadow-[0_20px_60px_rgba(30,24,18,0.08)]"
+                >
                   <p className="text-base font-medium text-[#1d1814]">{item}</p>
                 </div>
               ))}
@@ -44,18 +44,45 @@ export default async function CareersPage({
 
           <MailtoForm
             email="kariyer@sirket.com"
-            subjectPrefix="Kariyer Basvurusu"
-            title="Basvurunuzu mail ile iletin"
-            description="Bilgileriniz varsayilan mail uygulamaniza aktarilir. CV dosyanizi acilan mail ekranina ekleyebilirsiniz."
-            buttonLabel="Basvuru Maili Olustur"
+            subjectPrefix={dict.careers.form.subjectPrefix}
+            title={dict.careers.form.title}
+            description={dict.careers.form.description}
+            buttonLabel={dict.careers.form.buttonLabel}
             theme="light"
             fields={[
-              { id: "fullName", label: "Ad Soyad", placeholder: "Adinizi girin" },
-              { id: "email", label: "E-posta", type: "email", placeholder: "ornek@mail.com" },
-              { id: "position", label: "Pozisyon", placeholder: "Ilgilendiginiz alan" },
-              { id: "experience", label: "Deneyim", placeholder: "Orn. 4 yil gumruk operasyonu" },
-              { id: "cv", label: "CV", type: "file", placeholder: "" },
-              { id: "message", label: "Kisa Not", type: "textarea", placeholder: "Kendinizden kisaca bahsedin" },
+              {
+                id: "fullName",
+                label: dict.careers.form.fields.fullName.label,
+                placeholder: dict.careers.form.fields.fullName.placeholder,
+              },
+              {
+                id: "email",
+                label: dict.careers.form.fields.email.label,
+                type: "email",
+                placeholder: dict.careers.form.fields.email.placeholder,
+              },
+              {
+                id: "position",
+                label: dict.careers.form.fields.position.label,
+                placeholder: dict.careers.form.fields.position.placeholder,
+              },
+              {
+                id: "experience",
+                label: dict.careers.form.fields.experience.label,
+                placeholder: dict.careers.form.fields.experience.placeholder,
+              },
+              {
+                id: "cv",
+                label: dict.careers.form.fields.cv.label,
+                type: "file",
+                placeholder: dict.careers.form.fields.cv.placeholder,
+              },
+              {
+                id: "message",
+                label: dict.careers.form.fields.message.label,
+                type: "textarea",
+                placeholder: dict.careers.form.fields.message.placeholder,
+              },
             ]}
           />
         </SectionReveal>

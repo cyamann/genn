@@ -2,47 +2,12 @@
 
 import { useEffect, useState } from "react";
 import SectionReveal from "../ui/section-reveal";
-
-const slides = [
-  {
-    id: "01",
-    tag: "Gumrukleme",
-    title: "Ithalat ve ihracat sureclerinde belge, beyan ve mevzuat takibini destekliyoruz",
-    description:
-      "Surecin gerektirdigi evrak akisini, beyan hazirligini ve operasyon koordinasyonunu daha duzenli bir yapida ele aliyoruz.",
-    bullets: ["Beyan surec destegi", "Belge kontrol akisi", "Koordinasyon ve takip"],
-    accent: "from-[#d8b27d] via-[#9f6c38] to-[#2f2217]",
-  },
-  {
-    id: "02",
-    tag: "Karayolu",
-    title: "Yurtiçi ve uluslararasi karayolu operasyonlarinda planli sevkiyat destegi",
-    description:
-      "Parsiyel ya da komple yuk ihtiyaclarinda, sevkiyat ritmine uygun planlama ve surec koordinasyonu sunuyoruz.",
-    bullets: ["Yukleme planlamasi", "Sinir gecisi koordinasyonu", "Teslim sureci takibi"],
-    accent: "from-[#ecdfca] via-[#b38a58] to-[#463224]",
-  },
-  {
-    id: "03",
-    tag: "Denizyolu",
-    title: "Konteyner bazli tasimalarda daha dengeli maliyet ve sure planlamasi",
-    description:
-      "Hat secimi, liman surecleri ve evrak akisinda daha kontrollu bir operasyon akisi olusturuyoruz.",
-    bullets: ["FCL / LCL organizasyonu", "Liman surec takibi", "Dokumantasyon destegi"],
-    accent: "from-[#d7dce0] via-[#698198] to-[#1f2f3d]",
-  },
-  {
-    id: "04",
-    tag: "Havayolu",
-    title: "Zaman hassasiyetli gonderiler icin hizli ve duzenli havayolu organizasyonu",
-    description:
-      "Acil sevkiyatlarda kapasite, belge ve operasyon koordinasyonunu daha temiz bir surece ceviriyoruz.",
-    bullets: ["Rezervasyon koordinasyonu", "Belge hazirlik destegi", "Sure odakli planlama"],
-    accent: "from-[#f3e5ce] via-[#c68d4a] to-[#4c3723]",
-  },
-];
+import { useDictionary } from "../providers/dictionary-provider";
 
 export default function ServiceCarousel() {
+  const dict = useDictionary();
+  const slides = dict.serviceCarousel.slides;
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -51,7 +16,7 @@ export default function ServiceCarousel() {
     }, 5000);
 
     return () => window.clearInterval(timer);
-  }, []);
+  }, [slides.length]);
 
   const activeSlide = slides[activeIndex];
 
@@ -61,16 +26,15 @@ export default function ServiceCarousel() {
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#9a7444]">
-              Hizmet Alanlari
+              {dict.serviceCarousel.eyebrow}
             </p>
             <h2 className="max-w-xl text-3xl font-semibold tracking-tight text-[#1d1814] sm:text-4xl md:text-5xl">
-              Ihtiyaca gore sekillenen hizmet basliklarini sade bir yapiyla sunuyoruz.
+              {dict.serviceCarousel.title}
             </h2>
           </div>
 
           <p className="max-w-2xl text-base leading-8 text-[#5f554c] md:text-lg">
-            Burada amac, teknik olarak var olmayan bir sistemi anlatmak degil; hangi alanlarda destek
-            verdiginizi daha anlasilir ve daha duzenli bir sekilde gostermek.
+            {dict.serviceCarousel.description}
           </p>
         </div>
 
@@ -126,33 +90,35 @@ export default function ServiceCarousel() {
 
           <div className="grid gap-6">
             <article className="rounded-[28px] bg-white p-6 shadow-[0_26px_70px_rgba(30,24,18,0.08)] sm:rounded-[32px] sm:p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9a7444]">Yaklasimimiz</p>
-              <h3 className="mt-4 text-xl font-semibold text-[#1d1814] sm:text-2xl">Calisma bicimimizi sade adimlarla anlatiyoruz</h3>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9a7444]">
+                {dict.serviceCarousel.approach.eyebrow}
+              </p>
+              <h3 className="mt-4 text-xl font-semibold text-[#1d1814] sm:text-2xl">
+                {dict.serviceCarousel.approach.title}
+              </h3>
               <div className="mt-8 space-y-4">
-                {["Ihtiyac ve surec degerlendirmesi", "Uygun hizmet modelinin belirlenmesi", "Operasyon planlamasi ve koordinasyon", "Surecin iletisimle takip edilmesi"].map(
-                  (item, index) => (
-                    <div key={item} className="flex items-center gap-4 rounded-[20px] bg-[#f5f1e8] px-4 py-4">
-                      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1d1814] text-sm font-semibold text-white">
-                        0{index + 1}
-                      </span>
-                      <p className="text-sm font-medium text-[#322821]">{item}</p>
-                    </div>
-                  )
-                )}
+                {dict.serviceCarousel.approach.steps.map((item, index) => (
+                  <div key={item} className="flex items-center gap-4 rounded-[20px] bg-[#f5f1e8] px-4 py-4">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1d1814] text-sm font-semibold text-white">
+                      0{index + 1}
+                    </span>
+                    <p className="text-sm font-medium text-[#322821]">{item}</p>
+                  </div>
+                ))}
               </div>
             </article>
 
             <article className="rounded-[28px] bg-[#1d1814] p-6 text-white shadow-[0_26px_70px_rgba(30,24,18,0.16)] sm:rounded-[32px] sm:p-7">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#d3ae79]">Odak Noktasi</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#d3ae79]">
+                {dict.serviceCarousel.focus.eyebrow}
+              </p>
               <div className="mt-6 grid grid-cols-2 gap-4">
-                <div className="rounded-[24px] bg-white/6 p-5">
-                  <p className="text-3xl font-semibold">18</p>
-                  <p className="mt-2 text-sm text-white/65">Ulke ve dis ticaret baglantisi</p>
-                </div>
-                <div className="rounded-[24px] bg-white/6 p-5">
-                  <p className="text-3xl font-semibold">320+</p>
-                  <p className="mt-2 text-sm text-white/65">Surec, belge ve koordinasyon takibi</p>
-                </div>
+                {dict.serviceCarousel.focus.stats.map((stat) => (
+                  <div key={stat.value + stat.label} className="rounded-[24px] bg-white/6 p-5">
+                    <p className="text-3xl font-semibold">{stat.value}</p>
+                    <p className="mt-2 text-sm text-white/65">{stat.label}</p>
+                  </div>
+                ))}
               </div>
             </article>
           </div>
