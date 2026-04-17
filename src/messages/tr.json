@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "logo": "LOGO",
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "cta": "Teklif Al"
+  },
+  "hero": {
+    "eyebrow": "Gumruk ve Lojistik Operasyonlari",
+    "title": "Sinir gecislerinden teslimata uzanan sureci tek merkezden yonetin.",
+    "description": "Ithalat, ihracat, depo ve uluslararasi tasima adimlarini hizli karar verebilen bir operasyon yapisinda bir araya getiriyoruz.",
+    "primaryCta": "Operasyonu Incele",
+    "secondaryCta": "Teklif Talep Et"
+  },
+  "services": {
+    "eyebrow": "Uctan Uca Operasyon",
+    "title": "Isletmeniz icin gumruk, tasima ve saha operasyonlarini tek akista birlestiriyoruz.",
+    "description": "Gumruk ve lojistik odakli kritik hizmet alanlarini tek bir operasyon diliyle yonetiyoruz."
+  },
+  "footer": {
+    "companyTitle": "Şirket",
+    "companyDescription": "Gümrük ve lojistik alanında profesyonel çözümler sunuyoruz.",
+    "linksTitle": "Bağlantılar",
+    "contactTitle": "İletişim",
+    "copyright": "© 2026 Tüm hakları saklıdır."
+  }
+}

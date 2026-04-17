@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "logo": "LOGO",
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "cta": "Get a Quote"
+  },
+  "hero": {
+    "eyebrow": "Customs and Logistics Operations",
+    "title": "Manage the journey from border clearance to final delivery through one control center.",
+    "description": "We bring together import, export, warehousing, and international transport in one agile operational structure.",
+    "primaryCta": "Review Operations",
+    "secondaryCta": "Request a Quote"
+  },
+  "services": {
+    "eyebrow": "End-to-End Operations",
+    "title": "We connect customs, transport, and field operations in a single flow for your business.",
+    "description": "We manage critical customs and logistics services with one clear operational language."
+  },
+  "footer": {
+    "companyTitle": "Company",
+    "companyDescription": "We provide professional solutions in customs and logistics.",
+    "linksTitle": "Links",
+    "contactTitle": "Contact",
+    "copyright": "© 2026 All rights reserved."
+  }
+}
