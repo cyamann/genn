@@ -397,7 +397,13 @@
     "contact": {
       "email": "info@sirket.com",
       "phone": "+90 212 000 00 00",
-      "address": "Istanbul, Türkiye"
+      "address": "Istanbul, Türkiye",
+      "instagramLabel": "Instagram",
+      "instagramValue": "@gennlogistics",
+      "instagramHref": "https://www.instagram.com/gennlogistics/",
+      "linkedinLabel": "LinkedIn",
+      "linkedinValue": "Genn Logistics",
+      "linkedinHref": "https://www.linkedin.com/company/genn-logistics/"
     },
     "bottom": {
       "copyright": "© 2026 Genn. All rights reserved.",

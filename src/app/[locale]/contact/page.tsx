@@ -13,6 +13,8 @@ export default async function ContactPage({
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
+  const instagramHref = dict.contact.info.instagramHref;
+  const linkedinHref = dict.contact.info.linkedinHref;
 
   return (
     <>
@@ -86,25 +88,39 @@ export default async function ContactPage({
             <p className="mt-2 text-lg text-white">{dict.contact.info.addressValue}</p>
           </div>
 
-          <Link
-            href={dict.contact.info.instagramHref}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-[28px] border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-          >
-            <p className="text-white/50">{dict.contact.info.instagramLabel}</p>
-            <p className="mt-2 text-lg text-white">{dict.contact.info.instagramValue}</p>
-          </Link>
+          {instagramHref ? (
+            <Link
+              href={instagramHref}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-[28px] border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+            >
+              <p className="text-white/50">{dict.contact.info.instagramLabel}</p>
+              <p className="mt-2 text-lg text-white">{dict.contact.info.instagramValue}</p>
+            </Link>
+          ) : (
+            <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
+              <p className="text-white/50">{dict.contact.info.instagramLabel}</p>
+              <p className="mt-2 text-lg text-white">{dict.contact.info.instagramValue}</p>
+            </div>
+          )}
 
-          <Link
-            href={dict.contact.info.linkedinHref}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-[28px] border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-          >
-            <p className="text-white/50">{dict.contact.info.linkedinLabel}</p>
-            <p className="mt-2 text-lg text-white">{dict.contact.info.linkedinValue}</p>
-          </Link>
+          {linkedinHref ? (
+            <Link
+              href={linkedinHref}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-[28px] border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+            >
+              <p className="text-white/50">{dict.contact.info.linkedinLabel}</p>
+              <p className="mt-2 text-lg text-white">{dict.contact.info.linkedinValue}</p>
+            </Link>
+          ) : (
+            <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
+              <p className="text-white/50">{dict.contact.info.linkedinLabel}</p>
+              <p className="mt-2 text-lg text-white">{dict.contact.info.linkedinValue}</p>
+            </div>
+          )}
         </SectionReveal>
 
         <SectionReveal className="mx-auto mt-10 max-w-6xl" delay={160}>

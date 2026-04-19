@@ -9,6 +9,9 @@ type FooterProps = {
 
 export default function Footer({ locale }: FooterProps) {
   const dict = useDictionary();
+  const instagramHref = dict.footer.contact.instagramHref;
+  const linkedinHref = dict.footer.contact.linkedinHref;
+
   return (
     <footer className="mt-20 bg-[#120f0d] px-6 pb-8 pt-14 text-white md:px-10 lg:px-16">
       <div className="mx-auto max-w-7xl">
@@ -53,6 +56,24 @@ export default function Footer({ locale }: FooterProps) {
                   <p>{dict.footer.contact.email}</p>
                   <p>{dict.footer.contact.phone}</p>
                   <p>{dict.footer.contact.address}</p>
+                  {instagramHref ? (
+                    <Link href={instagramHref} target="_blank" rel="noreferrer">
+                      {dict.footer.contact.instagramLabel}: {dict.footer.contact.instagramValue}
+                    </Link>
+                  ) : (
+                    <p>
+                      {dict.footer.contact.instagramLabel}: {dict.footer.contact.instagramValue}
+                    </p>
+                  )}
+                  {linkedinHref ? (
+                    <Link href={linkedinHref} target="_blank" rel="noreferrer">
+                      {dict.footer.contact.linkedinLabel}: {dict.footer.contact.linkedinValue}
+                    </Link>
+                  ) : (
+                    <p>
+                      {dict.footer.contact.linkedinLabel}: {dict.footer.contact.linkedinValue}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
