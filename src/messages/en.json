@@ -80,7 +80,13 @@
       "emailLabel": "Email",
       "phoneLabel": "Phone",
       "addressLabel": "Address",
-      "addressValue": "Istanbul, Türkiye"
+      "addressValue": "Istanbul, Türkiye",
+      "instagramLabel": "Instagram",
+      "instagramValue": "@gennlogistics",
+      "instagramHref": "https://www.instagram.com/gennlogistics/",
+      "linkedinLabel": "LinkedIn",
+      "linkedinValue": "Genn Logistics",
+      "linkedinHref": "https://www.linkedin.com/company/genn-logistics/"
     },
     "location": {
       "eyebrow": "Location",

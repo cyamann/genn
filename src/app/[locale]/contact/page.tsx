@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Footer from "../../components/layout/footer";
 import Navbar from "../../components/layout/navbar";
 import MapEmbed from "../../components/ui/map-embed";
@@ -66,7 +67,10 @@ export default async function ContactPage({
           />
         </SectionReveal>
 
-        <SectionReveal className="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-3" delay={120}>
+        <SectionReveal
+          className="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-2 xl:grid-cols-5"
+          delay={120}
+        >
           <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
             <p className="text-white/50">{dict.contact.info.emailLabel}</p>
             <p className="mt-2 text-lg text-white">info@sirket.com</p>
@@ -81,6 +85,26 @@ export default async function ContactPage({
             <p className="text-white/50">{dict.contact.info.addressLabel}</p>
             <p className="mt-2 text-lg text-white">{dict.contact.info.addressValue}</p>
           </div>
+
+          <Link
+            href={dict.contact.info.instagramHref}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-[28px] border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <p className="text-white/50">{dict.contact.info.instagramLabel}</p>
+            <p className="mt-2 text-lg text-white">{dict.contact.info.instagramValue}</p>
+          </Link>
+
+          <Link
+            href={dict.contact.info.linkedinHref}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-[28px] border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <p className="text-white/50">{dict.contact.info.linkedinLabel}</p>
+            <p className="mt-2 text-lg text-white">{dict.contact.info.linkedinValue}</p>
+          </Link>
         </SectionReveal>
 
         <SectionReveal className="mx-auto mt-10 max-w-6xl" delay={160}>
