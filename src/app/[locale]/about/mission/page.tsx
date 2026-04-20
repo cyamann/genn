@@ -7,7 +7,7 @@ import { getDictionary } from "@/src/lib/getDictionaries";
 export default async function AboutMissionPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" | "ru" | "fr" }>;
+  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" | "ru" | "fr" | "zh" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);

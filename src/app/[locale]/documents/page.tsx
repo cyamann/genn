@@ -7,7 +7,7 @@ import SectionReveal from "../../components/ui/section-reveal";
 export default async function DocumentsPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" | "ru" | "fr" }>;
+  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" | "ru" | "fr" | "zh" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);

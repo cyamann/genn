@@ -6,7 +6,7 @@ import DnaBackground from "../../components/ui/dna-background";
 export default async function ServicesPage({
   params,
 }: {
-  params: Promise<{ locale: "en" | "tr" | "de" | "es" | "ar" | "ru" | "fr" }>;
+  params: Promise<{ locale: "en" | "tr" | "de" | "es" | "ar" | "ru" | "fr" | "zh" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);

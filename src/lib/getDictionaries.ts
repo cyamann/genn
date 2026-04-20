@@ -1,6 +1,7 @@
 import { Dictionary } from "./dictionary.type";
 
 const dictionaries = {
+  zh: () => import("../messages/zh.json").then((module) => module.default),
   en: () => import("../messages/en.json").then((module) => module.default),
   es: () => import("../messages/es.json").then((module) => module.default),
   ar: () => import("../messages/ar.json").then((module) => module.default),
@@ -17,7 +18,8 @@ export async function getDictionary(locale: string): Promise<Dictionary> {
     locale === "es" ||
     locale === "ar" ||
     locale === "ru" ||
-    locale === "fr"
+    locale === "fr" ||
+    locale === "zh"
       ? locale
       : "en";
   return dictionaries[safeLocale]();

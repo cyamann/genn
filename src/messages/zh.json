@@ -1,0 +1,588 @@
+{
+  "services": {
+    "title": "服务",
+    "heading": "为您的报关、运输和现场运营流程提供集中协调的一站式服务。",
+    "items": [
+      "进出口报关清关",
+      "仓储与保税仓协调",
+      "公路与海运组织",
+      "空运操作规划",
+      "文件与法规流程管理",
+      "运营物流咨询"
+    ]
+  },
+  "documents": {
+    "eyebrow": "所需文件",
+    "title": "出口与进口文件",
+    "description": "所有由贵方报关代表需要准备并由我方提供的官方及商业文件。",
+    "exportTitle": "出口文件",
+    "importTitle": "进口文件",
+    "exportItems": [
+      "土耳其正式发票（电子发票 - 电子档案）",
+      "出口至欧盟的 ATR 文件（由我方签发）",
+      "协议国家适用的 EUR1 文件（由我方签发）",
+      "其他国家适用的原产地证书（由我方签发）",
+      "采用预付款方式出口时的外汇购买证明（由您的银行签发）",
+      "对于需要特殊文件的出口货物，可根据要求由我方代办控制证书、农业报告、卫生报告、熏蒸报告等",
+      "为完成出口而加入相关出口商协会（由我方代为办理会员资格）",
+      "基于内销加工许可的出口文件",
+      "出口进口货物时所需的单一行政文件及其附件"
+    ],
+    "importItems": [
+      "进口货物原始发票",
+      "进口货物装箱单",
+      "进口货物海关完税价格申报表（由我方准备）",
+      "保险单（如交易条件为 F.O.B. 或 C.F.）",
+      "运费发票",
+      "银行转账凭证或资源使用支持基金扣款证明",
+      "提货单",
+      "提单",
+      "工业承诺书及维修/保养证明（适用于需要特殊文件的货物）",
+      "自欧洲进口货物所需的 ATR 或 EUR.1 文件"
+    ]
+  },
+  "ourDocuments": {
+    "eyebrow": "公司文件",
+    "title": "企业证书与文件",
+    "description": "您可以在此查看 Genn 持有的官方证书、资质与报关文件。",
+    "certificateTitle": "报关证书",
+    "certificateDescription": "该证书证明公司符合报关运营要求并满足官方标准，适用于所有清关流程。",
+    "primaryAction": "打开 PDF",
+    "secondaryAction": "下载 PDF",
+    "viewerTitle": "文件详情"
+  },
+  "resources": {
+    "eyebrow": "实用链接",
+    "title": "报关与外贸流程中常用的官方链接",
+    "description": "我们在此页面汇总了位于伊斯坦布尔的报关运营中最常用的官方系统、申请页面和参考资源。",
+    "linkLabel": "访问网站",
+    "sections": [
+      {
+        "title": "官方海关系统",
+        "description": "在日常运营和数字报关流程中最常使用的主要页面。",
+        "items": [
+          {
+            "title": "贸易部电子服务",
+            "description": "用于访问部级应用、文件查询和申报指导的中央入口。",
+            "href": "https://ticaret.gov.tr/e-islemler",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "单一窗口系统",
+            "description": "用于通过单一报关渠道处理所需许可和文件的官方系统。",
+            "href": "https://ticaret.gov.tr/gumruk-islemleri/dijital-gumruk-uygulamalari/tek-pencere-sistemi",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "TAREKS",
+            "description": "用于基于风险的外贸监管与产品安全流程的官方平台。",
+            "href": "https://ticaret.gov.tr/urun-guvenligi/tareks",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "文件与申请页面",
+        "description": "用于进口许可、商业登记及文件核验时最常用的链接。",
+        "items": [
+          {
+            "title": "ImportBIS 电子申请",
+            "description": "用于进口许可证、许可与监管文件的电子申请页面。",
+            "href": "https://ticaret.gov.tr/ithalat/ithalat-belge-islemleri-ithalatbis-e-basvuru",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "MERSIS",
+            "description": "用于公司设立、变更及商业登记流程的中央登记系统。",
+            "href": "https://mersis.ticaret.gov.tr/Portal/KullaniciIslemleri/GirisIslemleri",
+            "domain": "mersis.ticaret.gov.tr"
+          },
+          {
+            "title": "文件查询页面",
+            "description": "用于贸易部文件查询及文件验证的官方页面。",
+            "href": "https://ticaret.gov.tr/e-islemler/evrak-sorgu-ekrani",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "伊斯坦布尔海关联系信息",
+        "description": "在伊斯坦布尔运营中最常参考的地区与海关机构页面。",
+        "items": [
+          {
+            "title": "伊斯坦布尔海关与外贸地区管理局",
+            "description": "可访问伊斯坦布尔关联海关机构的地区联系页面。",
+            "href": "https://istanbulbolge.ticaret.gov.tr/iletisim",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "伊斯坦布尔机场海关管理局",
+            "description": "伊斯坦布尔机场海关业务与联系方式官方页面。",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-havalimani-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "伊斯坦布尔邮政海关管理局",
+            "description": "邮政及快件海关流程的官方页面。",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-posta-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "外贸与数据资源",
+        "description": "用于 HS 编码查询、市场研究与贸易数据的实用资源。",
+        "items": [
+          {
+            "title": "HS 编码搜索引擎",
+            "description": "用于查询产品 HS/GTIP 编码的官方税则搜索页面。",
+            "href": "https://uygulama.gtb.gov.tr/Tara",
+            "domain": "uygulama.gtb.gov.tr"
+          },
+          {
+            "title": "Easy Export 平台",
+            "description": "整合市场研究、目标国家、培训与出口规划工具的官方平台。",
+            "href": "https://www.kolayihracat.gov.tr/",
+            "domain": "kolayihracat.gov.tr"
+          },
+          {
+            "title": "TurkStat 数据门户",
+            "description": "用于外贸统计、数据看板和开放数据集的官方数据门户。",
+            "href": "https://data.tuik.gov.tr/",
+            "domain": "data.tuik.gov.tr"
+          }
+        ]
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "获取报价",
+    "title": "请向我们发送关键信息，以便我们提供符合您运营需求的报价",
+    "description": "请分享货物类型、目的国、运输预期和时效要求。我们的团队将以合适的建议回复您。",
+    "form": {
+      "subjectPrefix": "报价请求",
+      "title": "创建报价请求",
+      "description": "提交表单后，您的默认邮件应用将打开，您的信息会自动整理为可直接发送的邮件。",
+      "buttonLabel": "生成报价邮件",
+      "fields": {
+        "company": {
+          "label": "公司",
+          "placeholder": "您的公司名称"
+        },
+        "name": {
+          "label": "联系人",
+          "placeholder": "姓名"
+        },
+        "email": {
+          "label": "电子邮箱",
+          "placeholder": "example@mail.com"
+        },
+        "phone": {
+          "label": "电话",
+          "placeholder": "+90 ..."
+        },
+        "service": {
+          "label": "服务需求",
+          "placeholder": "报关、陆运、海运..."
+        },
+        "message": {
+          "label": "详情",
+          "placeholder": "请填写货物及流程详情"
+        }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "联系我们",
+    "title": "让我们一起规划您的运营需求。",
+    "description": "请告诉我们您的货运结构、报关流程以及所需的运营模式。我们的团队将以最适合的流程回复您。",
+    "form": {
+      "subjectPrefix": "联系请求",
+      "title": "给我们留言",
+      "description": "填写表单后，您的默认邮件应用将打开，您的信息会自动整理为可发送的邮件。",
+      "buttonLabel": "发送邮件",
+      "fields": {
+        "name": {
+          "label": "姓名",
+          "placeholder": "请输入您的姓名"
+        },
+        "email": {
+          "label": "电子邮箱",
+          "placeholder": "example@mail.com"
+        },
+        "phone": {
+          "label": "电话",
+          "placeholder": "+90 ..."
+        },
+        "message": {
+          "label": "留言",
+          "placeholder": "请描述您的运营需求"
+        }
+      }
+    },
+    "info": {
+      "emailLabel": "电子邮箱",
+      "phoneLabel": "电话",
+      "addressLabel": "地址",
+      "addressValue": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 伊斯坦布尔，土耳其",
+      "instagramLabel": "Instagram",
+      "instagramValue": "@gennlogistics",
+      "instagramHref": "https://www.instagram.com/gennlogistics/",
+      "linkedinLabel": "LinkedIn",
+      "linkedinValue": "Genn Logistics",
+      "linkedinHref": "https://www.linkedin.com/company/genn-logistics/"
+    },
+    "location": {
+      "eyebrow": "位置",
+      "title": "在地图上查看 Metroport Business 位置",
+      "mapTitle": "Metroport Business",
+      "mapQuery": "Metroport Business Istanbul"
+    }
+  },
+  "careers": {
+    "eyebrow": "招聘",
+    "title": "为希望加入推动运营发展的团队的人提供开放申请入口",
+    "description": "我们正在寻找在报关运营、客户管理、运输规划和现场协调方面表现出色的伙伴。您可以通过下方表单将简历和简短说明通过电子邮件发送给我们。",
+    "highlights": [
+      "报关运营专长",
+      "物流规划",
+      "客户与合作伙伴管理",
+      "分析能力与责任意识"
+    ],
+    "form": {
+      "subjectPrefix": "职位申请",
+      "title": "通过电子邮件发送您的申请",
+      "description": "您的信息将传输到默认邮件应用中。您可以在打开的邮件窗口中附加您的简历文件。",
+      "buttonLabel": "生成申请邮件",
+      "fields": {
+        "fullName": {
+          "label": "姓名",
+          "placeholder": "请输入您的姓名"
+        },
+        "email": {
+          "label": "电子邮箱",
+          "placeholder": "example@mail.com"
+        },
+        "position": {
+          "label": "职位",
+          "placeholder": "您感兴趣的领域"
+        },
+        "experience": {
+          "label": "经验",
+          "placeholder": "例如：4年报关运营经验"
+        },
+        "cv": {
+          "label": "简历",
+          "placeholder": ""
+        },
+        "message": {
+          "label": "简短说明",
+          "placeholder": "请简要介绍您自己"
+        }
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "关于我们",
+    "title": "我们是一支共同规划报关与物流流程的运营团队",
+    "description": "我们的目标是根据客户在进口、出口、运输和仓储方面的需求，构建更有条理的流程。我们同样重视沟通协调与专业技术。",
+    "slides": [
+      {
+        "eyebrow": "规划",
+        "title": "在开始流程之前，我们先明确运营与法规需求",
+        "description": "我们共同评估文件、运输与时间安排，以减少不必要的不确定性。"
+      },
+      {
+        "eyebrow": "跟进",
+        "title": "我们将沟通与协调视为流程中不可分割的一部分",
+        "description": "我们采用定期反馈与清晰的责任分工，确保客户始终掌握流程。"
+      }
+    ]
+  },
+  "mission": {
+    "eyebrow": "我们的目标",
+    "title": "让流程更清晰、更易追踪、更值得信赖",
+    "description": "我们知道，并非每一票货物都适合同一种方案。因此我们会根据实际需求进行规划，避免不必要的复杂性。",
+    "slides": [
+      {
+        "eyebrow": "简洁",
+        "title": "我们希望将复杂运营拆分为更清晰的决策步骤",
+        "description": "随着流程变长，我们希望通过更易读的结构来管理，以避免沟通减弱。"
+      },
+      {
+        "eyebrow": "信任",
+        "title": "我们希望建立一个客户清楚了解过程与预期的流程",
+        "description": "我们的优先事项是建立一种能够减少不确定性并保持清晰一致沟通的服务语言。"
+      }
+    ]
+  },
+  "partners": {
+    "eyebrow": "我们的合作伙伴",
+    "title": "我们通过加强流程的合作关系构建更平衡的运营结构",
+    "showcase": {
+      "eyebrow": "合作网络",
+      "title": "支持运营流程的品牌与业务合作伙伴",
+      "description": "此区域设计为品牌墙，用于展示可在不同运输与物流线路中合作的全球及区域参与者。"
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "关于",
+    "title": "清晰回答我们是谁、我们的目标以及我们与谁合作",
+    "slides": [
+      {
+        "eyebrow": "我们是谁",
+        "title": "我们是一支为报关与物流流程提供规划与协调支持的团队",
+        "description": "我们通过将技术运营与强有力的沟通及跟进纪律相结合，打造更易理解的流程。"
+      },
+      {
+        "eyebrow": "我们的目标",
+        "title": "我们希望让复杂流程更简单、更可靠",
+        "description": "我们不会为每一票货物套用同一模板，而是专注于量身定制的引导和可控的运营流程。"
+      },
+      {
+        "eyebrow": "我们的合作伙伴",
+        "title": "我们通过合作关系构建强化运输与现场运营的结构",
+        "description": "我们与仓储、运输和外贸连接中的合作伙伴一起支持整个流程。"
+      }
+    ],
+    "sections": [
+      {
+        "title": "我们是谁",
+        "description": "我们是一支在报关、外贸和物流流程中提供规划与协调支持的运营团队。"
+      },
+      {
+        "title": "我们的目标",
+        "description": "我们希望让复杂流程更简单、更易跟踪、更值得信赖。"
+      },
+      {
+        "title": "我们的合作伙伴",
+        "description": "我们通过在运输、仓储和现场运营方面合作的解决方案伙伴来强化整个流程。"
+      }
+    ]
+  },
+  "discovery": {
+    "eyebrow": "为什么选择我们",
+    "title": "我们构建了更有意义的框架来体现我们的服务理念",
+    "items": [
+      {
+        "title": "正确引导",
+        "description": "我们不会为每一票货物使用同一模板，而是根据实际需求塑造运营模式。"
+      },
+      {
+        "title": "清晰沟通",
+        "description": "它使各方在不同流程阶段中的沟通更加清晰有序。"
+      },
+      {
+        "title": "文件与流程纪律",
+        "description": "它在文件、法规和规划方面建立更稳固的运营基础。"
+      },
+      {
+        "title": "灵活的运营支持",
+        "description": "它可根据运输、仓储和报关需求适应不同场景。"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "报关与物流运营",
+    "title": "为您的外贸流程获得正确规划与可靠的运营支持。",
+    "description": "我们将与您一起为进口、出口、仓储和国际运输流程规划合适的运营模式。我们的目标是在不过度复杂化的前提下，让流程更有条理、更可追踪、更可靠。",
+    "primaryCta": "查看运营",
+    "secondaryCta": "申请报价",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "沟通与流程协调"
+      },
+      {
+        "value": "12+",
+        "label": "国际线路与合作网络"
+      },
+      {
+        "value": "%100",
+        "label": "聚焦于文件与流程跟踪的方法"
+      }
+    ],
+    "floatingLabels": {
+      "top": "报关 + 运输 + 协调",
+      "bottom": "聚焦法规与流程"
+    },
+    "card": {
+      "eyebrow": "咨询与规划",
+      "title": "并非每票货物都相同，而是根据需求塑造运营方法",
+      "focusLabel": "重点",
+      "focusValue": "正确的文件、正确的时间、正确的引导",
+      "approachLabel": "方法",
+      "approachValue": "基于需求、简单且可控的运营结构",
+      "planningLabel": "准备与规划",
+      "planningValue": "以流程为中心",
+      "supportLabel": "我们提供的支持",
+      "supportItems": [
+        "文件与流程的前期准备",
+        "运输与物流规划支持",
+        "沟通、跟进与协调"
+      ],
+      "serviceAreaLabel": "服务领域",
+      "serviceAreaValue": "报关与物流协调",
+      "workStyleLabel": "工作方式",
+      "workStyleValue": "根据需求灵活规划"
+    }
+  },
+  "serviceCarousel": {
+    "eyebrow": "服务领域",
+    "title": "我们以简单结构呈现根据需求形成的服务类别。",
+    "description": "这里的目的不是描述一个技术上并不存在的系统，而是更清晰、更有条理地展示您所提供支持的领域。",
+    "slides": [
+      {
+        "id": "01",
+        "tag": "报关清关",
+        "title": "我们支持进出口流程中的文件、申报与法规跟进",
+        "description": "我们以更有条理的结构处理所需文件流、申报准备和运营协调。",
+        "bullets": [
+          "申报流程支持",
+          "文件控制流程",
+          "协调与跟进"
+        ],
+        "accent": "from-[#d8b27d] via-[#9f6c38] to-[#2f2217]"
+      },
+      {
+        "id": "02",
+        "tag": "公路运输",
+        "title": "为国内和国际公路运输提供有计划的发运支持",
+        "description": "针对拼箱或整车需求，我们提供与发运节奏一致的规划与流程协调。",
+        "bullets": [
+          "装载规划",
+          "边境通关协调",
+          "交付流程跟踪"
+        ],
+        "accent": "from-[#ecdfca] via-[#b38a58] to-[#463224]"
+      },
+      {
+        "id": "03",
+        "tag": "海运",
+        "title": "在集装箱运输中实现更平衡的成本与时效规划",
+        "description": "我们在线路选择、港口流程和文件流方面打造更受控的运营流程。",
+        "bullets": [
+          "FCL / LCL 组织",
+          "港口流程跟踪",
+          "文件支持"
+        ],
+        "accent": "from-[#d7dce0] via-[#698198] to-[#1f2f3d]"
+      },
+      {
+        "id": "04",
+        "tag": "空运",
+        "title": "为时效敏感货物提供快速有序的空运协调",
+        "description": "对于紧急货物，我们将舱位、文件和运营协调转化为更清晰的流程。",
+        "bullets": [
+          "订舱协调",
+          "文件准备支持",
+          "以时间为重点的规划"
+        ],
+        "accent": "from-[#f3e5ce] via-[#c68d4a] to-[#4c3723]"
+      }
+    ],
+    "approach": {
+      "eyebrow": "我们的方法",
+      "title": "我们通过简单步骤解释我们的工作方式",
+      "steps": [
+        "需求与流程评估",
+        "确定正确的服务模式",
+        "运营规划与协调",
+        "通过沟通跟进整个流程"
+      ]
+    },
+    "focus": {
+      "eyebrow": "关注点",
+      "stats": [
+        {
+          "value": "18",
+          "label": "国家与外贸连接"
+        },
+        {
+          "value": "320+",
+          "label": "流程、文件与协调跟踪"
+        }
+      ]
+    }
+  },
+  "teamHighlight": {
+    "eyebrow": "团队与方法",
+    "title": "一个将流程不仅视为运输，更视为责任的团队结构",
+    "description": "对客户而言，建立信任的并不只是服务清单，还包括您如何跟进流程以及如何进行沟通。本部分用于更清晰地传达这种信任。",
+    "workStyle": {
+      "label": "工作方式",
+      "value": "有计划的沟通、定期跟进、明确责任"
+    },
+    "stats": [
+      {
+        "value": "14+",
+        "label": "专注于报关与物流流程的团队结构"
+      },
+      {
+        "value": "9 分钟",
+        "label": "快速响应与初步引导目标"
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Genn Logistics",
+    "title": "在报关与物流流程中实现更清晰的沟通、更有序的跟进与更可靠的流转",
+    "description": "我们的目标是将外贸与运营中的规划、协调和流程跟踪整合到一个地方。",
+    "linksTitle": "页面",
+    "links": {
+      "home": "首页",
+      "services": "服务",
+      "documents": "所需文件",
+      "ourDocuments": "公司文件",
+      "resources": "实用链接",
+      "about": "关于我们",
+      "careers": "招聘",
+      "contact": "联系我们",
+      "quote": "获取报价"
+    },
+    "contactTitle": "联系我们",
+    "contact": {
+      "email": "info@genn.com.tr",
+      "phone": "+90 212 843 59 00",
+      "address": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 伊斯坦布尔，土耳其",
+      "instagramLabel": "Instagram",
+      "instagramValue": "@gennlogistics",
+      "instagramHref": "https://www.instagram.com/gennlogistics/",
+      "linkedinLabel": "LinkedIn",
+      "linkedinValue": "Genn Logistics",
+      "linkedinHref": "https://www.linkedin.com/company/genn-logistics/"
+    },
+    "bottom": {
+      "copyright": "© 2026 Genn. 保留所有权利。",
+      "slogan": "有计划的运营。清晰的沟通。可靠的流程。",
+      "credit": "Web Design by Ceren Yaman"
+    }
+  },
+  "navbar": {
+    "brand": "Genn",
+    "brandSubtitle": {
+      "lineOne": "报关咨询与",
+      "lineTwo": "物流服务股份公司"
+    },
+    "links": {
+      "home": "首页",
+      "services": "服务",
+      "documents": "资源",
+      "about": "关于我们",
+      "careers": "招聘",
+      "contact": "联系我们",
+      "quote": "获取报价"
+    },
+    "documentsMenu": {
+      "required": "所需文件",
+      "certificates": "公司文件",
+      "resources": "实用链接"
+    },
+    "aboutMenu": {
+      "company": "我们是谁",
+      "mission": "我们的目标",
+      "partners": "合作伙伴"
+    },
+    "mobileMenuLabel": "菜单"
+  }
+}
