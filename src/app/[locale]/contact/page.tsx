@@ -10,7 +10,7 @@ import { getDictionary } from "@/src/lib/getDictionaries";
 export default async function ContactPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" }>;
+  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" | "ru" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);

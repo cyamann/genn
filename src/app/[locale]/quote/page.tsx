@@ -8,7 +8,7 @@ import DnaBackground from "../../components/ui/dna-background";
 export default async function QuotePage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" }>;
+  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" | "ru" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
