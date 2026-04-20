@@ -1,12 +1,17 @@
 "use client";
 import { useDictionary } from "../providers/dictionary-provider";
 import SectionReveal from "../ui/section-reveal";
+import DnaBackground from "../ui/dna-background";
 
 export default function DiscoveryGrid() {
   const dict = useDictionary();
 
   return (
-    <SectionReveal className="bg-white px-6 py-16 md:px-10 lg:px-16 lg:py-20" delay={100}>
+    <SectionReveal
+      className="relative overflow-hidden bg-white px-6 py-16 md:px-10 lg:px-16 lg:py-20"
+      delay={100}
+    >
+      <DnaBackground tone="light" density="page" />
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <div>

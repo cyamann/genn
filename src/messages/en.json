@@ -224,7 +224,7 @@
       "emailLabel": "Email",
       "phoneLabel": "Phone",
       "addressLabel": "Address",
-      "addressValue": "Istanbul, Türkiye",
+      "addressValue": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 İstanbul, Türkiye",
       "instagramLabel": "Instagram",
       "instagramValue": "@gennlogistics",
       "instagramHref": "https://www.instagram.com/gennlogistics/",
@@ -542,9 +542,9 @@
     },
     "contactTitle": "Contact",
     "contact": {
-      "email": "info@sirket.com",
-      "phone": "+90 212 000 00 00",
-      "address": "Istanbul, Türkiye",
+      "email": "info@genn.com.tr",
+      "phone": "+90 212 843 59 00",
+      "address": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 İstanbul, Türkiye",
       "instagramLabel": "Instagram",
       "instagramValue": "@gennlogistics",
       "instagramHref": "https://www.instagram.com/gennlogistics/",
@@ -554,7 +554,8 @@
     },
     "bottom": {
       "copyright": "© 2026 Genn. All rights reserved.",
-      "slogan": "Planned operations. Clear communication. Reliable process."
+      "slogan": "Planned operations. Clear communication. Reliable process.",
+      "credit": "Web Design by Ceren Yaman"
     }
   },
   "navbar": {

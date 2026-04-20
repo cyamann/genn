@@ -3,6 +3,7 @@ import { getDictionary } from "@/src/lib/getDictionaries";
 import Footer from "../../components/layout/footer";
 import Navbar from "../../components/layout/navbar";
 import SectionReveal from "../../components/ui/section-reveal";
+import DnaBackground from "../../components/ui/dna-background";
 
 export default async function ResourcesPage({
   params,
@@ -14,7 +15,8 @@ export default async function ResourcesPage({
 
   return (
     <>
-      <div className="bg-[#f5f1e8]">
+      <div className="relative overflow-hidden bg-[#f5f1e8]">
+        <DnaBackground tone="light" density="page" />
         <Navbar locale={locale} />
         <main className="px-6 py-24 md:px-10 md:py-28 lg:px-16">
           <SectionReveal className="mx-auto max-w-7xl">

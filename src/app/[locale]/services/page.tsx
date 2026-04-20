@@ -1,6 +1,7 @@
 import { getDictionary } from "@/src/lib/getDictionaries";
 import Footer from "../../components/layout/footer";
 import Navbar from "../../components/layout/navbar";
+import DnaBackground from "../../components/ui/dna-background";
 
 export default async function ServicesPage({
   params,
@@ -12,7 +13,8 @@ export default async function ServicesPage({
 
   return (
     <>
-      <div className="bg-[#f4f1ea]">
+      <div className="relative overflow-hidden bg-[#f4f1ea]">
+        <DnaBackground tone="light" density="page" />
         <Navbar locale={locale} />
         <main className="px-6 py-24 md:px-10 md:py-28 lg:px-16">
           <div className="mx-auto max-w-6xl">

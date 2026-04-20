@@ -2,11 +2,16 @@
 
 import SectionReveal from "../ui/section-reveal";
 import { useDictionary } from "../providers/dictionary-provider";
+import DnaBackground from "../ui/dna-background";
 export default function TeamHighlight() {
   const dict = useDictionary();
 
   return (
-    <SectionReveal className="bg-[#e7ddcf] px-6 py-16 md:px-10 lg:px-16 lg:py-20" delay={140}>
+    <SectionReveal
+      className="relative overflow-hidden bg-[#e7ddcf] px-6 py-16 md:px-10 lg:px-16 lg:py-20"
+      delay={140}
+    >
+      <DnaBackground tone="light" density="page" />
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr]">
         <article className="rounded-[28px] bg-[#1d1814] p-6 text-white shadow-[0_30px_90px_rgba(30,24,18,0.18)] sm:rounded-[36px] sm:p-8 md:p-10">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#d3ae79]">

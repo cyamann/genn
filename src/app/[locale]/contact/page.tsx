@@ -4,6 +4,7 @@ import Navbar from "../../components/layout/navbar";
 import MapEmbed from "../../components/ui/map-embed";
 import MailtoForm from "../../components/ui/mailto-form";
 import SectionReveal from "../../components/ui/section-reveal";
+import DnaBackground from "../../components/ui/dna-background";
 import { getDictionary } from "@/src/lib/getDictionaries";
 
 export default async function ContactPage({
@@ -18,7 +19,8 @@ export default async function ContactPage({
 
   return (
     <>
-      <div className="bg-[#191512]">
+      <div className="relative overflow-hidden bg-[#191512]">
+        <DnaBackground tone="dark" density="page" />
         <Navbar locale={locale} variant="overlay" />
         <main className="px-6 pb-24 pt-36 text-white md:px-10 md:pb-28 md:pt-40 lg:px-16 lg:pt-44">
           <SectionReveal className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_0.9fr]">
@@ -37,7 +39,7 @@ export default async function ContactPage({
             </div>
 
             <MailtoForm
-              email="info@sirket.com"
+              email="info@genn.com.tr"
               subjectPrefix={dict.contact.form.subjectPrefix}
               title={dict.contact.form.title}
               description={dict.contact.form.description}
@@ -76,12 +78,12 @@ export default async function ContactPage({
           >
             <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
               <p className="text-white/50">{dict.contact.info.emailLabel}</p>
-              <p className="mt-2 text-lg text-white">info@sirket.com</p>
+              <p className="mt-2 text-lg text-white">info@genn.com.tr</p>
             </div>
 
             <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
               <p className="text-white/50">{dict.contact.info.phoneLabel}</p>
-              <p className="mt-2 text-lg text-white">+90 212 000 00 00</p>
+              <p className="mt-2 text-lg text-white">+90 212 843 59 00</p>
             </div>
 
             <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">

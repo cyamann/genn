@@ -3,6 +3,7 @@ import Footer from "../../components/layout/footer";
 import Navbar from "../../components/layout/navbar";
 import MailtoForm from "../../components/ui/mailto-form";
 import SectionReveal from "../../components/ui/section-reveal";
+import DnaBackground from "../../components/ui/dna-background";
 
 export default async function QuotePage({
   params,
@@ -14,7 +15,8 @@ export default async function QuotePage({
 
   return (
     <>
-      <div className="bg-[#f5f1e8]">
+      <div className="relative overflow-hidden bg-[#f5f1e8]">
+        <DnaBackground tone="light" density="page" />
         <Navbar locale={locale} />
         <main className="px-6 py-24 md:px-10 md:py-28 lg:px-16">
           <SectionReveal className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.95fr]">

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import SectionReveal from "../ui/section-reveal";
 import { useDictionary } from "../providers/dictionary-provider";
+import DnaBackground from "../ui/dna-background";
 
 export default function ServiceCarousel() {
   const dict = useDictionary();
@@ -21,7 +22,8 @@ export default function ServiceCarousel() {
   const activeSlide = slides[activeIndex];
 
   return (
-    <SectionReveal className="bg-[#f5f1e8] px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-12 lg:py-16 xl:px-16">
+    <SectionReveal className="relative overflow-hidden bg-[#f5f1e8] px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-12 lg:py-16 xl:px-16">
+      <DnaBackground tone="light" density="page" />
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
           <div>

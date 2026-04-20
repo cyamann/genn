@@ -3,6 +3,7 @@
 import Link from "next/link";
 import SectionReveal from "../ui/section-reveal";
 import { useDictionary } from "../providers/dictionary-provider";
+import DnaBackground from "../ui/dna-background";
 
 type HeroProps = {
   locale: string;
@@ -14,6 +15,7 @@ export default function Hero({ locale }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-[#16120f] px-4 pb-12 pt-36 text-white sm:px-6 sm:pb-14 sm:pt-40 md:px-8 md:pt-40 lg:px-12 lg:pb-16 lg:pt-44 xl:px-16">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(227,181,112,0.24),_transparent_26%),radial-gradient(circle_at_80%_24%,_rgba(109,71,36,0.32),_transparent_24%)]" />
+      <DnaBackground tone="dark" density="hero" />
       <div className="absolute left-1/2 top-6 hidden h-[420px] w-[420px] -translate-x-1/2 rounded-full border border-white/6 xl:block" />
 
       <SectionReveal className="relative mx-auto grid max-w-7xl gap-8 xl:grid-cols-[0.96fr_1.04fr] xl:items-center">

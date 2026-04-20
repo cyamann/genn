@@ -38,3 +38,89 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.dna-helix-shell {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.dna-rung {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  transition: transform 400ms ease;
+}
+
+.dna-dot {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 9999px;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.05);
+}
+
+.dna-link {
+  width: 4.2rem;
+  height: 1px;
+}
+
+.dna-link-dark {
+  background: linear-gradient(90deg, rgba(214, 163, 93, 0.25), rgba(255, 255, 255, 0.38));
+}
+
+.dna-link-light {
+  background: linear-gradient(90deg, rgba(176, 118, 45, 0.28), rgba(92, 74, 58, 0.3));
+}
+
+.dna-grid {
+  background-image:
+    radial-gradient(circle at center, rgba(214, 163, 93, 0.3) 0.9px, transparent 0.9px),
+    linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.02));
+  background-size: 24px 24px, 100% 100%;
+  mask-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.9) 28%, rgba(0, 0, 0, 0.2));
+}
+
+.dna-grid-dark {
+  opacity: 0.3;
+}
+
+.dna-grid-light {
+  opacity: 0.36;
+}
+
+.dna-helix-dark {
+  opacity: 0.94;
+}
+
+.dna-helix-light {
+  opacity: 0.82;
+}
+
+.dna-parallax {
+  animation: dna-float 12s ease-in-out infinite;
+}
+
+.dna-parallax-slow {
+  animation: dna-float-slow 18s ease-in-out infinite;
+}
+
+@keyframes dna-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -14px, 0);
+  }
+}
+
+@keyframes dna-float-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 18px, 0);
+  }
+}

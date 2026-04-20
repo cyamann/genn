@@ -2,6 +2,7 @@ import AboutCarousel from "../../../components/about/about-carousel";
 import Footer from "../../../components/layout/footer";
 import Navbar from "../../../components/layout/navbar";
 import SectionReveal from "../../../components/ui/section-reveal";
+import DnaBackground from "../../../components/ui/dna-background";
 import { getDictionary } from "@/src/lib/getDictionaries";
 export default async function AboutCompanyPage({
   params,
@@ -13,7 +14,8 @@ export default async function AboutCompanyPage({
 
   return (
     <>
-      <div className="bg-[#f8f4ed]">
+      <div className="relative overflow-hidden bg-[#f8f4ed]">
+        <DnaBackground tone="light" density="page" />
         <Navbar locale={locale} />
         <main className="px-6 py-24 md:px-10 md:py-28 lg:px-16">
           <SectionReveal className="mx-auto max-w-5xl">
