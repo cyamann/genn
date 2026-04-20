@@ -1,0 +1,584 @@
+{
+  "services": {
+    "title": "Dienstleistungen",
+    "heading": "Leistungen, die zentral für Ihre Zoll-, Transport- und operativen Feldprozesse koordiniert werden.",
+    "items": [
+      "Import- und Exportverzollung",
+      "Lager- und Zolllagerkoordination",
+      "Organisation von Straßen- und Seefracht",
+      "Planung von Luftfrachtoperationen",
+      "Dokumenten- und Regulierungsprozessmanagement",
+      "Operative Logistikberatung"
+    ]
+  },
+  "documents": {
+    "eyebrow": "Erforderliche Dokumente",
+    "title": "Export- und Importdokumentation",
+    "description": "Alle offiziellen und kommerziellen Dokumente, die Ihr Zollvertreter vorbereiten muss und die von unserem Team bereitgestellt werden.",
+    "exportTitle": "EXPORTDOKUMENTATION",
+    "importTitle": "IMPORTDOKUMENTATION",
+    "exportItems": [
+      "Offizielle türkische Rechnung (E-Rechnung - E-Archiv)",
+      "ATR für Exporte in die Europäische Gemeinschaft (von uns ausgestellt)",
+      "EUR1-Bescheinigung für Länder mit Abkommen (von uns ausgestellt)",
+      "Ursprungszeugnis für andere Länder (von uns ausgestellt)",
+      "Devisenkaufbeleg für Exporte mit Vorauszahlung (von Ihrer Bank ausgestellt)",
+      "Für Exportwaren mit besonderem Dokumentationsbedarf werden Unterlagen wie Kontrollzertifikat, Landwirtschaftsbericht, Gesundheitsbericht, Begasungsbericht usw. auf Anfrage von uns beschafft",
+      "Mitgliedschaft bei der Exporteursvereinigung, die für die zu versendende Ware zuständig ist (die Mitgliedschaft wird von uns organisiert)",
+      "Exportdokumente auf Grundlage einer aktiven Veredelungsgenehmigung",
+      "Einheitliches Verwaltungsdokument und Anhänge der Importakte beim Export importierter Waren"
+    ],
+    "importItems": [
+      "Originalrechnung der importierten Waren",
+      "Packliste der importierten Waren",
+      "Zollwertanmeldungsformular für die importierten Waren (von uns vorbereitet)",
+      "Versicherungspolice (wenn die Transaktion F.O.B. oder C.F. ist)",
+      "Frachtrechnung",
+      "Banküberweisungsbeleg oder Abzug des Fonds zur Förderung der Ressourcennutzung",
+      "Auslieferungsanordnung",
+      "Konnossement",
+      "Industrieverpflichtung und Wartungs-/Reparaturbescheinigung (für Waren mit besonderem Dokumentationsbedarf)",
+      "ATR- oder EUR.1-Bescheinigung für Waren, die aus Europa importiert werden"
+    ]
+  },
+  "ourDocuments": {
+    "eyebrow": "Unternehmensdokumente",
+    "title": "Unternehmenszertifikate und Dokumente",
+    "description": "Hier können Sie die offiziellen Zertifikate, Akkreditierungen und Zolldokumente einsehen, über die Genn verfügt.",
+    "certificateTitle": "Zollzertifikat",
+    "certificateDescription": "Unser Zertifikat bestätigt, dass das Unternehmen den Zollabläufen entspricht und die offiziellen Standards erfüllt. Es ist für alle Zollabfertigungsverfahren gültig.",
+    "primaryAction": "PDF öffnen",
+    "secondaryAction": "PDF herunterladen",
+    "viewerTitle": "Dokumentdetail"
+  },
+  "resources": {
+    "eyebrow": "Nützliche Links",
+    "title": "Offizielle Links, die in Zoll- und Außenhandelsprozessen häufig verwendet werden",
+    "description": "Wir haben die offiziellen Systeme, Antragsseiten und Referenzquellen, die in einem in Istanbul ansässigen Zollbetrieb am häufigsten benötigt werden, auf dieser Seite zusammengeführt.",
+    "linkLabel": "Zur Website",
+    "sections": [
+      {
+        "title": "Offizielle Zollsysteme",
+        "description": "Die wichtigsten Seiten, die in täglichen Abläufen und digitalen Zollprozessen am häufigsten genutzt werden.",
+        "items": [
+          {
+            "title": "E-Services des Handelsministeriums",
+            "description": "Der zentrale Einstiegspunkt für Ministeriumsanwendungen, Dokumentenanfragen und Hinweise zu Erklärungen.",
+            "href": "https://ticaret.gov.tr/e-islemler",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "Single Window System",
+            "description": "Das offizielle System, in dem erforderliche Genehmigungen und Dokumente über einen einzigen Zollkanal abgewickelt werden.",
+            "href": "https://ticaret.gov.tr/gumruk-islemleri/dijital-gumruk-uygulamalari/tek-pencere-sistemi",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "TAREKS",
+            "description": "Die offizielle Plattform für risikobasierte Außenhandelskontrollen und Produktsicherheitsverfahren.",
+            "href": "https://ticaret.gov.tr/urun-guvenligi/tareks",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Dokumenten- und Antragsseiten",
+        "description": "Häufig benötigte Links für Importgenehmigungen, Handelsregister und Dokumentenprüfung.",
+        "items": [
+          {
+            "title": "ImportBIS E-Antrag",
+            "description": "Elektronische Antragsseite für Importlizenzen, Genehmigungen und Überwachungsdokumente.",
+            "href": "https://ticaret.gov.tr/ithalat/ithalat-belge-islemleri-ithalatbis-e-basvuru",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "MERSIS",
+            "description": "Das zentrale Registersystem für Unternehmensgründungen, Änderungen und Handelsregisterprozesse.",
+            "href": "https://mersis.ticaret.gov.tr/Portal/KullaniciIslemleri/GirisIslemleri",
+            "domain": "mersis.ticaret.gov.tr"
+          },
+          {
+            "title": "Dokumentenabfrage",
+            "description": "Die offizielle Seite für Dokumentenanfragen und Dokumentenprüfung des Ministeriums.",
+            "href": "https://ticaret.gov.tr/e-islemler/evrak-sorgu-ekrani",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Istanbuler Zollkontakte",
+        "description": "Regionale und Zollamtsseiten, auf die in Istanbuler Abläufen am häufigsten verwiesen wird.",
+        "items": [
+          {
+            "title": "Regionale Direktion Istanbul für Zoll und Außenhandel",
+            "description": "Regionale Kontaktseite mit Zugang zu den in Istanbul angeschlossenen Zollverwaltungen.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/iletisim",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "Zolldirektion Flughafen Istanbul",
+            "description": "Offizielle Zollseite für Abläufe am Flughafen Istanbul und Kontaktdaten.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-havalimani-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "Postzollamt Istanbul",
+            "description": "Offizielle Amtsseite für Zollverfahren im Post- und Expressfrachtbereich.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-posta-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Außenhandel und Datenquellen",
+        "description": "Praktische Quellen für HS-Code-Recherche, Marktanalyse und Handelsdaten.",
+        "items": [
+          {
+            "title": "HS-Code-Suchmaschine",
+            "description": "Die offizielle Tarifsuchseite zur Recherche von HS-/GTIP-Codes für Produkte.",
+            "href": "https://uygulama.gtb.gov.tr/Tara",
+            "domain": "uygulama.gtb.gov.tr"
+          },
+          {
+            "title": "Easy Export Platform",
+            "description": "Eine offizielle Plattform, die Marktforschung, Zielländer, Schulungen und Exportplanung zusammenführt.",
+            "href": "https://www.kolayihracat.gov.tr/",
+            "domain": "kolayihracat.gov.tr"
+          },
+          {
+            "title": "TurkStat Datenportal",
+            "description": "Das offizielle Datenportal für Außenhandelsstatistiken, Dashboards und offene Datensätze.",
+            "href": "https://data.tuik.gov.tr/",
+            "domain": "data.tuik.gov.tr"
+          }
+        ]
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "Angebot erhalten",
+    "title": "Senden Sie uns die wichtigsten Details für ein auf Ihre operativen Anforderungen zugeschnittenes Angebot",
+    "description": "Teilen Sie Frachtart, Zielland, Transporterwartungen und Zeitkritikalität mit. Unser Team meldet sich mit der passenden Orientierung zurück.",
+    "form": {
+      "subjectPrefix": "Angebotsanfrage",
+      "title": "Angebotsanfrage erstellen",
+      "description": "Wenn Sie das Formular absenden, öffnet sich Ihre Standard-Mail-App und Ihre Angaben werden als versandfertige E-Mail vorbereitet.",
+      "buttonLabel": "Angebots-E-Mail erstellen",
+      "fields": {
+        "company": {
+          "label": "Unternehmen",
+          "placeholder": "Ihr Unternehmensname"
+        },
+        "name": {
+          "label": "Ansprechperson",
+          "placeholder": "Vollständiger Name"
+        },
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "beispiel@mail.com"
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "+90 ..."
+        },
+        "service": {
+          "label": "Dienstleistungsbedarf",
+          "placeholder": "Zollabfertigung, Straßentransport, Seefracht..."
+        },
+        "message": {
+          "label": "Details",
+          "placeholder": "Schreiben Sie Fracht- und Prozessdetails"
+        }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Lassen Sie uns Ihren operativen Bedarf gemeinsam planen.",
+    "description": "Teilen Sie uns Ihre Sendungsstruktur, Zollprozesse und das benötigte Betriebsmodell mit. Unser Team meldet sich mit dem passendsten Ablauf zurück.",
+    "form": {
+      "subjectPrefix": "Kontaktanfrage",
+      "title": "Schreiben Sie uns",
+      "description": "Wenn Sie das Formular ausfüllen, öffnet sich Ihre Standard-Mail-App und Ihre Angaben werden als versandfertige E-Mail vorbereitet.",
+      "buttonLabel": "E-Mail senden",
+      "fields": {
+        "name": {
+          "label": "Vollständiger Name",
+          "placeholder": "Geben Sie Ihren Namen ein"
+        },
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "beispiel@mail.com"
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "+90 ..."
+        },
+        "message": {
+          "label": "Nachricht",
+          "placeholder": "Beschreiben Sie Ihren operativen Bedarf"
+        }
+      }
+    },
+    "info": {
+      "emailLabel": "E-Mail",
+      "phoneLabel": "Telefon",
+      "addressLabel": "Adresse",
+      "addressValue": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 İstanbul, Türkei",
+      "instagramLabel": "Instagram",
+      "instagramValue": "@gennlogistics",
+      "instagramHref": "https://www.instagram.com/gennlogistics/",
+      "linkedinLabel": "LinkedIn",
+      "linkedinValue": "Genn Logistics",
+      "linkedinHref": "https://www.linkedin.com/company/genn-logistics/"
+    },
+    "location": {
+      "eyebrow": "Standort",
+      "title": "Sehen Sie den Standort Metroport Business auf der Karte",
+      "mapTitle": "Metroport Business",
+      "mapQuery": "Metroport Business Istanbul"
+    }
+  },
+  "careers": {
+    "eyebrow": "Karriere",
+    "title": "Ein offener Bewerbungsbereich für alle, die Teil des Teams werden möchten, das Abläufe voranbringt",
+    "description": "Wir suchen starke Teammitglieder in den Bereichen Zolloperationen, Kundenmanagement, Transportplanung und Feldkoordination. Über das untenstehende Formular können Sie uns Ihren Lebenslauf und eine kurze Notiz per E-Mail senden.",
+    "highlights": [
+      "Fachwissen in Zolloperationen",
+      "Logistikplanung",
+      "Kunden- und Partnermanagement",
+      "Analytisches Denken und Verantwortungsbewusstsein"
+    ],
+    "form": {
+      "subjectPrefix": "Karrierebewerbung",
+      "title": "Senden Sie Ihre Bewerbung per E-Mail",
+      "description": "Ihre Informationen werden in Ihre Standard-Mail-App übertragen. Sie können Ihre CV-Datei im geöffneten E-Mail-Fenster anhängen.",
+      "buttonLabel": "Bewerbungs-E-Mail erstellen",
+      "fields": {
+        "fullName": {
+          "label": "Vollständiger Name",
+          "placeholder": "Geben Sie Ihren Namen ein"
+        },
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "beispiel@mail.com"
+        },
+        "position": {
+          "label": "Position",
+          "placeholder": "Bereich, für den Sie sich interessieren"
+        },
+        "experience": {
+          "label": "Erfahrung",
+          "placeholder": "Z. B. 4 Jahre in Zolloperationen"
+        },
+        "cv": {
+          "label": "Lebenslauf",
+          "placeholder": ""
+        },
+        "message": {
+          "label": "Kurze Notiz",
+          "placeholder": "Erzählen Sie uns kurz etwas über sich"
+        }
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "title": "Wir sind ein Operationsteam, das Zoll- und Logistikprozesse gemeinsam plant",
+    "description": "Wir wollen einen strukturierteren Prozess schaffen, der auf die Import-, Export-, Transport- und Lagerbedürfnisse unserer Kunden zugeschnitten ist. Wir schätzen Kommunikation und Koordination ebenso wie technisches Know-how.",
+    "slides": [
+      {
+        "eyebrow": "Planung",
+        "title": "Wir klären operative und regulatorische Anforderungen, bevor der Prozess startet",
+        "description": "Wir bewerten Dokumentation, Transport und Timing gemeinsam, um unnötige Unsicherheit zu reduzieren."
+      },
+      {
+        "eyebrow": "Nachverfolgung",
+        "title": "Wir sehen Kommunikation und Koordination als integralen Bestandteil des Prozesses",
+        "description": "Wir setzen auf regelmäßiges Feedback und klare Verantwortungsverteilung, damit Kunden den Prozess jederzeit im Blick behalten."
+      }
+    ]
+  },
+  "mission": {
+    "eyebrow": "Unser Ziel",
+    "title": "Prozesse klarer, leichter nachverfolgbar und verlässlicher machen",
+    "description": "Wir wissen, dass nicht für jede Sendung dieselbe Lösung passt. Deshalb planen wir bedarfsgerecht und halten Abläufe von unnötiger Komplexität fern.",
+    "slides": [
+      {
+        "eyebrow": "Einfachheit",
+        "title": "Wir wollen komplexe Abläufe in klarere Entscheidungsschritte aufteilen",
+        "description": "Wenn Prozesse umfangreicher werden, wollen wir sie in einer besser lesbaren Struktur steuern, damit die Kommunikation nicht leidet."
+      },
+      {
+        "eyebrow": "Vertrauen",
+        "title": "Wir wollen einen Prozess schaffen, in dem der Kunde weiß, was passiert und was ihn erwartet",
+        "description": "Unsere Priorität ist eine Service-Sprache, die Unsicherheit reduziert und klare, konsistente Kommunikation ermöglicht."
+      }
+    ]
+  },
+  "partners": {
+    "eyebrow": "Unsere Partner",
+    "title": "Wir schaffen ausgewogenere Abläufe mit Partnerschaften, die den Prozess stärken",
+    "showcase": {
+      "eyebrow": "Partnernetzwerk",
+      "title": "Marken und Geschäftspartner, die den operativen Ablauf unterstützen",
+      "description": "Dieser Bereich ist als Logo-Wand gestaltet und zeigt globale sowie regionale Akteure, die in unterschiedlichen Transport- und Logistiklinien zusammenarbeiten können."
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "Über uns",
+    "title": "Klare Antworten darauf, wer wir sind, was wir anstreben und mit wem wir arbeiten",
+    "slides": [
+      {
+        "eyebrow": "Wer wir sind",
+        "title": "Wir sind ein Team, das Planungs- und Koordinationsunterstützung in Zoll- und Logistikprozessen bietet",
+        "description": "Wir wollen einen besser lesbaren Prozess schaffen, indem wir technische Abläufe mit starker Kommunikation und konsequenter Nachverfolgung verbinden."
+      },
+      {
+        "eyebrow": "Unser Ziel",
+        "title": "Wir möchten komplexe Prozesse einfacher und verlässlicher machen",
+        "description": "Statt für jede Sendung dieselbe Vorlage zu verwenden, setzen wir auf passgenaue Orientierung und kontrollierte operative Abläufe."
+      },
+      {
+        "eyebrow": "Unsere Partner",
+        "title": "Wir schaffen eine Struktur, die Transport- und Feldoperationen durch Partnerschaften stärkt",
+        "description": "Wir unterstützen den Prozess mit Partnern, mit denen wir in Lagerung, Transport und Außenhandelsverbindungen zusammenarbeiten."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Wer wir sind",
+        "description": "Wir sind ein Operationsteam, das Planungs- und Koordinationsunterstützung in Zoll-, Außenhandels- und Logistikprozessen bietet."
+      },
+      {
+        "title": "Unser Ziel",
+        "description": "Wir möchten komplexe Prozesse einfacher, transparenter und verlässlicher machen."
+      },
+      {
+        "title": "Unsere Partner",
+        "description": "Wir stärken den Prozess mit Lösungspartnern, mit denen wir in Transport-, Lager- und Feldoperationen zusammenarbeiten."
+      }
+    ]
+  },
+  "discovery": {
+    "eyebrow": "Warum wir",
+    "title": "Wir haben einen aussagekräftigeren Rahmen geschaffen, der unseren Serviceansatz widerspiegelt",
+    "items": [
+      {
+        "title": "Die richtige Orientierung",
+        "description": "Anstatt für jede Sendung dieselbe Vorlage zu verwenden, wird das Betriebsmodell entsprechend dem Bedarf gestaltet."
+      },
+      {
+        "title": "Klare Kommunikation",
+        "description": "Sie macht die Kommunikation zwischen den Parteien in den verschiedenen Prozessphasen lesbarer und strukturierter."
+      },
+      {
+        "title": "Dokumenten- und Prozessdisziplin",
+        "description": "Sie schafft eine stärkere operative Grundlage in Dokumentation, Vorschriften und Planung."
+      },
+      {
+        "title": "Flexible operative Unterstützung",
+        "description": "Sie passt sich an unterschiedliche Szenarien an, je nach Transport-, Lager- und Zollbedarf."
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Zoll- und Logistikoperationen",
+    "title": "Erhalten Sie die richtige Planung und verlässliche operative Unterstützung für Ihre Außenhandelsprozesse.",
+    "description": "Wir planen gemeinsam das passende Betriebsmodell für Ihre Import-, Export-, Lager- und internationalen Transportprozesse. Unser Ziel ist es, den Prozess strukturierter, besser nachverfolgbar und verlässlicher zu machen, ohne ihn unnötig zu verkomplizieren.",
+    "primaryCta": "Abläufe ansehen",
+    "secondaryCta": "Angebot anfordern",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Kommunikation und Prozesskoordination"
+      },
+      {
+        "value": "12+",
+        "label": "Internationales Strecken- und Partnernetzwerk"
+      },
+      {
+        "value": "%100",
+        "label": "Fokus auf Dokumentation und Prozessverfolgung"
+      }
+    ],
+    "floatingLabels": {
+      "top": "Zoll + Transport + Koordination",
+      "bottom": "Fokus auf Vorschriften und Prozesse"
+    },
+    "card": {
+      "eyebrow": "Beratung und Planung",
+      "title": "Nicht für jede Sendung dasselbe, sondern ein bedarfsgerechter operativer Ansatz",
+      "focusLabel": "Fokus",
+      "focusValue": "Die richtigen Dokumente, das richtige Timing, die richtige Orientierung",
+      "approachLabel": "Ansatz",
+      "approachValue": "Bedarfsorientierte, einfache und kontrollierte operative Struktur",
+      "planningLabel": "Vorbereitung und Planung",
+      "planningValue": "Prozessorientiert",
+      "supportLabel": "Unsere Unterstützung",
+      "supportItems": [
+        "Vorbereitung von Dokumenten und Prozessen",
+        "Unterstützung bei Transport- und Logistikplanung",
+        "Kommunikation, Nachverfolgung und Koordination"
+      ],
+      "serviceAreaLabel": "Leistungsbereich",
+      "serviceAreaValue": "Zoll- und Logistikkoordination",
+      "workStyleLabel": "Arbeitsweise",
+      "workStyleValue": "Flexible Planung je nach Bedarf"
+    }
+  },
+  "serviceCarousel": {
+    "eyebrow": "Leistungsbereiche",
+    "title": "Wir präsentieren bedarfsgerechte Leistungskategorien in einer einfachen Struktur.",
+    "description": "Ziel ist es hier nicht, ein technisch nicht existierendes System zu beschreiben, sondern klarer und geordneter zu zeigen, in welchen Bereichen Sie Unterstützung bieten.",
+    "slides": [
+      {
+        "id": "01",
+        "tag": "Zollabfertigung",
+        "title": "Wir unterstützen Dokumenten-, Anmeldungs- und Regulierungsnachverfolgung in Import- und Exportprozessen",
+        "description": "Wir organisieren den erforderlichen Dokumentenfluss, die Vorbereitung der Anmeldung und die operative Koordination in einer geordneten Struktur.",
+        "bullets": [
+          "Unterstützung im Anmeldeprozess",
+          "Dokumentenkontrollfluss",
+          "Koordination und Nachverfolgung"
+        ],
+        "accent": "from-[#d8b27d] via-[#9f6c38] to-[#2f2217]"
+      },
+      {
+        "id": "02",
+        "tag": "Straßentransport",
+        "title": "Geplante Versandunterstützung bei nationalen und internationalen Straßenfrachtoperationen",
+        "description": "Für Teil- oder Komplettladungen bieten wir Planung und Prozesskoordination im Einklang mit dem Versandrhythmus.",
+        "bullets": [
+          "Ladeplanung",
+          "Koordination von Grenzübergängen",
+          "Nachverfolgung des Lieferprozesses"
+        ],
+        "accent": "from-[#ecdfca] via-[#b38a58] to-[#463224]"
+      },
+      {
+        "id": "03",
+        "tag": "Seefracht",
+        "title": "Ausgewogenere Kosten- und Transitplanung im containerbasierten Transport",
+        "description": "Wir schaffen einen kontrollierteren operativen Ablauf bei Linienwahl, Hafenprozessen und Dokumentenfluss.",
+        "bullets": [
+          "FCL- / LCL-Organisation",
+          "Nachverfolgung von Hafenprozessen",
+          "Dokumentationsunterstützung"
+        ],
+        "accent": "from-[#d7dce0] via-[#698198] to-[#1f2f3d]"
+      },
+      {
+        "id": "04",
+        "tag": "Luftfracht",
+        "title": "Schnelle und strukturierte Luftfrachtkoordination für zeitkritische Sendungen",
+        "description": "Für dringende Sendungen gestalten wir Kapazität, Dokumentation und operative Koordination zu einem saubereren Prozess.",
+        "bullets": [
+          "Buchungskoordination",
+          "Unterstützung bei der Dokumentenvorbereitung",
+          "Zeitfokussierte Planung"
+        ],
+        "accent": "from-[#f3e5ce] via-[#c68d4a] to-[#4c3723]"
+      }
+    ],
+    "approach": {
+      "eyebrow": "Unser Ansatz",
+      "title": "Wir erklären unsere Arbeitsweise in einfachen Schritten",
+      "steps": [
+        "Bedarfs- und Prozessanalyse",
+        "Festlegung des richtigen Leistungsmodells",
+        "Operative Planung und Koordination",
+        "Nachverfolgung des Prozesses durch Kommunikation"
+      ]
+    },
+    "focus": {
+      "eyebrow": "Fokuspunkt",
+      "stats": [
+        {
+          "value": "18",
+          "label": "Länder- und Außenhandelsverbindungen"
+        },
+        {
+          "value": "320+",
+          "label": "Verfolgung von Prozessen, Dokumenten und Koordination"
+        }
+      ]
+    }
+  },
+  "teamHighlight": {
+    "eyebrow": "Team und Ansatz",
+    "title": "Eine Teamstruktur, die den Prozess nicht nur als Transport, sondern auch als Verantwortung versteht",
+    "description": "Für Kunden entsteht Vertrauen manchmal nicht nur durch die Liste der Leistungen, sondern dadurch, wie Sie den Prozess verfolgen und kommunizieren. Dieser Bereich dient dazu, dieses Vertrauen klarer zu vermitteln.",
+    "workStyle": {
+      "label": "Arbeitsweise",
+      "value": "Geplante Kommunikation, regelmäßige Nachverfolgung, klare Verantwortung"
+    },
+    "stats": [
+      {
+        "value": "14+",
+        "label": "Teamstruktur mit Fokus auf Zoll- und Logistikprozesse"
+      },
+      {
+        "value": "9 Min.",
+        "label": "Ziel für schnelle Rückmeldung und erste Orientierung"
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Genn Logistics",
+    "title": "Klare Kommunikation, strukturierte Nachverfolgung und verlässlicher Ablauf in Zoll- und Logistikprozessen",
+    "description": "Wir wollen Planung, Koordination und Prozessverfolgung für Ihren Außenhandel und Ihre Abläufe an einem Ort zusammenführen.",
+    "linksTitle": "Seiten",
+    "links": {
+      "home": "Startseite",
+      "services": "Dienstleistungen",
+      "documents": "Erforderliche Dokumente",
+      "ourDocuments": "Unternehmensdokumente",
+      "resources": "Nützliche Links",
+      "about": "Über uns",
+      "careers": "Karriere",
+      "contact": "Kontakt",
+      "quote": "Angebot erhalten"
+    },
+    "contactTitle": "Kontakt",
+    "contact": {
+      "email": "info@genn.com.tr",
+      "phone": "+90 212 843 59 00",
+      "address": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 İstanbul, Türkei",
+      "instagramLabel": "Instagram",
+      "instagramValue": "@gennlogistics",
+      "instagramHref": "https://www.instagram.com/gennlogistics/",
+      "linkedinLabel": "LinkedIn",
+      "linkedinValue": "Genn Logistics",
+      "linkedinHref": "https://www.linkedin.com/company/genn-logistics/"
+    },
+    "bottom": {
+      "copyright": "© 2026 Genn. Alle Rechte vorbehalten.",
+      "slogan": "Geplante Abläufe. Klare Kommunikation. Verlässlicher Prozess.",
+      "credit": "Web Design by Ceren Yaman"
+    }
+  },
+  "navbar": {
+    "brand": "Genn",
+    "links": {
+      "home": "Startseite",
+      "services": "Dienstleistungen",
+      "documents": "Ressourcen",
+      "about": "Über uns",
+      "careers": "Karriere",
+      "contact": "Kontakt",
+      "quote": "Angebot erhalten"
+    },
+    "documentsMenu": {
+      "required": "Erforderliche Dokumente",
+      "certificates": "Unternehmensdokumente",
+      "resources": "Nützliche Links"
+    },
+    "aboutMenu": {
+      "company": "Wer wir sind",
+      "mission": "Unser Ziel",
+      "partners": "Unsere Partner"
+    },
+    "mobileMenuLabel": "Menü"
+  }
+}
