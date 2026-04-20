@@ -12,29 +12,31 @@ export default async function ServicesPage({
 
   return (
     <>
-      <Navbar locale={locale} />
-      <main className="bg-[#f4f1ea] px-6 py-24 md:px-10 md:py-28 lg:px-16">
-        <div className="mx-auto max-w-6xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#8c6a3c]">
-            {dict.services.title}
-          </p>
+      <div className="bg-[#f4f1ea]">
+        <Navbar locale={locale} />
+        <main className="px-6 py-24 md:px-10 md:py-28 lg:px-16">
+          <div className="mx-auto max-w-6xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#8c6a3c]">
+              {dict.services.title}
+            </p>
 
-          <h1 className="max-w-4xl text-3xl font-semibold tracking-tight text-[#1f1a17] sm:text-4xl md:text-6xl">
-            {dict.services.heading}
-          </h1>
+            <h1 className="max-w-4xl text-3xl font-semibold tracking-tight text-[#1f1a17] sm:text-4xl md:text-6xl">
+              {dict.services.heading}
+            </h1>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {dict.services.items.map((item: string) => (
-              <div
-                key={item}
-                className="rounded-[24px] bg-white p-6 shadow-[0_24px_60px_rgba(34,24,13,0.08)]"
-              >
-                <p className="text-lg font-medium text-[#1f1a17]">{item}</p>
-              </div>
-            ))}
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {dict.services.items.map((item: string) => (
+                <div
+                  key={item}
+                  className="rounded-[24px] bg-white p-6 shadow-[0_24px_60px_rgba(34,24,13,0.08)]"
+                >
+                  <p className="text-lg font-medium text-[#1f1a17]">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
       <Footer locale={locale} />
     </>
   );

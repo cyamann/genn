@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useDictionary } from "../providers/dictionary-provider";
 
@@ -18,9 +19,19 @@ export default function Footer({ locale }: FooterProps) {
         <div className="rounded-[34px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-8 shadow-[0_30px_90px_rgba(0,0,0,0.18)] md:p-10">
           <div className="grid gap-10 xl:grid-cols-[1.15fr_0.85fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#d3ae79]">
-                {dict.footer.brand}
-              </p>
+              <Link
+                href={`/${locale}`}
+                aria-label={dict.footer.brand}
+                className="inline-flex items-center rounded-[22px] bg-white px-4 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.16)]"
+              >
+                <Image
+                  src="/logo.ai.png"
+                  alt={dict.footer.brand}
+                  width={176}
+                  height={58}
+                  className="h-auto w-[138px] md:w-[168px]"
+                />
+              </Link>
 
               <h2 className="mt-5 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
                 {dict.footer.title}
@@ -40,6 +51,11 @@ export default function Footer({ locale }: FooterProps) {
                 <div className="mt-4 grid gap-3 text-sm text-white/74">
                   <Link href={`/${locale}`}>{dict.footer.links.home}</Link>
                   <Link href={`/${locale}/services`}>{dict.footer.links.services}</Link>
+                  <Link href={`/${locale}/resources`}>{dict.footer.links.resources}</Link>
+                  <Link href={`/${locale}/documents`}>{dict.footer.links.documents}</Link>
+                  <Link href={`/${locale}/documents/certificates`}>
+                    {dict.footer.links.ourDocuments}
+                  </Link>
                   <Link href={`/${locale}/about`}>{dict.footer.links.about}</Link>
                   <Link href={`/${locale}/careers`}>{dict.footer.links.careers}</Link>
                   <Link href={`/${locale}/contact`}>{dict.footer.links.contact}</Link>

@@ -13,26 +13,28 @@ export default async function AboutMissionPage({
 
   return (
     <>
-      <Navbar locale={locale} />
-      <main className="bg-[#f8f4ed] px-6 py-24 md:px-10 md:py-28 lg:px-16">
-        <SectionReveal className="mx-auto max-w-5xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#9a7444]">
-            {dict.mission.eyebrow}
-          </p>
+      <div className="bg-[#f8f4ed]">
+        <Navbar locale={locale} />
+        <main className="px-6 py-24 md:px-10 md:py-28 lg:px-16">
+          <SectionReveal className="mx-auto max-w-5xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#9a7444]">
+              {dict.mission.eyebrow}
+            </p>
 
-          <h1 className="text-3xl font-semibold tracking-tight text-[#1d1814] sm:text-4xl md:text-6xl">
-            {dict.mission.title}
-          </h1>
+            <h1 className="text-3xl font-semibold tracking-tight text-[#1d1814] sm:text-4xl md:text-6xl">
+              {dict.mission.title}
+            </h1>
 
-          <p className="mt-8 text-base leading-8 text-[#5f554c] sm:text-lg">
-            {dict.mission.description}
-          </p>
+            <p className="mt-8 text-base leading-8 text-[#5f554c] sm:text-lg">
+              {dict.mission.description}
+            </p>
 
-          <div className="mt-10">
-            <AboutCarousel slides={dict.mission.slides} />
-          </div>
-        </SectionReveal>
-      </main>
+            <div className="mt-10">
+              <AboutCarousel slides={dict.mission.slides} />
+            </div>
+          </SectionReveal>
+        </main>
+      </div>
       <Footer locale={locale} />
     </>
   );

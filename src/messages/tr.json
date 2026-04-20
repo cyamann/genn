@@ -11,6 +11,150 @@
       "Operasyonel lojistik danışmanlığı"
     ]
   },
+  "documents": {
+    "eyebrow": "İstenilen Belgeler",
+    "title": "İhracat ve İthalat Evrak Dökümani",
+    "description": "Gümrük müşerileriğinizin hazırlaması gereken ve tarafımızdan temin edilen tüm resmi ve ticari belgeler",
+    "exportTitle": "İHRACAT EVRAK DÖKÜMANI",
+    "importTitle": "İTHALAT EVRAK DÖKÜMANI",
+    "exportItems": [
+      "Resmi Türkçe fatura (E-Fatura – E-Arşiv)",
+      "Avrupa topluluğuna yönelik ihracatlarında ATR (Tarafımızdan düzenlenir)",
+      "Anlaşmalı ülkeler için EUR1 belgesi (Tarafımızdan düzenlenir)",
+      "Diğer ülkeler için Menşe Şahadetnamesi (Tarafımızdan düzenlenir)",
+      "Peşin ödeme şeklinde yapılan ihracatta Döviz Alım Belgesi (Bankanız tarafından düzenlenir)",
+      "Özel evrak gerektiren ihraç eşyalar için Kontrol Belgesi, Ziraat Raporu, Sağlık Raporu, Fimugasyon Raporu v.b. istek doğrultusunda tarafımızdan alınır",
+      "İhracatın gerçekleştirilmesi için göndermek istediğiniz malın bağlı bulunduğu İhracatçılar Birliğine üyelik (Tarafımızdan üyelik yapılır)",
+      "Dahilde İşleme belgesine dayalı ihracat belgeleri",
+      "İthal edilen eşyanın İhracatında İthalat ta ait tek idari belge ve ekleri"
+    ],
+    "importItems": [
+      "İthal eşyaya ait orjinal fatura (Invoice)",
+      "İthal eşyaya ait Çeki Listesi (Packing List)",
+      "İthal eşya ya ait gümrük kıymet bildirim formu (Tarafımızca hazırlanır)",
+      "Sigorta poliçesi (İşlem F.O.B. veya C.F. ise)",
+      "Navlun faturası",
+      "Banka transfer dekontu veya % KKDF",
+      "Ordino",
+      "Konşimento",
+      "Sanayici Taahhütname, Bakım onarım belgesi (Özel evrak gerektiren mallarda)",
+      "Avrupa dan ithal edilecek mallardan ATR veya EUR.1 belgesi"
+    ]
+  },
+  "ourDocuments": {
+    "eyebrow": "Kurumsal Belgeler",
+    "title": "Kurumsal Sertifikalar ve Belgeler",
+    "description": "Genn olarak sahip olduğumuz resmi sertifikalar, akreditasyonlar ve gümrük belgelerini burada görebilirsiniz.",
+    "certificateTitle": "Gümrük Sertifika Belgesi",
+    "certificateDescription": "Firmanın gümrük operasyonlarına uyum sağladığını ve resmi standartları karşıladığını belgeleyici sertifikamız. Tüm gümrükleme işlemlerinde geçerlidir.",
+    "primaryAction": "PDF'yi Aç",
+    "secondaryAction": "PDF'yi İndir",
+    "viewerTitle": "Belge Detayı"
+  },
+  "resources": {
+    "eyebrow": "Faydalı Linkler",
+    "title": "Gümrük ve dış ticaret süreçlerinde sık kullanılan resmi bağlantılar",
+    "description": "İstanbul merkezli bir gümrük operasyonunda en sık ihtiyaç duyulan resmi sistemleri, başvuru ekranlarını ve referans kaynaklarını bu sayfada topladık.",
+    "linkLabel": "Siteye Git",
+    "sections": [
+      {
+        "title": "Resmi Gümrük Sistemleri",
+        "description": "Günlük operasyon ve dijital gümrük süreçlerinde en çok kullanılan temel ekranlar.",
+        "items": [
+          {
+            "title": "Ticaret Bakanlığı E-İşlemler",
+            "description": "Bakanlığın uygulamalar, evrak sorgu ve beyanname talimatları için merkezi giriş noktası.",
+            "href": "https://ticaret.gov.tr/e-islemler",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "Tek Pencere Sistemi",
+            "description": "Gümrük işlemlerinde gerekli izin ve belgelerin tek merkezden yürütüldüğü resmi sistem.",
+            "href": "https://ticaret.gov.tr/gumruk-islemleri/dijital-gumruk-uygulamalari/tek-pencere-sistemi",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "TAREKS",
+            "description": "Dış ticarette risk esaslı kontrol başvuruları ve ürün güvenliği işlemleri için resmi platform.",
+            "href": "https://ticaret.gov.tr/urun-guvenligi/tareks",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Belge ve Başvuru Ekranları",
+        "description": "İthalat, ticaret sicili ve evrak doğrulama tarafında sık ihtiyaç duyulan bağlantılar.",
+        "items": [
+          {
+            "title": "İthalatBİS E-Başvuru",
+            "description": "İthal lisansı, izin ve gözetim belgeleri için elektronik başvuru sayfası.",
+            "href": "https://ticaret.gov.tr/ithalat/ithalat-belge-islemleri-ithalatbis-e-basvuru",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "MERSİS",
+            "description": "Şirket kuruluş, değişiklik ve ticaret sicili işlemleri için merkezi sicil sistemi.",
+            "href": "https://mersis.ticaret.gov.tr/Portal/KullaniciIslemleri/GirisIslemleri",
+            "domain": "mersis.ticaret.gov.tr"
+          },
+          {
+            "title": "Evrak Sorgu Ekranı",
+            "description": "Bakanlık evrak sorgulama ve belge doğrulama işlemlerinin yapıldığı resmi ekran.",
+            "href": "https://ticaret.gov.tr/e-islemler/evrak-sorgu-ekrani",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "İstanbul Gümrük Bağlantıları",
+        "description": "İstanbul operasyonlarında en çok referans verilen bölge ve gümrük müdürlüğü sayfaları.",
+        "items": [
+          {
+            "title": "İstanbul Gümrük ve Dış Ticaret Bölge Müdürlüğü",
+            "description": "Bölge müdürlüğü iletişim bilgileri ve İstanbul bağlantı idarelerine erişim sayfası.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/iletisim",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "İstanbul Havalimanı Gümrük Müdürlüğü",
+            "description": "İstanbul Havalimanı gümrük işlemleri ve müdürlük iletişim bilgileri.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-havalimani-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "İstanbul Posta Gümrük Müdürlüğü",
+            "description": "Posta ve hızlı kargo tarafındaki gümrük süreçleri için resmi müdürlük sayfası.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-posta-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Dış Ticaret ve Veri Kaynakları",
+        "description": "GTİP, pazar araştırması ve dış ticaret verisi için pratik referans kaynakları.",
+        "items": [
+          {
+            "title": "GTİP Arama Motoru",
+            "description": "Ürünler için GTİP numarası araştırmasında kullanılan resmi tarife arama bağlantısı.",
+            "href": "https://uygulama.gtb.gov.tr/Tara",
+            "domain": "uygulama.gtb.gov.tr"
+          },
+          {
+            "title": "Kolay İhracat Platformu",
+            "description": "Pazar, hedef ülke, eğitim ve ihracat planlama içeriklerini bir arada sunan resmi platform.",
+            "href": "https://www.kolayihracat.gov.tr/",
+            "domain": "kolayihracat.gov.tr"
+          },
+          {
+            "title": "TÜİK Veri Portalı",
+            "description": "Dış ticaret verileri, istatistikler ve açık veri ekranları için resmi veri portalı.",
+            "href": "https://data.tuik.gov.tr/",
+            "domain": "data.tuik.gov.tr"
+          }
+        ]
+      }
+    ]
+  },
   "quote": {
     "eyebrow": "Teklif Al",
     "title": "Operasyon ihtiyacınıza uygun teklif için bize temel bilgileri iletin",
@@ -388,6 +532,9 @@
     "links": {
       "home": "Ana Sayfa",
       "services": "Hizmetler",
+      "documents": "İstenilen Belgeler",
+      "ourDocuments": "Kurumsal Belgeler",
+      "resources": "Faydalı Linkler",
       "about": "Hakkımızda",
       "careers": "Kariyer",
       "contact": "İletişim",
@@ -415,10 +562,16 @@
     "links": {
       "home": "Ana Sayfa",
       "services": "Hizmetler",
+      "documents": "Kaynaklar",
       "about": "Hakkımızda",
       "careers": "Kariyer",
       "contact": "İletişim",
       "quote": "Teklif Al"
+    },
+    "documentsMenu": {
+      "required": "İstenilen Belgeler",
+      "certificates": "Kurumsal Belgeler",
+      "resources": "Faydalı Linkler"
     },
     "aboutMenu": {
       "company": "Biz Kimiz",

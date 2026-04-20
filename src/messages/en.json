@@ -11,6 +11,150 @@
       "Operational logistics consulting"
     ]
   },
+  "documents": {
+    "eyebrow": "Required Documents",
+    "title": "Export and Import Documentation",
+    "description": "All official and commercial documents that your customs representative needs to prepare and that are provided by our team.",
+    "exportTitle": "EXPORT DOCUMENTATION",
+    "importTitle": "IMPORT DOCUMENTATION",
+    "exportItems": [
+      "Official Turkish invoice (e-Invoice - e-Archive)",
+      "ATR for exports to the European Community (issued by us)",
+      "EUR1 certificate for countries under agreement (issued by us)",
+      "Certificate of Origin for other countries (issued by us)",
+      "Foreign Exchange Purchase Document for exports made with advance payment terms (issued by your bank)",
+      "For export goods requiring special paperwork, documents such as Control Certificate, Agricultural Report, Health Report, Fumigation Report, etc. are obtained by us upon request",
+      "Membership to the Exporters' Association related to the goods you want to send for the completion of the export process (membership is arranged by us)",
+      "Export documents based on an Inward Processing Permit",
+      "Single administrative document and annexes related to the import file in the export of imported goods"
+    ],
+    "importItems": [
+      "Original invoice of the imported goods",
+      "Packing list of the imported goods",
+      "Customs valuation declaration form for the imported goods (prepared by us)",
+      "Insurance policy (if the transaction is F.O.B. or C.F.)",
+      "Freight invoice",
+      "Bank transfer receipt or Resource Utilization Support Fund deduction",
+      "Delivery order",
+      "Bill of lading",
+      "Industrialist undertaking and maintenance-repair certificate (for goods requiring special documentation)",
+      "ATR or EUR.1 certificate for goods to be imported from Europe"
+    ]
+  },
+  "ourDocuments": {
+    "eyebrow": "Corporate Documents",
+    "title": "Corporate Certificates and Documents",
+    "description": "You can view the official certificates, accreditations, and customs documents held by Genn here.",
+    "certificateTitle": "Customs Certificate Document",
+    "certificateDescription": "Our certificate confirming that the company complies with customs operations and meets official standards. It is valid for all customs clearance procedures.",
+    "primaryAction": "Open PDF",
+    "secondaryAction": "Download PDF",
+    "viewerTitle": "Document Detail"
+  },
+  "resources": {
+    "eyebrow": "Useful Links",
+    "title": "Official links frequently used in customs and foreign trade operations",
+    "description": "We gathered the official systems, application pages, and reference sources most frequently needed in an Istanbul-based customs operation on this page.",
+    "linkLabel": "Visit Site",
+    "sections": [
+      {
+        "title": "Official Customs Systems",
+        "description": "The main pages most frequently used in daily operations and digital customs workflows.",
+        "items": [
+          {
+            "title": "Ministry of Trade E-Services",
+            "description": "The central entry point for ministry applications, document inquiry, and declaration guidance.",
+            "href": "https://ticaret.gov.tr/e-islemler",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "Single Window System",
+            "description": "The official system where required permits and documents are handled through a single customs channel.",
+            "href": "https://ticaret.gov.tr/gumruk-islemleri/dijital-gumruk-uygulamalari/tek-pencere-sistemi",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "TAREKS",
+            "description": "The official platform for risk-based foreign trade controls and product safety procedures.",
+            "href": "https://ticaret.gov.tr/urun-guvenligi/tareks",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Document and Application Pages",
+        "description": "Commonly needed links for import permissions, trade registry, and document verification.",
+        "items": [
+          {
+            "title": "ImportBIS E-Application",
+            "description": "Electronic application page for import licenses, permits, and surveillance documents.",
+            "href": "https://ticaret.gov.tr/ithalat/ithalat-belge-islemleri-ithalatbis-e-basvuru",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "MERSIS",
+            "description": "The central registry system for company incorporation, amendments, and trade registry processes.",
+            "href": "https://mersis.ticaret.gov.tr/Portal/KullaniciIslemleri/GirisIslemleri",
+            "domain": "mersis.ticaret.gov.tr"
+          },
+          {
+            "title": "Document Inquiry Screen",
+            "description": "The official page used for ministry document inquiry and document verification.",
+            "href": "https://ticaret.gov.tr/e-islemler/evrak-sorgu-ekrani",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Istanbul Customs Contacts",
+        "description": "Regional and customs office pages most commonly referenced in Istanbul operations.",
+        "items": [
+          {
+            "title": "Istanbul Customs and Foreign Trade Regional Directorate",
+            "description": "Regional contact page with access to Istanbul-linked customs administrations.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/iletisim",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "Istanbul Airport Customs Directorate",
+            "description": "Official customs office page for Istanbul Airport operations and contact details.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-havalimani-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "Istanbul Postal Customs Directorate",
+            "description": "Official office page for postal and express cargo customs procedures.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-posta-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Foreign Trade and Data Sources",
+        "description": "Practical sources for HS code research, market discovery, and trade data.",
+        "items": [
+          {
+            "title": "HS Code Search Engine",
+            "description": "The official tariff search page used to research product HS/GTIP codes.",
+            "href": "https://uygulama.gtb.gov.tr/Tara",
+            "domain": "uygulama.gtb.gov.tr"
+          },
+          {
+            "title": "Easy Export Platform",
+            "description": "An official platform bringing together market research, target country, training, and export planning tools.",
+            "href": "https://www.kolayihracat.gov.tr/",
+            "domain": "kolayihracat.gov.tr"
+          },
+          {
+            "title": "TurkStat Data Portal",
+            "description": "The official data portal for foreign trade statistics, dashboards, and open datasets.",
+            "href": "https://data.tuik.gov.tr/",
+            "domain": "data.tuik.gov.tr"
+          }
+        ]
+      }
+    ]
+  },
   "quote": {
     "eyebrow": "Get a Quote",
     "title": "Send us the key details for a quote tailored to your operational needs",
@@ -388,6 +532,9 @@
     "links": {
       "home": "Home",
       "services": "Services",
+      "documents": "Required Documents",
+      "ourDocuments": "Corporate Documents",
+      "resources": "Useful Links",
       "about": "About",
       "careers": "Careers",
       "contact": "Contact",
@@ -415,10 +562,16 @@
     "links": {
       "home": "Home",
       "services": "Services",
+      "documents": "Resources",
       "about": "About",
       "careers": "Careers",
       "contact": "Contact",
       "quote": "Get a Quote"
+    },
+    "documentsMenu": {
+      "required": "Required Documents",
+      "certificates": "Corporate Documents",
+      "resources": "Useful Links"
     },
     "aboutMenu": {
       "company": "Who We Are",
