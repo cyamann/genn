@@ -8,7 +8,7 @@ import DnaBackground from "../../components/ui/dna-background";
 export default async function CareersPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" | "ru" }>;
+  params: Promise<{ locale: "tr" | "en" | "de" | "es" | "ar" | "ru" | "fr" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);

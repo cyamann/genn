@@ -1,0 +1,588 @@
+{
+  "services": {
+    "title": "Services",
+    "heading": "Services coordonnés depuis un centre unique pour vos processus douaniers, de transport et d’exploitation terrain.",
+    "items": [
+      "Dédouanement import et export",
+      "Coordination du stockage et de l’entrepôt douanier",
+      "Organisation du transport routier et maritime",
+      "Planification des opérations de fret aérien",
+      "Gestion des documents et des processus réglementaires",
+      "Conseil logistique opérationnel"
+    ]
+  },
+  "documents": {
+    "eyebrow": "Documents requis",
+    "title": "Documentation d’exportation et d’importation",
+    "description": "Tous les documents officiels et commerciaux que votre représentant en douane doit préparer et qui sont fournis par notre équipe.",
+    "exportTitle": "DOCUMENTATION D’EXPORTATION",
+    "importTitle": "DOCUMENTATION D’IMPORTATION",
+    "exportItems": [
+      "Facture turque officielle (e-Facture - e-Archive)",
+      "ATR pour les exportations vers la Communauté européenne (émis par nos soins)",
+      "Certificat EUR1 pour les pays couverts par un accord (émis par nos soins)",
+      "Certificat d’origine pour les autres pays (émis par nos soins)",
+      "Document d’achat de devises pour les exportations réalisées avec paiement anticipé (émis par votre banque)",
+      "Pour les marchandises d’exportation nécessitant des documents spéciaux, des documents tels que certificat de contrôle, rapport agricole, rapport sanitaire, rapport de fumigation, etc. sont obtenus par nos soins sur demande",
+      "Adhésion à l’Association des exportateurs liée à la marchandise que vous souhaitez expédier (l’adhésion est organisée par nos soins)",
+      "Documents d’exportation fondés sur un permis de perfectionnement actif",
+      "Document administratif unique et annexes du dossier d’importation lors de l’exportation de marchandises importées"
+    ],
+    "importItems": [
+      "Facture originale de la marchandise importée",
+      "Liste de colisage de la marchandise importée",
+      "Formulaire de déclaration de la valeur en douane de la marchandise importée (préparé par nos soins)",
+      "Police d’assurance (si la transaction est en F.O.B. ou C.F.)",
+      "Facture de fret",
+      "Justificatif de virement bancaire ou prélèvement du Fonds de soutien à l’utilisation des ressources",
+      "Ordre de livraison",
+      "Connaissement",
+      "Engagement industriel et certificat de maintenance/réparation (pour les marchandises nécessitant des documents spéciaux)",
+      "Certificat ATR ou EUR.1 pour les marchandises importées d’Europe"
+    ]
+  },
+  "ourDocuments": {
+    "eyebrow": "Documents de l’entreprise",
+    "title": "Certificats et documents institutionnels",
+    "description": "Vous pouvez consulter ici les certificats officiels, accréditations et documents douaniers détenus par Genn.",
+    "certificateTitle": "Certificat douanier",
+    "certificateDescription": "Notre certificat atteste que l’entreprise est conforme aux opérations douanières et répond aux normes officielles. Il est valable pour toutes les procédures de dédouanement.",
+    "primaryAction": "Ouvrir le PDF",
+    "secondaryAction": "Télécharger le PDF",
+    "viewerTitle": "Détail du document"
+  },
+  "resources": {
+    "eyebrow": "Liens utiles",
+    "title": "Liens officiels fréquemment utilisés dans les opérations douanières et de commerce extérieur",
+    "description": "Nous avons rassemblé sur cette page les systèmes officiels, les pages de demande et les sources de référence les plus nécessaires dans une opération douanière basée à Istanbul.",
+    "linkLabel": "Visiter le site",
+    "sections": [
+      {
+        "title": "Systèmes douaniers officiels",
+        "description": "Les principales pages les plus utilisées dans les opérations quotidiennes et les flux douaniers numériques.",
+        "items": [
+          {
+            "title": "Services électroniques du ministère du Commerce",
+            "description": "Le point d’entrée central pour les applications du ministère, la consultation des documents et les instructions relatives aux déclarations.",
+            "href": "https://ticaret.gov.tr/e-islemler",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "Système de guichet unique",
+            "description": "Le système officiel où les autorisations et documents nécessaires sont traités via un seul canal douanier.",
+            "href": "https://ticaret.gov.tr/gumruk-islemleri/dijital-gumruk-uygulamalari/tek-pencere-sistemi",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "TAREKS",
+            "description": "La plateforme officielle pour les contrôles du commerce extérieur fondés sur le risque et les procédures de sécurité des produits.",
+            "href": "https://ticaret.gov.tr/urun-guvenligi/tareks",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Pages de documents et de demandes",
+        "description": "Liens fréquemment nécessaires pour les autorisations d’importation, le registre du commerce et la vérification des documents.",
+        "items": [
+          {
+            "title": "Demande électronique ImportBIS",
+            "description": "Page de demande électronique pour les licences d’importation, autorisations et documents de surveillance.",
+            "href": "https://ticaret.gov.tr/ithalat/ithalat-belge-islemleri-ithalatbis-e-basvuru",
+            "domain": "ticaret.gov.tr"
+          },
+          {
+            "title": "MERSIS",
+            "description": "Le système central de registre pour la création d’entreprise, les modifications et les procédures du registre du commerce.",
+            "href": "https://mersis.ticaret.gov.tr/Portal/KullaniciIslemleri/GirisIslemleri",
+            "domain": "mersis.ticaret.gov.tr"
+          },
+          {
+            "title": "Écran de consultation des documents",
+            "description": "La page officielle utilisée pour consulter les documents du ministère et vérifier les documents.",
+            "href": "https://ticaret.gov.tr/e-islemler/evrak-sorgu-ekrani",
+            "domain": "ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Contacts douaniers d’Istanbul",
+        "description": "Les pages régionales et des bureaux douaniers les plus consultées dans les opérations à Istanbul.",
+        "items": [
+          {
+            "title": "Direction régionale des douanes et du commerce extérieur d’Istanbul",
+            "description": "Page de contact régionale avec accès aux administrations douanières liées à Istanbul.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/iletisim",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "Direction des douanes de l’aéroport d’Istanbul",
+            "description": "Page officielle des douanes pour les opérations à l’aéroport d’Istanbul et les coordonnées.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-havalimani-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          },
+          {
+            "title": "Direction des douanes postales d’Istanbul",
+            "description": "Page officielle pour les procédures douanières du courrier et du fret express.",
+            "href": "https://istanbulbolge.ticaret.gov.tr/baglanti-idarelerimiz/istanbul-posta-gumruk-mudurlugu",
+            "domain": "istanbulbolge.ticaret.gov.tr"
+          }
+        ]
+      },
+      {
+        "title": "Sources de commerce extérieur et de données",
+        "description": "Sources pratiques pour la recherche de codes HS, l’étude de marché et les données commerciales.",
+        "items": [
+          {
+            "title": "Moteur de recherche de codes HS",
+            "description": "La page officielle de recherche tarifaire utilisée pour rechercher les codes HS/GTIP des produits.",
+            "href": "https://uygulama.gtb.gov.tr/Tara",
+            "domain": "uygulama.gtb.gov.tr"
+          },
+          {
+            "title": "Plateforme Easy Export",
+            "description": "Une plateforme officielle réunissant étude de marché, pays cibles, formation et outils de planification de l’export.",
+            "href": "https://www.kolayihracat.gov.tr/",
+            "domain": "kolayihracat.gov.tr"
+          },
+          {
+            "title": "Portail de données TurkStat",
+            "description": "Le portail officiel des données pour les statistiques du commerce extérieur, les tableaux de bord et les jeux de données ouverts.",
+            "href": "https://data.tuik.gov.tr/",
+            "domain": "data.tuik.gov.tr"
+          }
+        ]
+      }
+    ]
+  },
+  "quote": {
+    "eyebrow": "Obtenir un devis",
+    "title": "Envoyez-nous les informations clés pour un devis adapté à vos besoins opérationnels",
+    "description": "Partagez le type de cargaison, le pays de destination, les attentes en matière de transport et la sensibilité au temps. Notre équipe reviendra vers vous avec l’orientation adéquate.",
+    "form": {
+      "subjectPrefix": "Demande de devis",
+      "title": "Créer une demande de devis",
+      "description": "Lorsque vous envoyez le formulaire, votre application mail par défaut s’ouvre et vos informations sont préparées sous forme d’e-mail prêt à être envoyé.",
+      "buttonLabel": "Créer un e-mail de devis",
+      "fields": {
+        "company": {
+          "label": "Entreprise",
+          "placeholder": "Nom de votre entreprise"
+        },
+        "name": {
+          "label": "Personne de contact",
+          "placeholder": "Nom complet"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "exemple@mail.com"
+        },
+        "phone": {
+          "label": "Téléphone",
+          "placeholder": "+90 ..."
+        },
+        "service": {
+          "label": "Besoin de service",
+          "placeholder": "Dédouanement, transport routier, fret maritime..."
+        },
+        "message": {
+          "label": "Détails",
+          "placeholder": "Écrivez les détails de la cargaison et du processus"
+        }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Planifions ensemble vos besoins opérationnels.",
+    "description": "Partagez votre structure d’expédition, vos processus douaniers et le modèle opérationnel dont vous avez besoin. Notre équipe reviendra vers vous avec le flux le plus approprié.",
+    "form": {
+      "subjectPrefix": "Demande de contact",
+      "title": "Écrivez-nous",
+      "description": "Lorsque vous remplissez le formulaire, votre application mail par défaut s’ouvre et vos informations sont préparées sous forme d’e-mail prêt à être envoyé.",
+      "buttonLabel": "Envoyer un e-mail",
+      "fields": {
+        "name": {
+          "label": "Nom complet",
+          "placeholder": "Entrez votre nom"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "exemple@mail.com"
+        },
+        "phone": {
+          "label": "Téléphone",
+          "placeholder": "+90 ..."
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Écrivez vos besoins opérationnels"
+        }
+      }
+    },
+    "info": {
+      "emailLabel": "E-mail",
+      "phoneLabel": "Téléphone",
+      "addressLabel": "Adresse",
+      "addressValue": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 Istanbul, Turquie",
+      "instagramLabel": "Instagram",
+      "instagramValue": "@gennlogistics",
+      "instagramHref": "https://www.instagram.com/gennlogistics/",
+      "linkedinLabel": "LinkedIn",
+      "linkedinValue": "Genn Logistics",
+      "linkedinHref": "https://www.linkedin.com/company/genn-logistics/"
+    },
+    "location": {
+      "eyebrow": "Emplacement",
+      "title": "Afficher l’emplacement de Metroport Business sur la carte",
+      "mapTitle": "Metroport Business",
+      "mapQuery": "Metroport Business Istanbul"
+    }
+  },
+  "careers": {
+    "eyebrow": "Carrière",
+    "title": "Un espace de candidature ouvert pour ceux qui souhaitent rejoindre l’équipe qui fait avancer les opérations",
+    "description": "Nous recherchons de solides collaborateurs dans les domaines des opérations douanières, de la gestion client, de la planification du transport et de la coordination terrain. Vous pouvez nous envoyer votre CV et une courte note par e-mail via le formulaire ci-dessous.",
+    "highlights": [
+      "Expertise en opérations douanières",
+      "Planification logistique",
+      "Gestion des clients et des partenaires",
+      "Esprit analytique et sens des responsabilités"
+    ],
+    "form": {
+      "subjectPrefix": "Candidature carrière",
+      "title": "Envoyez votre candidature par e-mail",
+      "description": "Vos informations sont transférées vers votre application mail par défaut. Vous pouvez joindre votre CV dans la fenêtre d’e-mail qui s’ouvre.",
+      "buttonLabel": "Créer un e-mail de candidature",
+      "fields": {
+        "fullName": {
+          "label": "Nom complet",
+          "placeholder": "Entrez votre nom"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "exemple@mail.com"
+        },
+        "position": {
+          "label": "Poste",
+          "placeholder": "Domaine qui vous intéresse"
+        },
+        "experience": {
+          "label": "Expérience",
+          "placeholder": "Ex. 4 ans dans les opérations douanières"
+        },
+        "cv": {
+          "label": "CV",
+          "placeholder": ""
+        },
+        "message": {
+          "label": "Courte note",
+          "placeholder": "Parlez-nous brièvement de vous"
+        }
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "À propos de nous",
+    "title": "Nous sommes une équipe opérationnelle qui planifie ensemble les processus douaniers et logistiques",
+    "description": "Nous visons à construire un processus plus structuré, adapté aux besoins de nos clients en importation, exportation, transport et stockage. Nous accordons autant d’importance à la communication et à la coordination qu’à l’expertise technique.",
+    "slides": [
+      {
+        "eyebrow": "Planification",
+        "title": "Nous clarifions les besoins opérationnels et réglementaires avant de démarrer le processus",
+        "description": "Nous évaluons ensemble la documentation, le transport et le calendrier afin de réduire l’incertitude inutile."
+      },
+      {
+        "eyebrow": "Suivi",
+        "title": "Nous considérons la communication et la coordination comme une partie intégrante du processus",
+        "description": "Nous adoptons un retour régulier et une répartition claire des responsabilités afin que les clients gardent la maîtrise du processus."
+      }
+    ]
+  },
+  "mission": {
+    "eyebrow": "Notre objectif",
+    "title": "Rendre les processus plus clairs, plus suivables et plus fiables",
+    "description": "Nous savons qu’une même solution ne convient pas à chaque expédition. C’est pourquoi nous planifions selon chaque besoin et éloignons les opérations de la complexité inutile.",
+    "slides": [
+      {
+        "eyebrow": "Simplicité",
+        "title": "Nous voulons décomposer les opérations complexes en étapes de décision plus claires",
+        "description": "Au fur et à mesure que le processus grandit, nous cherchons à le gérer avec une structure plus lisible afin que la communication ne s’affaiblisse pas."
+      },
+      {
+        "eyebrow": "Confiance",
+        "title": "Nous voulons construire un processus où le client sait ce qui se passe et ce qu’il peut attendre",
+        "description": "Notre priorité est de créer un langage de service qui réduit l’incertitude et maintient une communication claire et cohérente."
+      }
+    ]
+  },
+  "partners": {
+    "eyebrow": "Nos partenaires",
+    "title": "Nous construisons des opérations plus équilibrées grâce à des partenariats qui renforcent le processus",
+    "showcase": {
+      "eyebrow": "Réseau de partenaires",
+      "title": "Marques et partenaires commerciaux soutenant le flux opérationnel",
+      "description": "Cette zone est conçue comme un mur de logos présentant des acteurs mondiaux et régionaux pouvant collaborer sur différentes lignes de transport et de logistique."
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "À propos",
+    "title": "Des réponses claires à qui nous sommes, ce que nous visons et avec qui nous travaillons",
+    "slides": [
+      {
+        "eyebrow": "Qui nous sommes",
+        "title": "Nous sommes une équipe fournissant un soutien à la planification et à la coordination dans les processus douaniers et logistiques",
+        "description": "Nous visons à créer un processus plus lisible en combinant opérations techniques, communication forte et discipline de suivi."
+      },
+      {
+        "eyebrow": "Notre objectif",
+        "title": "Nous voulons rendre les processus complexes plus simples et plus fiables",
+        "description": "Au lieu d’utiliser le même modèle pour chaque expédition, nous nous concentrons sur une orientation sur mesure et des flux opérationnels maîtrisés."
+      },
+      {
+        "eyebrow": "Nos partenaires",
+        "title": "Nous construisons une structure qui renforce le transport et les opérations de terrain grâce aux partenariats",
+        "description": "Nous soutenons le processus avec des partenaires avec lesquels nous collaborons dans le stockage, le transport et les connexions du commerce extérieur."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Qui nous sommes",
+        "description": "Nous sommes une équipe opérationnelle fournissant un soutien à la planification et à la coordination dans les processus douaniers, du commerce extérieur et de la logistique."
+      },
+      {
+        "title": "Notre objectif",
+        "description": "Nous voulons rendre les processus complexes plus simples, plus traçables et plus fiables."
+      },
+      {
+        "title": "Nos partenaires",
+        "description": "Nous renforçons le processus avec des partenaires de solution avec lesquels nous travaillons dans le transport, le stockage et les opérations de terrain."
+      }
+    ]
+  },
+  "discovery": {
+    "eyebrow": "Pourquoi nous",
+    "title": "Nous avons construit un cadre plus significatif qui reflète notre approche du service",
+    "items": [
+      {
+        "title": "La bonne orientation",
+        "description": "Au lieu d’utiliser le même modèle pour chaque expédition, le modèle opérationnel est façonné selon le besoin."
+      },
+      {
+        "title": "Communication claire",
+        "description": "Elle rend la communication entre les parties plus lisible et plus organisée à travers les différentes étapes du processus."
+      },
+      {
+        "title": "Discipline documentaire et process",
+        "description": "Elle crée une base opérationnelle plus solide en matière de documentation, de réglementation et de planification."
+      },
+      {
+        "title": "Soutien opérationnel flexible",
+        "description": "Elle s’adapte à différents scénarios en fonction des besoins en transport, stockage et douane."
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Opérations douanières et logistiques",
+    "title": "Obtenez la bonne planification et un soutien opérationnel fiable pour vos processus de commerce extérieur.",
+    "description": "Nous planifions avec vous le modèle opérationnel adapté à vos processus d’importation, d’exportation, de stockage et de transport international. Notre objectif est de rendre le processus plus structuré, plus suivable et plus fiable sans le compliquer inutilement.",
+    "primaryCta": "Voir les opérations",
+    "secondaryCta": "Demander un devis",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Communication et coordination des processus"
+      },
+      {
+        "value": "12+",
+        "label": "Réseau international de lignes et de partenaires"
+      },
+      {
+        "value": "%100",
+        "label": "Approche axée sur la documentation et le suivi des processus"
+      }
+    ],
+    "floatingLabels": {
+      "top": "Douane + Transport + Coordination",
+      "bottom": "Focus sur la réglementation et les processus"
+    },
+    "card": {
+      "eyebrow": "Conseil et planification",
+      "title": "Pas la même approche pour chaque expédition, mais une approche opérationnelle façonnée par le besoin",
+      "focusLabel": "Focus",
+      "focusValue": "Les bons documents, le bon timing, la bonne orientation",
+      "approachLabel": "Approche",
+      "approachValue": "Structure opérationnelle simple, contrôlée et orientée besoin",
+      "planningLabel": "Préparation et planification",
+      "planningValue": "Axé sur le processus",
+      "supportLabel": "Notre accompagnement",
+      "supportItems": [
+        "Préparation préalable des documents et des processus",
+        "Soutien à la planification transport et logistique",
+        "Communication, suivi et coordination"
+      ],
+      "serviceAreaLabel": "Domaine de service",
+      "serviceAreaValue": "Coordination douanière et logistique",
+      "workStyleLabel": "Mode de travail",
+      "workStyleValue": "Planification flexible selon le besoin"
+    }
+  },
+  "serviceCarousel": {
+    "eyebrow": "Domaines de service",
+    "title": "Nous présentons des catégories de services façonnées selon le besoin dans une structure simple.",
+    "description": "L’objectif ici n’est pas de décrire un système techniquement inexistant, mais de montrer plus clairement et plus proprement où vous apportez du soutien.",
+    "slides": [
+      {
+        "id": "01",
+        "tag": "Dédouanement",
+        "title": "Nous soutenons le suivi des documents, déclarations et réglementations dans les processus d’importation et d’exportation",
+        "description": "Nous gérons le flux documentaire requis, la préparation des déclarations et la coordination opérationnelle dans une structure plus ordonnée.",
+        "bullets": [
+          "Soutien au processus de déclaration",
+          "Flux de contrôle documentaire",
+          "Coordination et suivi"
+        ],
+        "accent": "from-[#d8b27d] via-[#9f6c38] to-[#2f2217]"
+      },
+      {
+        "id": "02",
+        "tag": "Transport routier",
+        "title": "Soutien planifié à l’expédition dans les opérations de transport routier national et international",
+        "description": "Pour les besoins en lots partiels ou complets, nous fournissons planification et coordination du processus en phase avec le rythme des expéditions.",
+        "bullets": [
+          "Planification du chargement",
+          "Coordination des passages frontaliers",
+          "Suivi du processus de livraison"
+        ],
+        "accent": "from-[#ecdfca] via-[#b38a58] to-[#463224]"
+      },
+      {
+        "id": "03",
+        "tag": "Fret maritime",
+        "title": "Une planification plus équilibrée des coûts et du transit dans le transport conteneurisé",
+        "description": "Nous créons un flux opérationnel plus maîtrisé dans le choix des lignes, les processus portuaires et le flux documentaire.",
+        "bullets": [
+          "Organisation FCL / LCL",
+          "Suivi des processus portuaires",
+          "Soutien documentaire"
+        ],
+        "accent": "from-[#d7dce0] via-[#698198] to-[#1f2f3d]"
+      },
+      {
+        "id": "04",
+        "tag": "Fret aérien",
+        "title": "Coordination rapide et organisée du fret aérien pour les expéditions sensibles au temps",
+        "description": "Pour les expéditions urgentes, nous transformons la capacité, la documentation et la coordination opérationnelle en un processus plus fluide.",
+        "bullets": [
+          "Coordination des réservations",
+          "Soutien à la préparation des documents",
+          "Planification axée sur les délais"
+        ],
+        "accent": "from-[#f3e5ce] via-[#c68d4a] to-[#4c3723]"
+      }
+    ],
+    "approach": {
+      "eyebrow": "Notre approche",
+      "title": "Nous expliquons notre façon de travailler à travers des étapes simples",
+      "steps": [
+        "Évaluation des besoins et du processus",
+        "Définition du bon modèle de service",
+        "Planification et coordination opérationnelles",
+        "Suivi du processus par la communication"
+      ]
+    },
+    "focus": {
+      "eyebrow": "Point de focus",
+      "stats": [
+        {
+          "value": "18",
+          "label": "Pays et connexions de commerce extérieur"
+        },
+        {
+          "value": "320+",
+          "label": "Suivi des processus, documents et coordination"
+        }
+      ]
+    }
+  },
+  "teamHighlight": {
+    "eyebrow": "Équipe et approche",
+    "title": "Une structure d’équipe qui traite le processus non seulement comme un transport, mais comme une responsabilité",
+    "description": "Pour les clients, ce qui crée la confiance n’est parfois pas seulement la liste des services, mais la manière dont vous suivez le processus et communiquez. Cette section existe pour exprimer cette confiance plus clairement.",
+    "workStyle": {
+      "label": "Mode de travail",
+      "value": "Communication planifiée, suivi régulier, responsabilité claire"
+    },
+    "stats": [
+      {
+        "value": "14+",
+        "label": "Structure d’équipe axée sur les processus douaniers et logistiques"
+      },
+      {
+        "value": "9 min",
+        "label": "Objectif de réponse rapide et de première orientation"
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Genn Logistics",
+    "title": "Communication claire, suivi structuré et flux fiable dans les processus douaniers et logistiques",
+    "description": "Nous visons à réunir planification, coordination et suivi des processus en un seul endroit pour vos activités de commerce extérieur et vos opérations.",
+    "linksTitle": "Pages",
+    "links": {
+      "home": "Accueil",
+      "services": "Services",
+      "documents": "Documents requis",
+      "ourDocuments": "Documents de l’entreprise",
+      "resources": "Liens utiles",
+      "about": "À propos",
+      "careers": "Carrière",
+      "contact": "Contact",
+      "quote": "Obtenir un devis"
+    },
+    "contactTitle": "Contact",
+    "contact": {
+      "email": "info@genn.com.tr",
+      "phone": "+90 212 843 59 00",
+      "address": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 Istanbul, Turquie",
+      "instagramLabel": "Instagram",
+      "instagramValue": "@gennlogistics",
+      "instagramHref": "https://www.instagram.com/gennlogistics/",
+      "linkedinLabel": "LinkedIn",
+      "linkedinValue": "Genn Logistics",
+      "linkedinHref": "https://www.linkedin.com/company/genn-logistics/"
+    },
+    "bottom": {
+      "copyright": "© 2026 Genn. Tous droits réservés.",
+      "slogan": "Opérations planifiées. Communication claire. Processus fiable.",
+      "credit": "Web Design by Ceren Yaman"
+    }
+  },
+  "navbar": {
+    "brand": "Genn",
+    "brandSubtitle": {
+      "lineOne": "Conseil en douane et",
+      "lineTwo": "Services logistiques S.A."
+    },
+    "links": {
+      "home": "Accueil",
+      "services": "Services",
+      "documents": "Ressources",
+      "about": "À propos",
+      "careers": "Carrière",
+      "contact": "Contact",
+      "quote": "Obtenir un devis"
+    },
+    "documentsMenu": {
+      "required": "Documents requis",
+      "certificates": "Documents de l’entreprise",
+      "resources": "Liens utiles"
+    },
+    "aboutMenu": {
+      "company": "Qui nous sommes",
+      "mission": "Notre objectif",
+      "partners": "Nos partenaires"
+    },
+    "mobileMenuLabel": "Menu"
+  }
+}

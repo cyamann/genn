@@ -15,6 +15,7 @@ const locales = {
   es: { label: "Español", shortLabel: "ES", flag: "🇪🇸" },
   ar: { label: "العربية", shortLabel: "AR", flag: "🇸🇦" },
   ru: { label: "Русский", shortLabel: "RU", flag: "🇷🇺" },
+  fr: { label: "Français", shortLabel: "FR", flag: "🇫🇷" },
   en: { label: "English", shortLabel: "EN", flag: "🇬🇧" },
 } as const;
 
