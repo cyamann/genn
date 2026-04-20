@@ -560,6 +560,10 @@
   },
   "navbar": {
     "brand": "Genn",
+    "brandSubtitle": {
+      "lineOne": "Zollberatung und",
+      "lineTwo": "Logistikdienstleistungen AG"
+    },
     "links": {
       "home": "Startseite",
       "services": "Dienstleistungen",

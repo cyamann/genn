@@ -12,6 +12,7 @@ type LocaleSwitcherProps = {
 const locales = {
   tr: { label: "Türkçe", shortLabel: "TR", flag: "🇹🇷" },
   de: { label: "Deutsch", shortLabel: "DE", flag: "🇩🇪" },
+  es: { label: "Español", shortLabel: "ES", flag: "🇪🇸" },
   en: { label: "English", shortLabel: "EN", flag: "🇬🇧" },
 } as const;
 

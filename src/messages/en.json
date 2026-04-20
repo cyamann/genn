@@ -560,6 +560,10 @@
   },
   "navbar": {
     "brand": "Genn",
+    "brandSubtitle": {
+      "lineOne": "Customs Consultancy and",
+      "lineTwo": "Logistics Services Inc."
+    },
     "links": {
       "home": "Home",
       "services": "Services",

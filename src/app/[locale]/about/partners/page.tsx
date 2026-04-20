@@ -8,7 +8,7 @@ import { getDictionary } from "@/src/lib/getDictionaries";
 export default async function AboutPartnersPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" | "de" }>;
+  params: Promise<{ locale: "tr" | "en" | "de" | "es" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);

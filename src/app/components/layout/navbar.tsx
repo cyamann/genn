@@ -56,8 +56,8 @@ export default function Navbar({
                 className={`hidden max-w-[210px] ml-8 text-[10px] font-medium leading-4 tracking-[0.08em] lg:block xl:text-[11px] ${isOverlay ? "text-white/72" : "text-[#6a5c4f]"
                   }`}
               >
-                <span className="block">Gümrük Müşavirliği ve</span>
-                <span className="block">Lojistik Hizmetleri A.Ş.</span>
+                <span className="block">{dict.navbar.brandSubtitle.lineOne}</span>
+                <span className="block">{dict.navbar.brandSubtitle.lineTwo}</span>
               </span>
             </div>
 

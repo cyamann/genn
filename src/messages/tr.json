@@ -560,6 +560,10 @@
   },
   "navbar": {
     "brand": "Genn",
+    "brandSubtitle": {
+      "lineOne": "Gümrük Müşavirliği ve",
+      "lineTwo": "Lojistik Hizmetleri A.Ş."
+    },
     "links": {
       "home": "Ana Sayfa",
       "services": "Hizmetler",

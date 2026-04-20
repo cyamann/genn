@@ -1,13 +1,13 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const locales = ["tr", "de", "en"] as const;
+const locales = ["tr", "de", "es", "en"] as const;
 const defaultLocale = "en";
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const legacyCertificatesMatch = pathname.match(/^\/(tr|de|en)\/belgelerimiz\/?$/);
+  const legacyCertificatesMatch = pathname.match(/^\/(tr|de|es|en)\/belgelerimiz\/?$/);
 
   if (legacyCertificatesMatch) {
     const locale = legacyCertificatesMatch[1];
@@ -30,6 +30,8 @@ export function middleware(request: NextRequest) {
     ? "tr"
     : lowered.includes("de")
       ? "de"
+      : lowered.includes("es")
+        ? "es"
       : defaultLocale;
 
   return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));

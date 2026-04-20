@@ -10,7 +10,7 @@ const pdfPath = "/belge.pdf";
 export default async function CertificatesPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" | "de" }>;
+  params: Promise<{ locale: "tr" | "en" | "de" | "es" }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
