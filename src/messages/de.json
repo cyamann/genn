@@ -424,7 +424,45 @@
       "serviceAreaLabel": "Leistungsbereich",
       "serviceAreaValue": "Zoll- und Logistikkoordination",
       "workStyleLabel": "Arbeitsweise",
-      "workStyleValue": "Flexible Planung je nach Bedarf"
+      "workStyleValue": "Flexible Planung je nach Bedarf",
+      "gazetteLabel": "Haben Sie heute das Amtsblatt geprüft?",
+      "gazetteLinkLabel": "Zum Amtsblatt"
+    }
+  },
+  "holidayCalendar": {
+    "eyebrow": "Kalender 2026",
+    "title": "Sehen Sie die offiziellen und religiösen Tage der Türkei auf einen Blick.",
+    "description": "Für das Jahr 2026 sind gesetzliche Feiertage, religiöse Festtage und halbe Feiertage im Kalender markiert. Durch den Monatswechsel können Sie wichtige Daten im Jahresverlauf schnell prüfen.",
+    "legend": [
+      { "tone": "official", "label": "Gesetzlicher Feiertag" },
+      { "tone": "religious", "label": "Religiöser Festtag" },
+      { "tone": "halfDay", "label": "Halber Tag" }
+    ],
+    "weekdays": ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+    "badges": {
+      "official": "Offiziell",
+      "religious": "Religiös",
+      "halfDay": "Halbtag"
+    },
+    "emptyState": "In diesem Monat gibt es keine markierten offiziellen oder religiösen Tage.",
+    "holidays": {
+      "newYear": "Neujahr",
+      "ramadanEve": "Vorabend des Ramadanfestes",
+      "ramadanDay1": "Ramadanfest Tag 1",
+      "ramadanDay2": "Ramadanfest Tag 2",
+      "ramadanDay3": "Ramadanfest Tag 3",
+      "nationalSovereignty": "Tag der Nationalen Souveränität und des Kindes",
+      "laborDay": "Tag der Arbeit und Solidarität",
+      "youthDay": "Atatürk-Gedenktag, Jugend- und Sporttag",
+      "sacrificeEve": "Vorabend des Opferfestes",
+      "sacrificeDay1": "Opferfest Tag 1",
+      "sacrificeDay2": "Opferfest Tag 2",
+      "sacrificeDay3": "Opferfest Tag 3",
+      "sacrificeDay4": "Opferfest Tag 4",
+      "democracyDay": "Tag der Demokratie und nationalen Einheit",
+      "victoryDay": "Tag des Sieges",
+      "republicEve": "Vorabend des Republiktags",
+      "republicDay": "Republiktag"
     }
   },
   "serviceCarousel": {

@@ -424,7 +424,45 @@
       "serviceAreaLabel": "服务领域",
       "serviceAreaValue": "报关与物流协调",
       "workStyleLabel": "工作方式",
-      "workStyleValue": "根据需求灵活规划"
+      "workStyleValue": "根据需求灵活规划",
+      "gazetteLabel": "您今天查看官方公报了吗？",
+      "gazetteLinkLabel": "打开官方公报"
+    }
+  },
+  "holidayCalendar": {
+    "eyebrow": "2026 日历",
+    "title": "一眼查看土耳其的官方与宗教重要日期。",
+    "description": "2026 年的官方假日、宗教节日和半天假期已在日历上标记。您可以切换月份，快速查看全年重要日期。",
+    "legend": [
+      { "tone": "official", "label": "官方假日" },
+      { "tone": "religious", "label": "宗教节日" },
+      { "tone": "halfDay", "label": "半天" }
+    ],
+    "weekdays": ["日", "一", "二", "三", "四", "五", "六"],
+    "badges": {
+      "official": "官方",
+      "religious": "宗教",
+      "halfDay": "半天"
+    },
+    "emptyState": "本月没有标记的官方或宗教日期。",
+    "holidays": {
+      "newYear": "元旦",
+      "ramadanEve": "开斋节前夕",
+      "ramadanDay1": "开斋节第 1 天",
+      "ramadanDay2": "开斋节第 2 天",
+      "ramadanDay3": "开斋节第 3 天",
+      "nationalSovereignty": "国家主权与儿童节",
+      "laborDay": "劳动与团结日",
+      "youthDay": "纪念阿塔图尔克、青年和体育日",
+      "sacrificeEve": "宰牲节前夕",
+      "sacrificeDay1": "宰牲节第 1 天",
+      "sacrificeDay2": "宰牲节第 2 天",
+      "sacrificeDay3": "宰牲节第 3 天",
+      "sacrificeDay4": "宰牲节第 4 天",
+      "democracyDay": "民主和民族团结日",
+      "victoryDay": "胜利日",
+      "republicEve": "共和国日前夕",
+      "republicDay": "共和国日"
     }
   },
   "serviceCarousel": {

@@ -424,7 +424,45 @@
       "serviceAreaLabel": "مجال الخدمة",
       "serviceAreaValue": "تنسيق الجمارك واللوجستيات",
       "workStyleLabel": "أسلوب العمل",
-      "workStyleValue": "تخطيط مرن حسب الحاجة"
+      "workStyleValue": "تخطيط مرن حسب الحاجة",
+      "gazetteLabel": "هل اطلعتم على الجريدة الرسمية اليوم؟",
+      "gazetteLinkLabel": "فتح الجريدة الرسمية"
+    }
+  },
+  "holidayCalendar": {
+    "eyebrow": "تقويم 2026",
+    "title": "اطلع على المناسبات الرسمية والدينية في تركيا بنظرة واحدة.",
+    "description": "تم تمييز العطل الرسمية والأيام الدينية وأنصاف الأيام لعام 2026 على التقويم. يمكنكم التنقل بين الأشهر لمراجعة التواريخ المهمة بسرعة طوال العام.",
+    "legend": [
+      { "tone": "official", "label": "عطلة رسمية" },
+      { "tone": "religious", "label": "مناسبة دينية" },
+      { "tone": "halfDay", "label": "نصف يوم" }
+    ],
+    "weekdays": ["أحد", "اثن", "ثلا", "أرب", "خمي", "جمع", "سبت"],
+    "badges": {
+      "official": "رسمي",
+      "religious": "ديني",
+      "halfDay": "نصف يوم"
+    },
+    "emptyState": "لا توجد مناسبات رسمية أو دينية مميزة في هذا الشهر.",
+    "holidays": {
+      "newYear": "رأس السنة",
+      "ramadanEve": "وقفة عيد الفطر",
+      "ramadanDay1": "عيد الفطر - اليوم الأول",
+      "ramadanDay2": "عيد الفطر - اليوم الثاني",
+      "ramadanDay3": "عيد الفطر - اليوم الثالث",
+      "nationalSovereignty": "يوم السيادة الوطنية والطفل",
+      "laborDay": "يوم العمل والتضامن",
+      "youthDay": "ذكرى أتاتورك ويوم الشباب والرياضة",
+      "sacrificeEve": "وقفة عيد الأضحى",
+      "sacrificeDay1": "عيد الأضحى - اليوم الأول",
+      "sacrificeDay2": "عيد الأضحى - اليوم الثاني",
+      "sacrificeDay3": "عيد الأضحى - اليوم الثالث",
+      "sacrificeDay4": "عيد الأضحى - اليوم الرابع",
+      "democracyDay": "يوم الديمقراطية والوحدة الوطنية",
+      "victoryDay": "يوم النصر",
+      "republicEve": "عشية يوم الجمهورية",
+      "republicDay": "يوم الجمهورية"
     }
   },
   "serviceCarousel": {

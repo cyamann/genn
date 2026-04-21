@@ -136,6 +136,20 @@ export default function Hero({ locale }: HeroProps) {
                       {dict.hero.card.workStyleValue}
                     </p>
                   </div>
+
+                  <div className="rounded-[20px] border border-[#d6a35d]/20 bg-[#d6a35d]/8 p-4">
+                    <p className="text-sm font-medium leading-6 text-[#f4dfbf]">
+                      {dict.hero.card.gazetteLabel}
+                    </p>
+                    <Link
+                      href="https://www.resmigazete.gov.tr/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-2 inline-flex text-sm font-semibold text-white underline decoration-[#d6a35d]/60 underline-offset-4 transition hover:text-[#f4dfbf] sm:text-base"
+                    >
+                      {dict.hero.card.gazetteLinkLabel}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

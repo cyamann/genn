@@ -424,7 +424,45 @@
       "serviceAreaLabel": "Área de servicio",
       "serviceAreaValue": "Coordinación aduanera y logística",
       "workStyleLabel": "Forma de trabajo",
-      "workStyleValue": "Planificación flexible según la necesidad"
+      "workStyleValue": "Planificación flexible según la necesidad",
+      "gazetteLabel": "¿Ha revisado hoy el Boletín Oficial?",
+      "gazetteLinkLabel": "Abrir el Boletín Oficial"
+    }
+  },
+  "holidayCalendar": {
+    "eyebrow": "Calendario 2026",
+    "title": "Vea de un vistazo las fechas oficiales y religiosas de Turquía.",
+    "description": "Para 2026, los festivos oficiales, los días religiosos y los medios días están marcados en el calendario. Puede cambiar de mes para revisar rápidamente las fechas importantes del año.",
+    "legend": [
+      { "tone": "official", "label": "Festivo oficial" },
+      { "tone": "religious", "label": "Festividad religiosa" },
+      { "tone": "halfDay", "label": "Medio día" }
+    ],
+    "weekdays": ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
+    "badges": {
+      "official": "Oficial",
+      "religious": "Religioso",
+      "halfDay": "Medio día"
+    },
+    "emptyState": "No hay fechas oficiales o religiosas marcadas en este mes.",
+    "holidays": {
+      "newYear": "Año Nuevo",
+      "ramadanEve": "Víspera del Ramadán",
+      "ramadanDay1": "Ramadán Día 1",
+      "ramadanDay2": "Ramadán Día 2",
+      "ramadanDay3": "Ramadán Día 3",
+      "nationalSovereignty": "Día de la Soberanía Nacional y del Niño",
+      "laborDay": "Día del Trabajo y la Solidaridad",
+      "youthDay": "Conmemoración de Atatürk, Juventud y Deporte",
+      "sacrificeEve": "Víspera de la Fiesta del Sacrificio",
+      "sacrificeDay1": "Fiesta del Sacrificio Día 1",
+      "sacrificeDay2": "Fiesta del Sacrificio Día 2",
+      "sacrificeDay3": "Fiesta del Sacrificio Día 3",
+      "sacrificeDay4": "Fiesta del Sacrificio Día 4",
+      "democracyDay": "Día de la Democracia y la Unidad Nacional",
+      "victoryDay": "Día de la Victoria",
+      "republicEve": "Víspera del Día de la República",
+      "republicDay": "Día de la República"
     }
   },
   "serviceCarousel": {

@@ -424,7 +424,45 @@
       "serviceAreaLabel": "Hizmet alanı",
       "serviceAreaValue": "Gümrük ve lojistik koordinasyonu",
       "workStyleLabel": "Çalışma biçimi",
-      "workStyleValue": "İhtiyaca göre esnek planlama"
+      "workStyleValue": "İhtiyaca göre esnek planlama",
+      "gazetteLabel": "Bugün Resmi Gazeteyi İncelediniz mi?",
+      "gazetteLinkLabel": "Resmi Gazete'ye Git"
+    }
+  },
+  "holidayCalendar": {
+    "eyebrow": "2026 Takvimi",
+    "title": "Türkiye resmi ve dini günlerini tek bakışta görün.",
+    "description": "2026 yılı için resmi tatiller, dini bayram günleri ve yarım günler takvim üzerinde işaretlendi. Ayları değiştirerek yıl içindeki önemli tarihleri hızlıca inceleyebilirsiniz.",
+    "legend": [
+      { "tone": "official", "label": "Resmi tatil" },
+      { "tone": "religious", "label": "Dini bayram günü" },
+      { "tone": "halfDay", "label": "Yarım gün" }
+    ],
+    "weekdays": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"],
+    "badges": {
+      "official": "Resmi",
+      "religious": "Dini",
+      "halfDay": "Yarım gün"
+    },
+    "emptyState": "Bu ay işaretli resmi veya dini gün bulunmuyor.",
+    "holidays": {
+      "newYear": "Yılbaşı",
+      "ramadanEve": "Ramazan Bayramı Arifesi",
+      "ramadanDay1": "Ramazan Bayramı 1. Gün",
+      "ramadanDay2": "Ramazan Bayramı 2. Gün",
+      "ramadanDay3": "Ramazan Bayramı 3. Gün",
+      "nationalSovereignty": "23 Nisan Ulusal Egemenlik ve Çocuk Bayramı",
+      "laborDay": "1 Mayıs Emek ve Dayanışma Günü",
+      "youthDay": "19 Mayıs Atatürk'ü Anma, Gençlik ve Spor Bayramı",
+      "sacrificeEve": "Kurban Bayramı Arifesi",
+      "sacrificeDay1": "Kurban Bayramı 1. Gün",
+      "sacrificeDay2": "Kurban Bayramı 2. Gün",
+      "sacrificeDay3": "Kurban Bayramı 3. Gün",
+      "sacrificeDay4": "Kurban Bayramı 4. Gün",
+      "democracyDay": "15 Temmuz Demokrasi ve Milli Birlik Günü",
+      "victoryDay": "30 Ağustos Zafer Bayramı",
+      "republicEve": "Cumhuriyet Bayramı Arifesi",
+      "republicDay": "29 Ekim Cumhuriyet Bayramı"
     }
   },
   "serviceCarousel": {

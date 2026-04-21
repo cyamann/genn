@@ -424,7 +424,45 @@
       "serviceAreaLabel": "Service area",
       "serviceAreaValue": "Customs and logistics coordination",
       "workStyleLabel": "Working style",
-      "workStyleValue": "Flexible planning based on need"
+      "workStyleValue": "Flexible planning based on need",
+      "gazetteLabel": "Have you reviewed today's Official Gazette?",
+      "gazetteLinkLabel": "Open the Official Gazette"
+    }
+  },
+  "holidayCalendar": {
+    "eyebrow": "2026 Calendar",
+    "title": "See Turkey's official and religious dates at a glance.",
+    "description": "For 2026, official holidays, religious feast days, and half days are marked on the calendar. You can switch months to quickly review important dates throughout the year.",
+    "legend": [
+      { "tone": "official", "label": "Official holiday" },
+      { "tone": "religious", "label": "Religious holiday" },
+      { "tone": "halfDay", "label": "Half day" }
+    ],
+    "weekdays": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "badges": {
+      "official": "Official",
+      "religious": "Religious",
+      "halfDay": "Half day"
+    },
+    "emptyState": "There are no marked official or religious dates in this month.",
+    "holidays": {
+      "newYear": "New Year's Day",
+      "ramadanEve": "Ramadan Feast Eve",
+      "ramadanDay1": "Ramadan Feast Day 1",
+      "ramadanDay2": "Ramadan Feast Day 2",
+      "ramadanDay3": "Ramadan Feast Day 3",
+      "nationalSovereignty": "National Sovereignty and Children's Day",
+      "laborDay": "Labour and Solidarity Day",
+      "youthDay": "Commemoration of Ataturk, Youth and Sports Day",
+      "sacrificeEve": "Sacrifice Feast Eve",
+      "sacrificeDay1": "Sacrifice Feast Day 1",
+      "sacrificeDay2": "Sacrifice Feast Day 2",
+      "sacrificeDay3": "Sacrifice Feast Day 3",
+      "sacrificeDay4": "Sacrifice Feast Day 4",
+      "democracyDay": "Democracy and National Unity Day",
+      "victoryDay": "Victory Day",
+      "republicEve": "Republic Day Eve",
+      "republicDay": "Republic Day"
     }
   },
   "serviceCarousel": {
