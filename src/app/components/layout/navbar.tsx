@@ -61,7 +61,7 @@ export default function Navbar({
               </span>
             </div>
 
-            <div className="hidden items-center gap-4 text-sm font-medium lg:flex xl:gap-5">
+            <div className="relative hidden items-center gap-4 pb-4 text-sm font-medium lg:flex xl:gap-5">
               <Link href={`/${locale}`} className={`${menuLinkClassName} whitespace-nowrap`}>
                 {dict.navbar.links.home}
               </Link>
@@ -151,6 +151,69 @@ export default function Navbar({
               >
                 {dict.navbar.links.contact}
               </Link>
+
+              <div
+                aria-hidden="true"
+                className={`pointer-events-none absolute -bottom-2 left-0 h-6 w-full overflow-hidden ${
+                  isOverlay ? "opacity-90" : "opacity-70"
+                }`}
+              >
+                <div
+                  className={`absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 ${
+                    isOverlay ? "bg-[#7cb7ff]/35" : "bg-[#4f8fe0]/30"
+                  }`}
+                />
+                <div className="navbar-truck-motion absolute inset-y-0 left-0 w-full">
+                  <div className="absolute left-0 top-1/2 -translate-y-1/2 scale-[0.9]">
+                    <svg
+                      viewBox="0 0 76 36"
+                      aria-hidden="true"
+                      className={`navbar-truck-icon h-9 w-[4.75rem] ${
+                        isOverlay ? "drop-shadow-[0_0_14px_rgba(77,153,255,0.45)]" : ""
+                      }`}
+                    >
+                      <defs>
+                        <linearGradient id="truckTrailer" x1="5" y1="6" x2="48" y2="24" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#f7fbff" />
+                          <stop offset="1" stopColor="#d6e8ff" />
+                        </linearGradient>
+                        <linearGradient id="truckCab" x1="46" y1="10" x2="70" y2="26" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#4fa4ff" />
+                          <stop offset="1" stopColor="#1f6fda" />
+                        </linearGradient>
+                        <linearGradient id="truckGlass" x1="55" y1="12" x2="64" y2="20" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#dff3ff" />
+                          <stop offset="1" stopColor="#8cc8ff" />
+                        </linearGradient>
+                      </defs>
+                      <rect x="4" y="10" width="38" height="14" rx="3.5" fill="url(#truckTrailer)" />
+                      <rect x="7" y="13" width="15" height="2" rx="1" fill="#7daeea" opacity="0.75" />
+                      <rect x="7" y="17" width="24" height="1.8" rx="0.9" fill="#c2d9f7" opacity="0.9" />
+                      <rect x="44" y="13" width="4" height="10" rx="1.2" fill="#2259a8" />
+                      <path
+                        d="M48 13h10.5c2.7 0 4.3.4 5.5 1.9l4.4 5.5c.7.9 1.1 1.7 1.1 2.8v.8c0 1.7-1.3 3-3 3H48z"
+                        fill="url(#truckCab)"
+                      />
+                      <path
+                        d="M57 14.2h5.4c1.2 0 1.9.2 2.5 1l2.9 3.8c.3.4.4.8.4 1.3v.4H57z"
+                        fill="url(#truckGlass)"
+                      />
+                      <rect x="58.5" y="15.5" width="2.5" height="4.8" rx="1" fill="#e9f7ff" opacity="0.95" />
+                      <rect x="62.2" y="15.5" width="4.5" height="4.8" rx="1.1" fill="#a8d8ff" opacity="0.95" />
+                      <rect x="44" y="24" width="25" height="2.4" rx="1.2" fill="#174d96" opacity="0.85" />
+                      <circle cx="18" cy="28" r="5.2" fill="#203246" />
+                      <circle cx="18" cy="28" r="2.5" fill="#f5f8fb" />
+                      <circle cx="52" cy="28" r="5.2" fill="#203246" />
+                      <circle cx="52" cy="28" r="2.5" fill="#f5f8fb" />
+                      <circle cx="65" cy="28" r="5.2" fill="#203246" />
+                      <circle cx="65" cy="28" r="2.5" fill="#f5f8fb" />
+                      <rect x="5" y="24.5" width="38" height="2.1" rx="1.05" fill="#8cb8ef" opacity="0.9" />
+                      <rect x="69.5" y="22.4" width="3.2" height="1.6" rx="0.8" fill="#ffd98a" />
+                      <circle cx="72" cy="23.2" r="1.6" fill="#ffd98a" opacity="0.45" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="hidden items-center gap-3 lg:flex">

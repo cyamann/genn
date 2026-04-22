@@ -107,6 +107,24 @@ body {
   animation: dna-float-slow 18s ease-in-out infinite;
 }
 
+.navbar-truck-motion {
+  animation: navbar-truck-drive 9s linear infinite;
+  will-change: transform;
+}
+
+.navbar-truck-icon {
+  animation: navbar-truck-bob 0.95s ease-in-out infinite;
+}
+
+.footer-ship-motion {
+  animation: footer-ship-sail 14s linear infinite;
+  will-change: transform;
+}
+
+.footer-ship-icon {
+  animation: footer-ship-bob 2.4s ease-in-out infinite;
+}
+
 @keyframes dna-float {
   0%,
   100% {
@@ -126,5 +144,47 @@ body {
 
   50% {
     transform: translate3d(0, 18px, 0);
+  }
+}
+
+@keyframes navbar-truck-drive {
+  0% {
+    transform: translate3d(-12%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(92%, 0, 0);
+  }
+}
+
+@keyframes navbar-truck-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes footer-ship-sail {
+  0% {
+    transform: translate3d(-12%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(92%, 0, 0);
+  }
+}
+
+@keyframes footer-ship-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1.5px);
   }
 }
