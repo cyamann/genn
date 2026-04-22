@@ -37,8 +37,8 @@ export default function Navbar({
               <Link
                 href={`/${locale}`}
                 className={`flex flex-col items-start rounded-[24px] px-3 py-2 ${isOverlay
-                  ? "border border-[rgba(214,163,93,0.22)] bg-[linear-gradient(180deg,#f8f3ea,#efe5d3)] shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
-                  : "border border-[#eadfce] bg-[#fcfaf6]"
+                  ? "border border-[rgba(214,163,93,0.22)] bg-white shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
+                  : "border border-[#eadfce] bg-white"
                   }`}
                 aria-label={dict.navbar.brand}
               >
