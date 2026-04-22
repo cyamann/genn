@@ -14,12 +14,8 @@ export default async function LocaleLayout({
   const dictionary = await getDictionary(locale);
 
   return (
-    <html lang={locale}>
-      <body>
-        <DictionaryProvider dictionary={dictionary}>
-          {children}
-        </DictionaryProvider>
-      </body>
-    </html>
+    <DictionaryProvider dictionary={dictionary}>
+      {children}
+    </DictionaryProvider>
   );
 }
