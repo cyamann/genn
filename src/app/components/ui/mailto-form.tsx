@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 type MailtoFormProps = {
-  email: string;
+  email?: string;
   subjectPrefix: string;
   title: string;
   description: string;
@@ -18,7 +18,6 @@ type MailtoFormProps = {
 };
 
 export default function MailtoForm({
-  email,
   subjectPrefix,
   title,
   description,
@@ -30,6 +29,8 @@ export default function MailtoForm({
     Object.fromEntries(fields.map((field) => [field.id, ""]))
   );
   const [fileNames, setFileNames] = useState<Record<string, string>>({});
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [statusMessage, setStatusMessage] = useState("");
 
   const isDark = theme === "dark";
 
@@ -47,22 +48,51 @@ export default function MailtoForm({
     }));
   }
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setStatus("sending");
+    setStatusMessage("");
 
     const primaryValue = values.name || values.fullName || values.company || "Yeni Talep";
     const subject = `${subjectPrefix}: ${primaryValue}`;
-    const body = fields
-      .map((field) => {
-        if (field.type === "file") {
-          return `${field.label}: ${fileNames[field.id] || "Secilmedi"}`;
-        }
+    const submittedFields = fields.map((field) => ({
+      id: field.id,
+      label: field.label,
+      value: field.type === "file" ? fileNames[field.id] || "Secilmedi" : values[field.id] || "-",
+    }));
 
-        return `${field.label}: ${values[field.id] || "-"}`;
-      })
-      .join("\n");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          subject,
+          fields: submittedFields,
+        }),
+      });
 
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if (!response.ok) {
+        const result = (await response.json().catch(() => null)) as {
+          error?: string;
+        } | null;
+
+        throw new Error(result?.error || "Mail gonderilemedi");
+      }
+
+      setStatus("sent");
+      setStatusMessage("Mesajınız gönderildi.");
+      setValues(Object.fromEntries(fields.map((field) => [field.id, ""])));
+      setFileNames({});
+    } catch (error) {
+      setStatus("error");
+      setStatusMessage(
+        error instanceof Error
+          ? error.message
+          : "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin."
+      );
+    }
   }
 
   return (
@@ -107,7 +137,7 @@ export default function MailtoForm({
                     className={`w-full text-sm ${isDark ? "text-white file:mr-4 file:rounded-full file:border-0 file:bg-[#d6a35d] file:px-4 file:py-2 file:text-[#1d1814]" : "text-[#1d1814] file:mr-4 file:rounded-full file:border-0 file:bg-[#1d1814] file:px-4 file:py-2 file:text-white"}`}
                   />
                   <p className={`mt-3 text-xs ${isDark ? "text-white/55" : "text-[#7d7266]"}`}>
-                    Secilen dosya mail govdesine yazilir. Dosyayi acilan mail ekranina ekleyebilirsiniz.
+                    Seçilen dosya adı başvuru notuna eklenir.
                   </p>
                 </div>
               ) : (
@@ -126,14 +156,25 @@ export default function MailtoForm({
 
       <button
         type="submit"
+        disabled={status === "sending"}
         className={`mt-8 rounded-full px-6 py-3 text-sm font-semibold transition ${
           isDark
             ? "bg-[#d6a35d] text-[#1d1814] hover:bg-[#e4b97f]"
             : "bg-[#1d1814] text-white hover:bg-[#342821]"
-        }`}
+        } disabled:cursor-not-allowed disabled:opacity-60`}
       >
-        {buttonLabel}
+        {status === "sending" ? "Gönderiliyor..." : buttonLabel}
       </button>
+
+      {statusMessage ? (
+        <p
+          className={`mt-4 text-sm font-medium ${
+            status === "sent" ? "text-[#3f6f3a]" : "text-[#9a3f36]"
+          }`}
+        >
+          {statusMessage}
+        </p>
+      ) : null}
     </form>
   );
 }

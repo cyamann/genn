@@ -4,7 +4,7 @@ import "./[locale]/globals.css";
 
 export const metadata: Metadata = {
   title: "GENN Gümrük Müşavirliği",
-  description: "Gümrük Müşavirliği ve Lojistik Hizmetleri A.Ş.",
+  description: "Gen Gümrük Müşavirliği ve Lojistik Hizmetleri A.Ş.",
   icons: {
     icon: "/icon.png",
     apple: "/icon.png",

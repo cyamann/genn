@@ -25,7 +25,7 @@ export default function ServiceCarousel() {
     <SectionReveal className="relative overflow-hidden bg-[#f5f1e8] px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-12 lg:py-16 xl:px-16">
       <DnaBackground tone="light" density="page" />
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+        <div className="max-w-3xl">
           <div>
             <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#9a7444] sm:text-xs">
               {dict.serviceCarousel.eyebrow}
@@ -34,11 +34,11 @@ export default function ServiceCarousel() {
             <h2 className="max-w-xl text-3xl font-semibold leading-[1.08] tracking-tight text-[#1d1814] sm:text-4xl md:text-5xl">
               {dict.serviceCarousel.title}
             </h2>
-          </div>
 
-          <p className="max-w-2xl text-sm leading-7 text-[#5f554c] sm:text-base md:text-lg">
-            {dict.serviceCarousel.description}
-          </p>
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-[#5f554c] sm:text-base md:text-lg">
+              {dict.serviceCarousel.description}
+            </p>
+          </div>
         </div>
 
         <div className="mt-8 flex flex-wrap gap-2.5 sm:gap-3">

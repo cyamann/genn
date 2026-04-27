@@ -46,7 +46,6 @@ export default async function CareersPage({
             </div>
 
             <MailtoForm
-              email="kariyer@sirket.com"
               subjectPrefix={dict.careers.form.subjectPrefix}
               title={dict.careers.form.title}
               description={dict.careers.form.description}

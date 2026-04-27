@@ -19,13 +19,13 @@ export default async function ContactPage({
 
   return (
     <>
-      <div className="relative overflow-hidden bg-[#191512]">
-        <DnaBackground tone="dark" density="page" />
+      <div className="relative overflow-hidden bg-[#f5f1e8]">
+        <DnaBackground tone="light" density="page" />
         <Navbar locale={locale} variant="overlay" />
-        <main className="px-6 pb-24 pt-36 text-white md:px-10 md:pb-28 md:pt-40 lg:px-16 lg:pt-44">
+        <main className="px-6 pb-24 pt-36 text-[#1d1814] md:px-10 md:pb-28 md:pt-40 lg:px-16 lg:pt-44">
           <SectionReveal className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_0.9fr]">
             <div>
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#d2b48c]">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#9a7444]">
                 {dict.contact.eyebrow}
               </p>
 
@@ -33,13 +33,13 @@ export default async function ContactPage({
                 {dict.contact.title}
               </h1>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f554c]">
                 {dict.contact.description}
               </p>
             </div>
 
             <MailtoForm
-              email="info@genn.com.tr"
+              theme="light"
               subjectPrefix={dict.contact.form.subjectPrefix}
               title={dict.contact.form.title}
               description={dict.contact.form.description}
@@ -76,19 +76,19 @@ export default async function ContactPage({
             className="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-2 xl:grid-cols-5"
             delay={120}
           >
-            <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
-              <p className="text-white/50">{dict.contact.info.emailLabel}</p>
-              <p className="mt-2 text-lg text-white">info@genn.com.tr</p>
+            <div className="rounded-[28px] border border-[#eadfce] bg-white p-6 shadow-[0_18px_42px_rgba(30,24,18,0.06)]">
+              <p className="text-[#6a5c4f]">{dict.contact.info.emailLabel}</p>
+              <p className="mt-2 text-lg text-[#1d1814]">info@genn.com.tr</p>
             </div>
 
-            <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
-              <p className="text-white/50">{dict.contact.info.phoneLabel}</p>
-              <p className="mt-2 text-lg text-white">+90 212 843 59 00</p>
+            <div className="rounded-[28px] border border-[#eadfce] bg-white p-6 shadow-[0_18px_42px_rgba(30,24,18,0.06)]">
+              <p className="text-[#6a5c4f]">{dict.contact.info.phoneLabel}</p>
+              <p className="mt-2 text-lg text-[#1d1814]">+90 212 843 59 00</p>
             </div>
 
-            <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
-              <p className="text-white/50">{dict.contact.info.addressLabel}</p>
-              <p className="mt-2 text-lg text-white">{dict.contact.info.addressValue}</p>
+            <div className="rounded-[28px] border border-[#eadfce] bg-white p-6 shadow-[0_18px_42px_rgba(30,24,18,0.06)]">
+              <p className="text-[#6a5c4f]">{dict.contact.info.addressLabel}</p>
+              <p className="mt-2 text-lg text-[#1d1814]">{dict.contact.info.addressValue}</p>
             </div>
 
             {instagramHref ? (
@@ -96,15 +96,15 @@ export default async function ContactPage({
                 href={instagramHref}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-[28px] border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+                className="rounded-[28px] border border-[#eadfce] bg-white p-6 shadow-[0_18px_42px_rgba(30,24,18,0.06)] transition hover:bg-[#fcfaf6]"
               >
-                <p className="text-white/50">{dict.contact.info.instagramLabel}</p>
-                <p className="mt-2 text-lg text-white">{dict.contact.info.instagramValue}</p>
+                <p className="text-[#6a5c4f]">{dict.contact.info.instagramLabel}</p>
+                <p className="mt-2 text-lg text-[#1d1814]">{dict.contact.info.instagramValue}</p>
               </Link>
             ) : (
-              <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
-                <p className="text-white/50">{dict.contact.info.instagramLabel}</p>
-                <p className="mt-2 text-lg text-white">{dict.contact.info.instagramValue}</p>
+              <div className="rounded-[28px] border border-[#eadfce] bg-white p-6 shadow-[0_18px_42px_rgba(30,24,18,0.06)]">
+                <p className="text-[#6a5c4f]">{dict.contact.info.instagramLabel}</p>
+                <p className="mt-2 text-lg text-[#1d1814]">{dict.contact.info.instagramValue}</p>
               </div>
             )}
 
@@ -113,26 +113,26 @@ export default async function ContactPage({
                 href={linkedinHref}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-[28px] border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+                className="rounded-[28px] border border-[#eadfce] bg-white p-6 shadow-[0_18px_42px_rgba(30,24,18,0.06)] transition hover:bg-[#fcfaf6]"
               >
-                <p className="text-white/50">{dict.contact.info.linkedinLabel}</p>
-                <p className="mt-2 text-lg text-white">{dict.contact.info.linkedinValue}</p>
+                <p className="text-[#6a5c4f]">{dict.contact.info.linkedinLabel}</p>
+                <p className="mt-2 text-lg text-[#1d1814]">{dict.contact.info.linkedinValue}</p>
               </Link>
             ) : (
-              <div className="rounded-[28px] border border-white/10 bg-white/5 p-6">
-                <p className="text-white/50">{dict.contact.info.linkedinLabel}</p>
-                <p className="mt-2 text-lg text-white">{dict.contact.info.linkedinValue}</p>
+              <div className="rounded-[28px] border border-[#eadfce] bg-white p-6 shadow-[0_18px_42px_rgba(30,24,18,0.06)]">
+                <p className="text-[#6a5c4f]">{dict.contact.info.linkedinLabel}</p>
+                <p className="mt-2 text-lg text-[#1d1814]">{dict.contact.info.linkedinValue}</p>
               </div>
             )}
           </SectionReveal>
 
           <SectionReveal className="mx-auto mt-10 max-w-6xl" delay={160}>
             <div className="mb-5">
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#d2b48c]">
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#9a7444]">
                 {dict.contact.location.eyebrow}
               </p>
 
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#1d1814] sm:text-3xl">
                 {dict.contact.location.title}
               </h2>
             </div>

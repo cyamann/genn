@@ -21,8 +21,8 @@ export default function Navbar({
   const isOverlay = variant === "overlay";
 
   const shellClassName = isOverlay
-    ? "border-[rgba(214,163,93,0.18)] bg-[linear-gradient(90deg,rgba(55,45,35,0.88),rgba(34,28,23,0.9))] text-white shadow-[0_24px_80px_rgba(0,0,0,0.22)]"
-    : "border-[#eadfce] bg-[rgba(255,255,255,0.92)] text-[#1d1814] shadow-[0_18px_50px_rgba(30,24,18,0.08)]";
+    ? "border-[#eadfce]/70 bg-transparent text-[#1d1814]"
+    : "border-[#eadfce]/70 bg-transparent text-[#1d1814]";
 
   const menuLinkClassName = "transition hover:opacity-75";
 
@@ -33,11 +33,11 @@ export default function Navbar({
           className={`rounded-[30px] border px-4 py-4 backdrop-blur-xl md:rounded-full md:px-6 ${shellClassName}`}
         >
           <div className="flex items-center justify-between gap-5">
-            <div className="flex items-center lg:min-w-[390px]">
+            <div className="ml-40 flex flex-col items-start lg:ml-5 lg:min-w-[390px]">
               <Link
                 href={`/${locale}`}
                 className={`flex flex-col items-start rounded-[24px] px-3 py-2 ${isOverlay
-                  ? "border border-[rgba(214,163,93,0.22)] bg-white shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
+                  ? "border border-[#eadfce] bg-white shadow-[0_18px_40px_rgba(30,24,18,0.08)]"
                   : "border border-[#eadfce] bg-white"
                   }`}
                 aria-label={dict.navbar.brand}
@@ -52,12 +52,8 @@ export default function Navbar({
                 />
               </Link>
 
-              <span
-                className={`hidden max-w-[210px] ml-8 text-[10px] font-medium leading-4 tracking-[0.08em] lg:block xl:text-[11px] ${isOverlay ? "text-white/72" : "text-[#6a5c4f]"
-                  }`}
-              >
-                <span className="block">{dict.navbar.brandSubtitle.lineOne}</span>
-                <span className="block">{dict.navbar.brandSubtitle.lineTwo}</span>
+              <span className="mt-2 hidden whitespace-nowrap text-[10px] font-medium leading-4 tracking-[0.08em] text-[#6a5c4f] lg:block xl:text-[11px]">
+                {dict.navbar.brandSubtitle.lineOne} {dict.navbar.brandSubtitle.lineTwo}
               </span>
             </div>
 
@@ -85,21 +81,21 @@ export default function Navbar({
                   <div className="rounded-[28px] border border-[#eadfce] bg-white p-3 text-[#1d1814] shadow-[0_24px_70px_rgba(30,24,18,0.12)]">
                     <Link
                       href={`/${locale}/documents`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-black/5"
+                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
                     >
                       {dict.navbar.documentsMenu.required}
                     </Link>
 
                     <Link
                       href={`/${locale}/documents/certificates`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-black/5"
+                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
                     >
                       {dict.navbar.documentsMenu.certificates}
                     </Link>
 
                     <Link
                       href={`/${locale}/resources`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-black/5"
+                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
                     >
                       {dict.navbar.documentsMenu.resources}
                     </Link>
@@ -116,21 +112,21 @@ export default function Navbar({
                   <div className="rounded-[28px] border border-[#eadfce] bg-white p-3 text-[#1d1814] shadow-[0_24px_70px_rgba(30,24,18,0.12)]">
                     <Link
                       href={`/${locale}/about/company`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-black/5"
+                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
                     >
                       {dict.navbar.aboutMenu.company}
                     </Link>
 
                     <Link
                       href={`/${locale}/about/mission`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-black/5"
+                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
                     >
                       {dict.navbar.aboutMenu.mission}
                     </Link>
 
                     <Link
                       href={`/${locale}/about/partners`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-black/5"
+                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
                     >
                       {dict.navbar.aboutMenu.partners}
                     </Link>
@@ -154,22 +150,16 @@ export default function Navbar({
 
               <div
                 aria-hidden="true"
-                className={`pointer-events-none absolute -bottom-2 left-0 h-6 w-full overflow-hidden ${
-                  isOverlay ? "opacity-90" : "opacity-70"
-                }`}
+                className="pointer-events-none absolute -bottom-2 left-0 h-6 w-full overflow-hidden opacity-70"
               >
-                <div
-                  className={`absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 ${
-                    isOverlay ? "bg-[#7cb7ff]/35" : "bg-[#4f8fe0]/30"
-                  }`}
-                />
+                <div className="absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 bg-[#c6924a]/28" />
                 <div className="navbar-truck-motion absolute inset-y-0 left-0 w-full">
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 scale-[0.9]">
                     <svg
                       viewBox="0 0 76 36"
                       aria-hidden="true"
                       className={`navbar-truck-icon h-9 w-[4.75rem] ${
-                        isOverlay ? "drop-shadow-[0_0_14px_rgba(77,153,255,0.45)]" : ""
+                        isOverlay ? "drop-shadow-[0_0_14px_rgba(198,146,74,0.28)]" : ""
                       }`}
                     >
                       <defs>
@@ -217,13 +207,10 @@ export default function Navbar({
             </div>
 
             <div className="hidden items-center gap-3 lg:flex">
-              <LocaleSwitcher locale={locale} inverted={isOverlay} />
+              <LocaleSwitcher locale={locale} />
               <Link
                 href={`/${locale}/quote`}
-                className={`rounded-full px-5 py-2.5 text-sm font-semibold transition ${isOverlay
-                    ? "bg-[#d6a35d] text-[#1d1814] hover:bg-[#e3b87c]"
-                    : "bg-[#1d1814] text-white hover:bg-[#342821]"
-                  }`}
+                className="rounded-full bg-[#1d1814] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#342821]"
               >
                 {dict.navbar.links.quote}
               </Link>
@@ -232,8 +219,7 @@ export default function Navbar({
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen((current) => !current)}
-              className={`flex h-11 w-11 items-center justify-center rounded-full border lg:hidden ${isOverlay ? "border-white/15 bg-white/8" : "border-[#eadfce] bg-[#fcfaf6]"
-                }`}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#eadfce] bg-[#fcfaf6] lg:hidden"
               aria-label={dict.navbar.mobileMenuLabel}
             >
               <span className="space-y-1.5">
@@ -245,7 +231,7 @@ export default function Navbar({
           </div>
 
           {isMobileMenuOpen ? (
-            <div className="mt-5 rounded-[24px] border border-white/10 bg-black/10 p-4 lg:hidden">
+            <div className="mt-5 rounded-[24px] border border-[#eadfce] bg-[#fcfaf6]/95 p-4 text-[#1d1814] lg:hidden">
               <div className="grid gap-3 text-sm font-medium">
                 <Link href={`/${locale}`} onClick={() => setIsMobileMenuOpen(false)}>
                   {dict.navbar.links.home}
@@ -327,14 +313,11 @@ export default function Navbar({
               </div>
 
               <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <LocaleSwitcher locale={locale} inverted={isOverlay} />
+                <LocaleSwitcher locale={locale} />
                 <Link
                   href={`/${locale}/quote`}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`rounded-full px-5 py-3 text-center text-sm font-semibold transition ${isOverlay
-                      ? "bg-[#d6a35d] text-[#1d1814]"
-                      : "bg-[#1d1814] text-white"
-                    }`}
+                  className="rounded-full bg-[#1d1814] px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#342821]"
                 >
                   {dict.navbar.links.quote}
                 </Link>

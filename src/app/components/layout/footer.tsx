@@ -14,15 +14,15 @@ export default function Footer({ locale }: FooterProps) {
   const linkedinHref = dict.footer.contact.linkedinHref;
 
   return (
-    <footer className="mt-20 bg-[#120f0d] px-6 pb-8 pt-14 text-white md:px-10 lg:px-16">
+    <footer className="bg-[#f5f1e8] px-6 pb-8 pt-14 text-[#1d1814] md:px-10 lg:px-16">
       <div className="mx-auto max-w-7xl">
-        <div className="relative overflow-hidden rounded-[34px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-8 shadow-[0_30px_90px_rgba(0,0,0,0.18)] md:p-10">
+        <div className="relative overflow-hidden rounded-[34px] border border-[#eadfce] bg-[#fcfaf6] p-8 shadow-[0_30px_90px_rgba(30,24,18,0.1)] md:p-10">
           <div className="grid gap-10 xl:grid-cols-[1.15fr_0.85fr]">
             <div>
               <Link
                 href={`/${locale}`}
                 aria-label={dict.footer.brand}
-                className="inline-flex items-center rounded-[22px] bg-white px-4 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.16)]"
+                className="inline-flex items-center rounded-[22px] border border-[#eadfce] bg-white px-4 py-3 shadow-[0_18px_40px_rgba(30,24,18,0.08)]"
               >
                 <Image
                   src="/logo.ai.png"
@@ -37,18 +37,18 @@ export default function Footer({ locale }: FooterProps) {
                 {dict.footer.title}
               </h2>
 
-              <p className="mt-6 max-w-2xl text-base leading-8 text-white/68">
+              <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f554c]">
                 {dict.footer.description}
               </p>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-white/70">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7444]">
                   {dict.footer.linksTitle}
                 </h3>
 
-                <div className="mt-4 grid gap-3 text-sm text-white/74">
+                <div className="mt-4 grid gap-3 text-sm text-[#5f554c]">
                   <Link href={`/${locale}`}>{dict.footer.links.home}</Link>
                   <Link href={`/${locale}/services`}>{dict.footer.links.services}</Link>
                   <Link href={`/${locale}/resources`}>{dict.footer.links.resources}</Link>
@@ -64,11 +64,11 @@ export default function Footer({ locale }: FooterProps) {
               </div>
 
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-white/70">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-[#9a7444]">
                   {dict.footer.contactTitle}
                 </h3>
 
-                <div className="mt-4 grid gap-3 text-sm text-white/74">
+                <div className="mt-4 grid gap-3 text-sm text-[#5f554c]">
                   <p>{dict.footer.contact.email}</p>
                   <p>{dict.footer.contact.phone}</p>
                   <p>{dict.footer.contact.address}</p>
@@ -95,21 +95,21 @@ export default function Footer({ locale }: FooterProps) {
             </div>
           </div>
 
-          <div aria-hidden="true" className="pointer-events-none mt-10 h-10 overflow-hidden border-b border-white/8">
-            <div className="absolute inset-x-0 bottom-2 h-px bg-[rgba(122,180,255,0.25)]" />
+          <div aria-hidden="true" className="pointer-events-none mt-10 h-10 overflow-hidden border-b border-[#eadfce]">
+            <div className="absolute inset-x-0 bottom-2 h-px bg-[#c6924a]/25" />
             <div className="footer-ship-motion relative h-full w-full">
               <div className="absolute bottom-0 left-0">
                 <img
                   src="https://openclipart.org/image/2000px/322884"
                   alt=""
-                  className="footer-ship-icon h-11 w-[11rem] object-contain drop-shadow-[0_0_16px_rgba(54,128,224,0.18)]"
+                  className="footer-ship-icon h-11 w-[11rem] object-contain opacity-80 drop-shadow-[0_0_16px_rgba(198,146,74,0.16)]"
                   aria-hidden="true"
                 />
               </div>
             </div>
           </div>
 
-          <div className="mt-6 flex flex-col gap-4 pt-6 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
+          <div className="mt-6 flex flex-col gap-4 pt-6 text-sm text-[#6a5c4f] md:flex-row md:items-center md:justify-between">
             <p>{dict.footer.bottom.copyright}</p>
             <p>{dict.footer.bottom.slogan}</p>
             <p>{dict.footer.bottom.credit}</p>

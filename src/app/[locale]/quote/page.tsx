@@ -35,7 +35,6 @@ export default async function QuotePage({
             </div>
 
             <MailtoForm
-              email="teklif@sirket.com"
               subjectPrefix={dict.quote.form.subjectPrefix}
               title={dict.quote.form.title}
               description={dict.quote.form.description}

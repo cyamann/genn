@@ -162,8 +162,8 @@
     "form": {
       "subjectPrefix": "Teklif Talebi",
       "title": "Teklif talebi oluşturun",
-      "description": "Formu gönderdiğinizde varsayılan mail uygulamanız açılır ve bilgileriniz hazır bir e-posta olarak gelir.",
-      "buttonLabel": "Teklif Maili Oluştur",
+      "description": "Formu gönderdiğinizde bilgileriniz doğrudan ekibimize e-posta olarak iletilir.",
+      "buttonLabel": "Teklif Talebini Gönder",
       "fields": {
         "company": {
           "label": "Firma",
@@ -199,7 +199,7 @@
     "form": {
       "subjectPrefix": "İletişim Talebi",
       "title": "Bize yazın",
-      "description": "Formu doldurduğunuzda varsayılan mail uygulamanız açılır ve bilgileriniz hazır bir e-posta olarak gider.",
+      "description": "Formu doldurduğunuzda bilgileriniz doğrudan ekibimize e-posta olarak iletilir.",
       "buttonLabel": "Mail Gönder",
       "fields": {
         "name": {
@@ -242,7 +242,7 @@
   "careers": {
     "eyebrow": "Kariyer",
     "title": "Operasyonu büyüten ekibe katılmak isteyenler için açık bir başvuru alanı",
-    "description": "Gümrük operasyonu, müşteri yönetimi, taşıma planlama ve saha koordinasyonu alanlarında güçlü ekip arkadaşları arıyoruz. Aşağıdaki form ile özgeçmiş ve kısa notunuzu bize mail olarak iletebilirsiniz.",
+    "description": "Gümrük operasyonu, müşteri yönetimi, taşıma planlama ve saha koordinasyonu alanlarında güçlü ekip arkadaşları arıyoruz. Aşağıdaki form ile özgeçmiş ve kısa notunuzu bize iletebilirsiniz.",
     "highlights": [
       "Gümrük operasyon uzmanlığı",
       "Lojistik planlama",
@@ -252,8 +252,8 @@
     "form": {
       "subjectPrefix": "Kariyer Başvurusu",
       "title": "Başvurunuzu mail ile iletin",
-      "description": "Bilgileriniz varsayılan mail uygulamanıza aktarılır. CV dosyanızı açılan mail ekranına ekleyebilirsiniz.",
-      "buttonLabel": "Başvuru Maili Oluştur",
+      "description": "Bilgileriniz doğrudan ekibimize e-posta olarak iletilir. CV dosya adınız başvuru notuna eklenir.",
+      "buttonLabel": "Başvuruyu Gönder",
       "fields": {
         "fullName": {
           "label": "Ad Soyad",
@@ -582,7 +582,7 @@
     "contact": {
       "email": "info@genn.com.tr",
       "phone": "+90 212 843 59 00",
-      "address": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34688 İstanbul, Türkiye",
+      "address": "Bahçelievler Mah. Metroport Business Center No: 11/1108 34180 İstanbul, Türkiye",
       "instagramLabel": "Instagram",
       "instagramValue": "@gennlogistics",
       "instagramHref": "https://www.instagram.com/gennlogistics/",
@@ -599,7 +599,7 @@
   "navbar": {
     "brand": "Genn",
     "brandSubtitle": {
-      "lineOne": "Gümrük Müşavirliği ve",
+      "lineOne": "Gen Gümrük Müşavirliği ve",
       "lineTwo": "Lojistik Hizmetleri A.Ş."
     },
     "links": {

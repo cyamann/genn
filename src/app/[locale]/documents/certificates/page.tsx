@@ -6,6 +6,7 @@ import SectionReveal from "../../../components/ui/section-reveal";
 import DnaBackground from "../../../components/ui/dna-background";
 
 const pdfPath = "/belge.pdf";
+const pdfSecondPagePath = "/belge-2.pdf";
 
 export default async function CertificatesPage({
   params,
@@ -53,7 +54,7 @@ export default async function CertificatesPage({
 
                 <div className="mt-6 flex flex-wrap gap-4">
                   <Link
-                    href={pdfPath}
+                    href={pdfSecondPagePath}
                     target="_blank"
                     rel="noreferrer"
                     className="rounded-full bg-[#1d1814] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#342821]"
