@@ -100,7 +100,7 @@ export default function Hero({ locale }: HeroProps) {
 
                 <div className="space-y-4">
                   <div className="rounded-[20px] border border-[#d6a35d]/30 bg-[#f3e5cf] p-4">
-                    <p className="text-sm font-medium leading-6 text-[#5d4630]">
+                    <p className="text-sm font-bold leading-6 text-[#5d4630]">
                       {dict.hero.card.gazetteLabel}
                     </p>
                     <Link

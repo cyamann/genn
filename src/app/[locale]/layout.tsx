@@ -1,6 +1,7 @@
 import { getDictionary } from "@/src/lib/getDictionaries";
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 import { DictionaryProvider } from "../components/providers/dictionary-provider";
+import RouteLoader from "../components/providers/route-loader";
 
 
 export default async function LocaleLayout({
@@ -15,6 +16,9 @@ export default async function LocaleLayout({
 
   return (
     <DictionaryProvider dictionary={dictionary}>
+      <Suspense fallback={null}>
+        <RouteLoader />
+      </Suspense>
       {children}
     </DictionaryProvider>
   );

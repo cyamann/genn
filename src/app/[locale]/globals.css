@@ -125,6 +125,18 @@ body {
   animation: footer-ship-bob 2.4s ease-in-out infinite;
 }
 
+.logo-loader-ring {
+  animation: logo-loader-pulse 1.45s ease-in-out infinite;
+}
+
+.logo-loader-ring-delay {
+  animation-delay: 0.28s;
+}
+
+.logo-loader-mark {
+  animation: logo-loader-breathe 1.45s ease-in-out infinite;
+}
+
 @keyframes dna-float {
   0%,
   100% {
@@ -186,5 +198,33 @@ body {
 
   50% {
     transform: translateY(-1.5px);
+  }
+}
+
+@keyframes logo-loader-pulse {
+  0% {
+    opacity: 0.35;
+    transform: scale(0.86);
+  }
+
+  50% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.15;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes logo-loader-breathe {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-2px) scale(1.025);
   }
 }
