@@ -17,7 +17,21 @@ type MailtoFormProps = {
   buttonLabel: string;
 };
 
+const turkishMailLabels: Record<string, string> = {
+  company: "Firma",
+  name: "Ad Soyad",
+  fullName: "Ad Soyad",
+  email: "E-posta",
+  phone: "Telefon",
+  service: "Hizmet İhtiyacı",
+  position: "Pozisyon",
+  experience: "Deneyim",
+  cv: "CV",
+  message: "Mesaj",
+};
+
 export default function MailtoForm({
+  email = "social@genn.com.tr",
   subjectPrefix,
   title,
   description,
@@ -48,51 +62,27 @@ export default function MailtoForm({
     }));
   }
 
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setStatus("sending");
     setStatusMessage("");
 
     const primaryValue = values.name || values.fullName || values.company || "Yeni Talep";
     const subject = `${subjectPrefix}: ${primaryValue}`;
     const submittedFields = fields.map((field) => ({
       id: field.id,
-      label: field.label,
-      value: field.type === "file" ? fileNames[field.id] || "Secilmedi" : values[field.id] || "-",
+      label: turkishMailLabels[field.id] || field.label,
+      value: field.type === "file" ? fileNames[field.id] || "Seçilmedi" : values[field.id] || "-",
     }));
+    const body = submittedFields
+      .map((field) => `${field.label}: ${field.value}`)
+      .join("\n");
+    const mailtoHref = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          subject,
-          fields: submittedFields,
-        }),
-      });
-
-      if (!response.ok) {
-        const result = (await response.json().catch(() => null)) as {
-          error?: string;
-        } | null;
-
-        throw new Error(result?.error || "Mail gonderilemedi");
-      }
-
-      setStatus("sent");
-      setStatusMessage("Mesajınız gönderildi.");
-      setValues(Object.fromEntries(fields.map((field) => [field.id, ""])));
-      setFileNames({});
-    } catch (error) {
-      setStatus("error");
-      setStatusMessage(
-        error instanceof Error
-          ? error.message
-          : "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin."
-      );
-    }
+    window.location.href = mailtoHref;
+    setStatus("sent");
+    setStatusMessage("Mail uygulamanız açıldı. Gönderimi oradan tamamlayabilirsiniz.");
   }
 
   return (
