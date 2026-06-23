@@ -74,12 +74,6 @@ export default async function CareersPage({
                   placeholder: dict.careers.form.fields.experience.placeholder,
                 },
                 {
-                  id: "cv",
-                  label: dict.careers.form.fields.cv.label,
-                  type: "file",
-                  placeholder: dict.careers.form.fields.cv.placeholder,
-                },
-                {
                   id: "message",
                   label: dict.careers.form.fields.message.label,
                   type: "textarea",

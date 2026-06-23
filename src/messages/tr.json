@@ -252,7 +252,7 @@
     "form": {
       "subjectPrefix": "Kariyer Başvurusu",
       "title": "Başvurunuzu mail ile iletin",
-      "description": "Bilgileriniz doğrudan ekibimize e-posta olarak iletilir. CV dosya adınız başvuru notuna eklenir.",
+      "description": "Bilgileriniz mail uygulamanıza aktarılır. Başvurunuzu kısa notunuzla birlikte gönderebilirsiniz.",
       "buttonLabel": "Başvuruyu Gönder",
       "fields": {
         "fullName": {
@@ -270,10 +270,6 @@
         "experience": {
           "label": "Deneyim",
           "placeholder": "Örn. 4 yıl gümrük operasyonu"
-        },
-        "cv": {
-          "label": "CV",
-          "placeholder": ""
         },
         "message": {
           "label": "Kısa Not",
@@ -434,11 +430,28 @@
     "title": "Türkiye resmi ve dini günlerini tek bakışta görün.",
     "description": "2026 yılı için resmi tatiller, dini bayram günleri ve yarım günler takvim üzerinde işaretlendi. Ayları değiştirerek yıl içindeki önemli tarihleri hızlıca inceleyebilirsiniz.",
     "legend": [
-      { "tone": "official", "label": "Resmi tatil" },
-      { "tone": "religious", "label": "Dini bayram günü" },
-      { "tone": "halfDay", "label": "Yarım gün" }
+      {
+        "tone": "official",
+        "label": "Resmi tatil"
+      },
+      {
+        "tone": "religious",
+        "label": "Dini bayram günü"
+      },
+      {
+        "tone": "halfDay",
+        "label": "Yarım gün"
+      }
     ],
-    "weekdays": ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"],
+    "weekdays": [
+      "Paz",
+      "Pzt",
+      "Sal",
+      "Çar",
+      "Per",
+      "Cum",
+      "Cmt"
+    ],
     "badges": {
       "official": "Resmi",
       "religious": "Dini",

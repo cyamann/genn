@@ -252,7 +252,7 @@
     "form": {
       "subjectPrefix": "Solicitud de carrera",
       "title": "Envíe su solicitud por correo electrónico",
-      "description": "Su información se transfiere a su aplicación de correo predeterminada. Puede adjuntar su CV en la ventana de correo que se abra.",
+      "description": "Su información se transfiere a su aplicación de correo predeterminada. Puede enviar su solicitud con una breve nota.",
       "buttonLabel": "Crear correo de solicitud",
       "fields": {
         "fullName": {
@@ -270,10 +270,6 @@
         "experience": {
           "label": "Experiencia",
           "placeholder": "Ej. 4 años en operaciones aduaneras"
-        },
-        "cv": {
-          "label": "CV",
-          "placeholder": ""
         },
         "message": {
           "label": "Nota breve",
@@ -434,11 +430,28 @@
     "title": "Vea de un vistazo las fechas oficiales y religiosas de Turquía.",
     "description": "Para 2026, los festivos oficiales, los días religiosos y los medios días están marcados en el calendario. Puede cambiar de mes para revisar rápidamente las fechas importantes del año.",
     "legend": [
-      { "tone": "official", "label": "Festivo oficial" },
-      { "tone": "religious", "label": "Festividad religiosa" },
-      { "tone": "halfDay", "label": "Medio día" }
+      {
+        "tone": "official",
+        "label": "Festivo oficial"
+      },
+      {
+        "tone": "religious",
+        "label": "Festividad religiosa"
+      },
+      {
+        "tone": "halfDay",
+        "label": "Medio día"
+      }
     ],
-    "weekdays": ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
+    "weekdays": [
+      "Dom",
+      "Lun",
+      "Mar",
+      "Mié",
+      "Jue",
+      "Vie",
+      "Sáb"
+    ],
     "badges": {
       "official": "Oficial",
       "religious": "Religioso",

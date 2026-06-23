@@ -252,7 +252,7 @@
     "form": {
       "subjectPrefix": "职位申请",
       "title": "通过电子邮件发送您的申请",
-      "description": "您的信息将传输到默认邮件应用中。您可以在打开的邮件窗口中附加您的简历文件。",
+      "description": "您的信息将传输到默认邮件应用中。您可以附上简短说明发送申请。",
       "buttonLabel": "生成申请邮件",
       "fields": {
         "fullName": {
@@ -270,10 +270,6 @@
         "experience": {
           "label": "经验",
           "placeholder": "例如：4年报关运营经验"
-        },
-        "cv": {
-          "label": "简历",
-          "placeholder": ""
         },
         "message": {
           "label": "简短说明",
@@ -434,11 +430,28 @@
     "title": "一眼查看土耳其的官方与宗教重要日期。",
     "description": "2026 年的官方假日、宗教节日和半天假期已在日历上标记。您可以切换月份，快速查看全年重要日期。",
     "legend": [
-      { "tone": "official", "label": "官方假日" },
-      { "tone": "religious", "label": "宗教节日" },
-      { "tone": "halfDay", "label": "半天" }
+      {
+        "tone": "official",
+        "label": "官方假日"
+      },
+      {
+        "tone": "religious",
+        "label": "宗教节日"
+      },
+      {
+        "tone": "halfDay",
+        "label": "半天"
+      }
     ],
-    "weekdays": ["日", "一", "二", "三", "四", "五", "六"],
+    "weekdays": [
+      "日",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六"
+    ],
     "badges": {
       "official": "官方",
       "religious": "宗教",

@@ -10,7 +10,7 @@ type MailtoFormProps = {
   fields: Array<{
     id: string;
     label: string;
-    type?: "text" | "email" | "tel" | "textarea" | "file";
+    type?: "text" | "email" | "tel" | "textarea";
     placeholder: string;
   }>;
   theme?: "dark" | "light";
@@ -26,7 +26,6 @@ const turkishMailLabels: Record<string, string> = {
   service: "Hizmet İhtiyacı",
   position: "Pozisyon",
   experience: "Deneyim",
-  cv: "CV",
   message: "Mesaj",
 };
 
@@ -42,7 +41,6 @@ export default function MailtoForm({
   const [values, setValues] = useState<Record<string, string>>(
     Object.fromEntries(fields.map((field) => [field.id, ""]))
   );
-  const [fileNames, setFileNames] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [statusMessage, setStatusMessage] = useState("");
 
@@ -55,13 +53,6 @@ export default function MailtoForm({
     }));
   }
 
-  function handleFileChange(id: string, fileName: string) {
-    setFileNames((current) => ({
-      ...current,
-      [id]: fileName,
-    }));
-  }
-
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatusMessage("");
@@ -71,7 +62,7 @@ export default function MailtoForm({
     const submittedFields = fields.map((field) => ({
       id: field.id,
       label: turkishMailLabels[field.id] || field.label,
-      value: field.type === "file" ? fileNames[field.id] || "Seçilmedi" : values[field.id] || "-",
+      value: values[field.id] || "-",
     }));
     const body = submittedFields
       .map((field) => `${field.label}: ${field.value}`)
@@ -117,19 +108,6 @@ export default function MailtoForm({
                   className={commonClasses}
                   placeholder={field.placeholder}
                 />
-              ) : field.type === "file" ? (
-                <div className={`rounded-[20px] border px-4 py-4 ${isDark ? "border-white/10 bg-white/5" : "border-[#e8dccd] bg-[#fcfaf6]"}`}>
-                  <input
-                    type="file"
-                    onChange={(event) =>
-                      handleFileChange(field.id, event.target.files?.[0]?.name || "")
-                    }
-                    className={`w-full text-sm ${isDark ? "text-white file:mr-4 file:rounded-full file:border-0 file:bg-[#d6a35d] file:px-4 file:py-2 file:text-[#1d1814]" : "text-[#1d1814] file:mr-4 file:rounded-full file:border-0 file:bg-[#1d1814] file:px-4 file:py-2 file:text-white"}`}
-                  />
-                  <p className={`mt-3 text-xs ${isDark ? "text-white/55" : "text-[#7d7266]"}`}>
-                    Seçilen dosya adı başvuru notuna eklenir.
-                  </p>
-                </div>
               ) : (
                 <input
                   type={field.type || "text"}

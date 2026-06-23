@@ -252,7 +252,7 @@
     "form": {
       "subjectPrefix": "Career Application",
       "title": "Send your application by email",
-      "description": "Your information is transferred to your default mail app. You can attach your CV file on the opened email screen.",
+      "description": "Your information is transferred to your default mail app. You can send your application with a short note.",
       "buttonLabel": "Create Application Email",
       "fields": {
         "fullName": {
@@ -270,10 +270,6 @@
         "experience": {
           "label": "Experience",
           "placeholder": "E.g. 4 years in customs operations"
-        },
-        "cv": {
-          "label": "CV",
-          "placeholder": ""
         },
         "message": {
           "label": "Short Note",
@@ -434,11 +430,28 @@
     "title": "See Turkey's official and religious dates at a glance.",
     "description": "For 2026, official holidays, religious feast days, and half days are marked on the calendar. You can switch months to quickly review important dates throughout the year.",
     "legend": [
-      { "tone": "official", "label": "Official holiday" },
-      { "tone": "religious", "label": "Religious holiday" },
-      { "tone": "halfDay", "label": "Half day" }
+      {
+        "tone": "official",
+        "label": "Official holiday"
+      },
+      {
+        "tone": "religious",
+        "label": "Religious holiday"
+      },
+      {
+        "tone": "halfDay",
+        "label": "Half day"
+      }
     ],
-    "weekdays": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "weekdays": [
+      "Sun",
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
     "badges": {
       "official": "Official",
       "religious": "Religious",

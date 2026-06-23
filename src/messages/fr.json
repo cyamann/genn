@@ -252,7 +252,7 @@
     "form": {
       "subjectPrefix": "Candidature carrière",
       "title": "Envoyez votre candidature par e-mail",
-      "description": "Vos informations sont transférées vers votre application mail par défaut. Vous pouvez joindre votre CV dans la fenêtre d’e-mail qui s’ouvre.",
+      "description": "Vos informations sont transférées vers votre application mail par défaut. Vous pouvez envoyer votre candidature avec une courte note.",
       "buttonLabel": "Créer un e-mail de candidature",
       "fields": {
         "fullName": {
@@ -270,10 +270,6 @@
         "experience": {
           "label": "Expérience",
           "placeholder": "Ex. 4 ans dans les opérations douanières"
-        },
-        "cv": {
-          "label": "CV",
-          "placeholder": ""
         },
         "message": {
           "label": "Courte note",
@@ -434,11 +430,28 @@
     "title": "Consultez en un coup d'œil les dates officielles et religieuses de la Turquie.",
     "description": "Pour 2026, les jours fériés officiels, les fêtes religieuses et les demi-journées sont marqués sur le calendrier. Vous pouvez changer de mois pour consulter rapidement les dates importantes de l'année.",
     "legend": [
-      { "tone": "official", "label": "Jour férié officiel" },
-      { "tone": "religious", "label": "Fête religieuse" },
-      { "tone": "halfDay", "label": "Demi-journée" }
+      {
+        "tone": "official",
+        "label": "Jour férié officiel"
+      },
+      {
+        "tone": "religious",
+        "label": "Fête religieuse"
+      },
+      {
+        "tone": "halfDay",
+        "label": "Demi-journée"
+      }
     ],
-    "weekdays": ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
+    "weekdays": [
+      "Dim",
+      "Lun",
+      "Mar",
+      "Mer",
+      "Jeu",
+      "Ven",
+      "Sam"
+    ],
     "badges": {
       "official": "Officiel",
       "religious": "Religieux",

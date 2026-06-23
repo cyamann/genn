@@ -252,7 +252,7 @@
     "form": {
       "subjectPrefix": "Karrierebewerbung",
       "title": "Senden Sie Ihre Bewerbung per E-Mail",
-      "description": "Ihre Informationen werden in Ihre Standard-Mail-App übertragen. Sie können Ihre CV-Datei im geöffneten E-Mail-Fenster anhängen.",
+      "description": "Ihre Informationen werden in Ihre Standard-Mail-App übertragen. Sie können Ihre Bewerbung mit einer kurzen Notiz senden.",
       "buttonLabel": "Bewerbungs-E-Mail erstellen",
       "fields": {
         "fullName": {
@@ -270,10 +270,6 @@
         "experience": {
           "label": "Erfahrung",
           "placeholder": "Z. B. 4 Jahre in Zolloperationen"
-        },
-        "cv": {
-          "label": "Lebenslauf",
-          "placeholder": ""
         },
         "message": {
           "label": "Kurze Notiz",
@@ -434,11 +430,28 @@
     "title": "Sehen Sie die offiziellen und religiösen Tage der Türkei auf einen Blick.",
     "description": "Für das Jahr 2026 sind gesetzliche Feiertage, religiöse Festtage und halbe Feiertage im Kalender markiert. Durch den Monatswechsel können Sie wichtige Daten im Jahresverlauf schnell prüfen.",
     "legend": [
-      { "tone": "official", "label": "Gesetzlicher Feiertag" },
-      { "tone": "religious", "label": "Religiöser Festtag" },
-      { "tone": "halfDay", "label": "Halber Tag" }
+      {
+        "tone": "official",
+        "label": "Gesetzlicher Feiertag"
+      },
+      {
+        "tone": "religious",
+        "label": "Religiöser Festtag"
+      },
+      {
+        "tone": "halfDay",
+        "label": "Halber Tag"
+      }
     ],
-    "weekdays": ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+    "weekdays": [
+      "So",
+      "Mo",
+      "Di",
+      "Mi",
+      "Do",
+      "Fr",
+      "Sa"
+    ],
     "badges": {
       "official": "Offiziell",
       "religious": "Religiös",
