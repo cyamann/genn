@@ -56,7 +56,7 @@ export default function Footer({ locale }: FooterProps) {
                   <Link href={`/${locale}/documents/certificates`}>
                     {dict.footer.links.ourDocuments}
                   </Link>
-                  <Link href={`/${locale}/about`}>{dict.footer.links.about}</Link>
+                  <Link href={`/${locale}/about/mission`}>{dict.navbar.aboutMenu.mission}</Link>
                   <Link href={`/${locale}/careers`}>{dict.footer.links.careers}</Link>
                   <Link href={`/${locale}/contact`}>{dict.footer.links.contact}</Link>
                   <Link href={`/${locale}/quote`}>{dict.footer.links.quote}</Link>

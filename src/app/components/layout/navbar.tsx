@@ -16,7 +16,6 @@ export default function Navbar({
 }: NavbarProps) {
   const dict = useDictionary();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isDocumentsOpen, setIsDocumentsOpen] = useState(false);
   const isOverlay = variant === "overlay";
 
@@ -103,36 +102,12 @@ export default function Navbar({
                 </div>
               </div>
 
-              <div className="group relative">
-                <Link href={`/${locale}/about`} className={`${menuLinkClassName} whitespace-nowrap`}>
-                  {dict.navbar.links.about}
-                </Link>
-
-                <div className="absolute left-0 top-full hidden min-w-[230px] pt-4 group-hover:block">
-                  <div className="rounded-[28px] border border-[#eadfce] bg-white p-3 text-[#1d1814] shadow-[0_24px_70px_rgba(30,24,18,0.12)]">
-                    <Link
-                      href={`/${locale}/about/company`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
-                    >
-                      {dict.navbar.aboutMenu.company}
-                    </Link>
-
-                    <Link
-                      href={`/${locale}/about/mission`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
-                    >
-                      {dict.navbar.aboutMenu.mission}
-                    </Link>
-
-                    <Link
-                      href={`/${locale}/about/partners`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
-                    >
-                      {dict.navbar.aboutMenu.partners}
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <Link
+                href={`/${locale}/about/mission`}
+                className={`${menuLinkClassName} whitespace-nowrap`}
+              >
+                {dict.navbar.aboutMenu.mission}
+              </Link>
 
               <Link
                 href={`/${locale}/careers`}
@@ -269,39 +244,12 @@ export default function Navbar({
                   </div>
                 ) : null}
 
-                <button
-                  type="button"
-                  onClick={() => setIsAboutOpen((current) => !current)}
-                  className="flex items-center justify-between"
+                <Link
+                  href={`/${locale}/about/mission`}
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <span>{dict.navbar.links.about}</span>
-                  <span>{isAboutOpen ? "-" : "+"}</span>
-                </button>
-
-                {isAboutOpen ? (
-                  <div className="grid gap-2 rounded-[20px] bg-white/70 p-3 text-[#1d1814]">
-                    <Link
-                      href={`/${locale}/about/company`}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {dict.navbar.aboutMenu.company}
-                    </Link>
-
-                    <Link
-                      href={`/${locale}/about/mission`}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {dict.navbar.aboutMenu.mission}
-                    </Link>
-
-                    <Link
-                      href={`/${locale}/about/partners`}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {dict.navbar.aboutMenu.partners}
-                    </Link>
-                  </div>
-                ) : null}
+                  {dict.navbar.aboutMenu.mission}
+                </Link>
 
                 <Link href={`/${locale}/careers`} onClick={() => setIsMobileMenuOpen(false)}>
                   {dict.navbar.links.careers}
