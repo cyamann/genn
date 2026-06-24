@@ -91,16 +91,16 @@ export default function Navbar({
                     >
                       {dict.navbar.documentsMenu.certificates}
                     </Link>
-
-                    <Link
-                      href={`/${locale}/resources`}
-                      className="block rounded-2xl px-4 py-3 text-sm hover:bg-[#f5f1e8]"
-                    >
-                      {dict.navbar.documentsMenu.resources}
-                    </Link>
                   </div>
                 </div>
               </div>
+
+              <Link
+                href={`/${locale}/resources`}
+                className={`${menuLinkClassName} whitespace-nowrap`}
+              >
+                {dict.navbar.documentsMenu.resources}
+              </Link>
 
               <Link
                 href={`/${locale}/about/mission`}
@@ -237,12 +237,12 @@ export default function Navbar({
                     >
                       {dict.navbar.documentsMenu.certificates}
                     </Link>
-
-                    <Link href={`/${locale}/resources`} onClick={() => setIsMobileMenuOpen(false)}>
-                      {dict.navbar.documentsMenu.resources}
-                    </Link>
                   </div>
                 ) : null}
+
+                <Link href={`/${locale}/resources`} onClick={() => setIsMobileMenuOpen(false)}>
+                  {dict.navbar.documentsMenu.resources}
+                </Link>
 
                 <Link
                   href={`/${locale}/about/mission`}
